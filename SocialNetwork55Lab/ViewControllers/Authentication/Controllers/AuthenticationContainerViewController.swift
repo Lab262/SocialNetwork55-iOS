@@ -8,20 +8,48 @@
 
 import UIKit
 
+let keyNotificationChangeBackground = "changeBackground"
+
 class AuthenticationContainerViewController: UIViewController {
 
+    @IBOutlet weak var firstBackground: UIImageView!
+    
+    @IBOutlet weak var secondBackground: UIImageView!
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.window?.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.registerObserver()
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func registerObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(changeBackgroundImage(_:)), name: NSNotification.Name(rawValue: keyNotificationChangeBackground), object: nil)
+        
     }
     
-
+    func changeBackgroundImage(_ notification: Notification) {
+        
+        
+        UIView.animate(withDuration: 0.5) { 
+            if self.firstBackground.alpha == 1 {
+                self.firstBackground.alpha = 0
+            } else {
+                self.firstBackground.alpha = 1
+            }
+            
+            if self.secondBackground.alpha == 1 {
+                self.secondBackground.alpha = 0
+            } else {
+                self.secondBackground.alpha = 1
+            }
+        }
+        
+    }
     /*
     // MARK: - Navigation
 
