@@ -25,6 +25,13 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+        cpfField.attributedPlaceholder = NSAttributedString(string: "CPF",
+                                                               attributes: [NSForegroundColorAttributeName: UIColor.white])
+        
+        passField.attributedPlaceholder = NSAttributedString(string: "Senha",
+                                                            attributes: [NSForegroundColorAttributeName: UIColor.white])
 
         // Do any additional setup after loading the view.
     }

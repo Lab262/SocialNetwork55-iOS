@@ -124,7 +124,6 @@ extension UITextField {
             return self.value(forKey: "_placeholderLabel.textColor") as? UIColor
         }
         set {
-            
             self.setValue(newValue, forKey: "_placeholderLabel.textColor")
         }
     }

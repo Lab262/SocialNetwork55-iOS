@@ -31,7 +31,15 @@ class CreateAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailField.attributedPlaceholder = NSAttributedString(string: "Email",
+                                                             attributes: [NSForegroundColorAttributeName: UIColor.white])
+        
+        passField.attributedPlaceholder = NSAttributedString(string: "Senha",
+                                                             attributes: [NSForegroundColorAttributeName: UIColor.white])
 
+        cpfField.attributedPlaceholder = NSAttributedString(string: "CPF",
+                                                             attributes: [NSForegroundColorAttributeName: UIColor.white])
         // Do any additional setup after loading the view.
     }
     
