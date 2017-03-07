@@ -35,6 +35,10 @@
 		A4F89B341DA809B100949A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F89B321DA809B100949A35 /* LaunchScreen.storyboard */; };
 		A4F89B3F1DA809B100949A35 /* SocialNetwork55LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F89B3E1DA809B100949A35 /* SocialNetwork55LabTests.swift */; };
 		A4FE063B1DD0A13E00BFDC4D /* Dictionary+Indexable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE063A1DD0A13E00BFDC4D /* Dictionary+Indexable.swift */; };
+		D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A8E1E6E802B004EDBD1 /* CreateAccountViewController.swift */; };
+		D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A901E6E8054004EDBD1 /* LoginViewController.swift */; };
+		D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */; };
+		D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		A4F89B3E1DA809B100949A35 /* SocialNetwork55LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetwork55LabTests.swift; sourceTree = "<group>"; };
 		A4F89B401DA809B100949A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4FE063A1DD0A13E00BFDC4D /* Dictionary+Indexable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Indexable.swift"; sourceTree = "<group>"; };
+		D42E1A8E1E6E802B004EDBD1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		D42E1A901E6E8054004EDBD1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
+		D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		A44E0C5D1DD092650028F06C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D48A00771E6E604500468DE0 /* gotham */,
 				A44E0C5E1DD092650028F06C /* montserrat  */,
 			);
 			path = Fonts;
@@ -161,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				A489B1F81DDA7D3E00B239D5 /* AuthenticationMainViewController.swift */,
+				D42E1A8E1E6E802B004EDBD1 /* CreateAccountViewController.swift */,
+				D42E1A901E6E8054004EDBD1 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -332,6 +343,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D48A00771E6E604500468DE0 /* gotham */ = {
+			isa = PBXGroup;
+			children = (
+				D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */,
+				D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */,
+			);
+			name = gotham;
+			sourceTree = "<group>";
+		};
 		F474218A046B1D080B651B7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,12 +460,14 @@
 				A4CB02671DD261B200B01A6B /* IconNavigationBar.xib in Resources */,
 				A489B1F71DDA7D1100B239D5 /* Authentication.storyboard in Resources */,
 				A44E0C6A1DD092650028F06C /* Montserrat-Hairline.otf in Resources */,
+				D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */,
 				A44E0C6E1DD092650028F06C /* Montserrat-UltraLight.otf in Resources */,
 				A4E462FD1DCAEAF800A611C0 /* Home.storyboard in Resources */,
 				A44E0C6C1DD092650028F06C /* Montserrat-Regular.otf in Resources */,
 				A44E0C671DD092650028F06C /* Montserrat-Black.otf in Resources */,
 				A4E463041DCAEC4F00A611C0 /* Assets.xcassets in Resources */,
 				A4F89B341DA809B100949A35 /* LaunchScreen.storyboard in Resources */,
+				D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */,
 				A44E0C681DD092650028F06C /* Montserrat-Bold.otf in Resources */,
 				A44E0C6B1DD092650028F06C /* Montserrat-Light.otf in Resources */,
 			);
@@ -478,7 +500,7 @@
 		};
 		447A52C46E0C74EA5D7B569F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -486,7 +508,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialNetwork55Lab/Pods-SocialNetwork55Lab-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -538,7 +560,7 @@
 		};
 		A4B5CAA91DA811DB003260BA /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -546,13 +568,13 @@
 			name = Fabric;
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/Fabric/run 2e1985f6065c4886c2f4320a20fb61e3c4323688 d2624afd5979642eef8ae5ce2ae3ee1eb86983da95e3c602e865668bb7b4bf8b";
 		};
 		A4F89B491DA80A0F00949A35 /* Adding tags to comment */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -560,13 +582,13 @@
 			name = "Adding tags to comment";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "#http://krakendev.io/blog/generating-warnings-in-xcode\n#http://stackoverflow.com/questions/24183812/swift-warning-equivalent\nTAGS=\"TODO:\"\necho \"searching ${SRCROOT/Humagine} for ${TAGS}\"\nfind \"${SRCROOT/Humagine}\" \\( -name \"*.swift\" \\) -type f -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"\n";
 		};
 		E85E50AC82A7A1B3976CFDF8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -574,7 +596,7 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialNetwork55Lab/Pods-SocialNetwork55Lab-resources.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -586,11 +608,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */,
 				A4CB02691DD261D900B01A6B /* IconNavigationBar.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,
 				A4AFBB021DD272A700F270C7 /* UIApplication+Navigation.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
+				D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */,
 				A40A252B1DCBD4C000DF9523 /* HomeMainViewController.swift in Sources */,
 				A4AFBB0D1DD35D4600F270C7 /* Colors.swift in Sources */,
 				A4D5DA231DDEBC7900EB9EC5 /* URLS.swift in Sources */,
