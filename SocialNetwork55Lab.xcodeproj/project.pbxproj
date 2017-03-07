@@ -38,6 +38,16 @@
 		D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A8E1E6E802B004EDBD1 /* CreateAccountViewController.swift */; };
 		D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A901E6E8054004EDBD1 /* LoginViewController.swift */; };
 		D42E1A931E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A921E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift */; };
+		D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */; };
+		D42E1AA21E6F0702004EDBD1 /* AKMaskField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A961E6F0702004EDBD1 /* AKMaskField.swift */; };
+		D42E1AA31E6F0702004EDBD1 /* AKMaskFieldBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A971E6F0702004EDBD1 /* AKMaskFieldBlock.swift */; };
+		D42E1AA41E6F0702004EDBD1 /* AKMaskFieldBlockCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A981E6F0702004EDBD1 /* AKMaskFieldBlockCharacter.swift */; };
+		D42E1AA51E6F0702004EDBD1 /* AKMaskFieldBrackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A991E6F0702004EDBD1 /* AKMaskFieldBrackets.swift */; };
+		D42E1AA61E6F0702004EDBD1 /* AKMaskFieldEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A9A1E6F0702004EDBD1 /* AKMaskFieldEvent.swift */; };
+		D42E1AA71E6F0702004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A9B1E6F0702004EDBD1 /* AKMaskFieldPatternCharacter.swift */; };
+		D42E1AA81E6F0702004EDBD1 /* AKMaskFieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A9C1E6F0702004EDBD1 /* AKMaskFieldStatus.swift */; };
+		D42E1AA91E6F0702004EDBD1 /* AKMaskFieldUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A9D1E6F0702004EDBD1 /* AKMaskFieldUtility.swift */; };
+		D42E1AAA1E6F0702004EDBD1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D42E1A9F1E6F0702004EDBD1 /* Info.plist */; };
 		D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */; };
 		D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */; };
 /* End PBXBuildFile section */
@@ -88,6 +98,17 @@
 		D42E1A8E1E6E802B004EDBD1 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		D42E1A901E6E8054004EDBD1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D42E1A921E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationContainerViewController.swift; sourceTree = "<group>"; };
+		D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtil.swift; sourceTree = "<group>"; };
+		D42E1A961E6F0702004EDBD1 /* AKMaskField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskField.swift; sourceTree = "<group>"; };
+		D42E1A971E6F0702004EDBD1 /* AKMaskFieldBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldBlock.swift; sourceTree = "<group>"; };
+		D42E1A981E6F0702004EDBD1 /* AKMaskFieldBlockCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldBlockCharacter.swift; sourceTree = "<group>"; };
+		D42E1A991E6F0702004EDBD1 /* AKMaskFieldBrackets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldBrackets.swift; sourceTree = "<group>"; };
+		D42E1A9A1E6F0702004EDBD1 /* AKMaskFieldEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldEvent.swift; sourceTree = "<group>"; };
+		D42E1A9B1E6F0702004EDBD1 /* AKMaskFieldPatternCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldPatternCharacter.swift; sourceTree = "<group>"; };
+		D42E1A9C1E6F0702004EDBD1 /* AKMaskFieldStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldStatus.swift; sourceTree = "<group>"; };
+		D42E1A9D1E6F0702004EDBD1 /* AKMaskFieldUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldUtility.swift; sourceTree = "<group>"; };
+		D42E1A9E1E6F0702004EDBD1 /* AKMaskField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKMaskField.h; sourceTree = "<group>"; };
+		D42E1A9F1E6F0702004EDBD1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
 		D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
 		DAC9F1F42C53F856E6388C8B /* Pods-SocialNetwork55LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55LabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55LabTests/Pods-SocialNetwork55LabTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +260,7 @@
 				A40A25191DCB681A00DF9523 /* UIView+Animations.swift */,
 				A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */,
 				A4AFBB011DD272A700F270C7 /* UIApplication+Navigation.swift */,
+				D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */,
 				A4FE063A1DD0A13E00BFDC4D /* Dictionary+Indexable.swift */,
 				A427680B1DD3A09D00363343 /* UIColorExtension.swift */,
 			);
@@ -349,11 +371,38 @@
 		D1C85340B3E7AD0DA6B8F3C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D42E1AA11E6F0702004EDBD1 /* AKMaskField */,
 				8072D6F2EC636560C10EDBAE /* Pods_SocialNetwork55Lab.framework */,
 				E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		D42E1AA01E6F0702004EDBD1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D42E1A9E1E6F0702004EDBD1 /* AKMaskField.h */,
+				D42E1A9F1E6F0702004EDBD1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D42E1AA11E6F0702004EDBD1 /* AKMaskField */ = {
+			isa = PBXGroup;
+			children = (
+				D42E1A961E6F0702004EDBD1 /* AKMaskField.swift */,
+				D42E1A971E6F0702004EDBD1 /* AKMaskFieldBlock.swift */,
+				D42E1A981E6F0702004EDBD1 /* AKMaskFieldBlockCharacter.swift */,
+				D42E1A991E6F0702004EDBD1 /* AKMaskFieldBrackets.swift */,
+				D42E1A9A1E6F0702004EDBD1 /* AKMaskFieldEvent.swift */,
+				D42E1A9B1E6F0702004EDBD1 /* AKMaskFieldPatternCharacter.swift */,
+				D42E1A9C1E6F0702004EDBD1 /* AKMaskFieldStatus.swift */,
+				D42E1A9D1E6F0702004EDBD1 /* AKMaskFieldUtility.swift */,
+				D42E1AA01E6F0702004EDBD1 /* Supporting Files */,
+			);
+			name = AKMaskField;
+			path = "/Users/huallydsmadi/Documents/Development/MobGap/Billin/Billin-iOS/Bilin_Cliente_iOS/Billin/Billin/../../../../../../../../Downloads/AKMaskField-master/AKMaskField";
+			sourceTree = "<absolute>";
 		};
 		D48A00771E6E604500468DE0 /* gotham */ = {
 			isa = PBXGroup;
@@ -458,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42E1AAA1E6F0702004EDBD1 /* Info.plist in Resources */,
 				A44E0C691DD092650028F06C /* Montserrat-ExtraBold.otf in Resources */,
 				A44E0C6D1DD092650028F06C /* Montserrat-SemiBold.otf in Resources */,
 				A4CB02671DD261B200B01A6B /* IconNavigationBar.xib in Resources */,
@@ -611,18 +661,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D42E1AA61E6F0702004EDBD1 /* AKMaskFieldEvent.swift in Sources */,
 				D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */,
 				A4CB02691DD261D900B01A6B /* IconNavigationBar.swift in Sources */,
+				D42E1AA81E6F0702004EDBD1 /* AKMaskFieldStatus.swift in Sources */,
+				D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,
+				D42E1AA31E6F0702004EDBD1 /* AKMaskFieldBlock.swift in Sources */,
 				A4AFBB021DD272A700F270C7 /* UIApplication+Navigation.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
+				D42E1AA71E6F0702004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
+				D42E1AA91E6F0702004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
 				D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */,
 				D42E1A931E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift in Sources */,
 				A40A252B1DCBD4C000DF9523 /* HomeMainViewController.swift in Sources */,
+				D42E1AA51E6F0702004EDBD1 /* AKMaskFieldBrackets.swift in Sources */,
 				A4AFBB0D1DD35D4600F270C7 /* Colors.swift in Sources */,
+				D42E1AA41E6F0702004EDBD1 /* AKMaskFieldBlockCharacter.swift in Sources */,
 				A4D5DA231DDEBC7900EB9EC5 /* URLS.swift in Sources */,
 				A4FE063B1DD0A13E00BFDC4D /* Dictionary+Indexable.swift in Sources */,
+				D42E1AA21E6F0702004EDBD1 /* AKMaskField.swift in Sources */,
 				A427680C1DD3A09D00363343 /* UIColorExtension.swift in Sources */,
 				A489B1F91DDA7D3E00B239D5 /* AuthenticationMainViewController.swift in Sources */,
 				A40A25181DCB5C2C00DF9523 /* UIView+IBInspector.swift in Sources */,

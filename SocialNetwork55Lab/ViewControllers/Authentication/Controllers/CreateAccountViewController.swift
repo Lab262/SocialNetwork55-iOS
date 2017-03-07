@@ -15,7 +15,8 @@ class CreateAccountViewController: UIViewController {
     
     @IBOutlet weak var forgetButton: UIButton!
     @IBOutlet weak var backButtonView: UIView!
-    @IBOutlet weak var cpfField: UITextField!
+    
+    @IBOutlet weak var cpfField: AKMaskField!
     
     @IBOutlet weak var emailField: UITextField!
     
@@ -40,6 +41,8 @@ class CreateAccountViewController: UIViewController {
 
         cpfField.attributedPlaceholder = NSAttributedString(string: "CPF",
                                                              attributes: [NSForegroundColorAttributeName: UIColor.white])
+        
+         self.cpfField.setMask("{ddd}.{ddd}.{ddd}-{dd}", withMaskTemplate: "")
         // Do any additional setup after loading the view.
     }
     
@@ -55,9 +58,79 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func forgetAction(_ sender: Any) {
+        let alertController = UIAlertController(title: "Esqueci a Senha", message: "", preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "Enviar", style: .default, handler: {
+            alert -> Void in
+            
+            if alertController.textFields![0].text! != "" {
+                
+                
+                self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+                
+                
+            }else {
+                
+                self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: "Email inválido."), animated: true, completion: nil)
+                
+            }
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .default, handler: nil)
+        
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            
+            textField.placeholder = "E-mail para recuperar conta."
+            textField.keyboardType = .emailAddress
+        }
+        
+        alertController.addAction(saveAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func enterApp(_ sender: Any) {
+
+        if cpfField.maskStatus == .incomplete || cpfField.maskStatus == .clear {
+            self.present(ViewUtil.alertControllerWithTitle(_title: "Atenção", _withMessage: "CPF inválido."), animated: true, completion: nil)
+            return
+        }
+        
+        if emailField.text == "" {
+            self.present(ViewUtil.alertControllerWithTitle(_title: "Atenção", _withMessage: "Email inválido."), animated: true, completion: nil)
+            return
+        }
+        
+        if passField.text == ""{
+            self.present(ViewUtil.alertControllerWithTitle(_title: "Atenção", _withMessage: "Senha inválida."), animated: true, completion: nil)
+            return
+        }
+        
+        
+        view.loadAnimation()
+        
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.present(self.alertControllerWithPopoverView(title: "Sucesso", message: "Conta criada com sucesso."), animated: true, completion: nil)
+            self.view.unload()
+        }
+        
+    }
+    
+    func alertControllerWithPopoverView(title: String, message: String) -> UIAlertController {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) {
+            UIAlertAction in
+            
+        NotificationCenter.default.post(name: Notification.Name(rawValue: keyNotificationChangeBackground), object: nil)
+            _ = self.navigationController?.popViewController(animated: true)
+        })
+        
+        return alert
         
     }
     

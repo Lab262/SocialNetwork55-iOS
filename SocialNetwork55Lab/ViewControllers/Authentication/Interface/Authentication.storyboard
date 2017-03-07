@@ -198,7 +198,7 @@
                                     <action selector="backButtonAction:" destination="kNL-rd-Mgg" eventType="touchUpInside" id="KAj-ng-nYg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6M-YY-DkK">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6M-YY-DkK" customClass="AKMaskField" customModule="SocialNetwork55Lab" customModuleProvider="target">
                                 <rect key="frame" x="42" y="214" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -231,7 +231,7 @@
                         <outlet property="backButton" destination="EJS-DQ-OSt" id="8bN-yn-drk"/>
                         <outlet property="backButtonView" destination="pCH-SX-buG" id="9VS-6U-ha8"/>
                         <outlet property="backgroundImage" destination="HIf-mX-03s" id="lzW-pP-HEn"/>
-                        <outlet property="cpfField" destination="b6M-YY-DkK" id="2Jq-zP-tkO"/>
+                        <outlet property="cpfField" destination="b6M-YY-DkK" id="LR0-CT-KMU"/>
                         <outlet property="cpfFieldSupportView" destination="G5J-aX-ShS" id="Oyo-go-wdS"/>
                         <outlet property="forgetButton" destination="zcw-Ue-N8K" id="2X4-0b-1eX"/>
                         <outlet property="loginButton" destination="6GR-j3-KDc" id="Tsh-qj-BvY"/>
@@ -321,7 +321,7 @@
                                     <action selector="enterApp:" destination="xLi-5D-Hh3" eventType="touchUpInside" id="rMI-Br-nk2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82V-rM-xSO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82V-rM-xSO" customClass="AKMaskField" customModule="SocialNetwork55Lab" customModuleProvider="target">
                                 <rect key="frame" x="42" y="176" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -367,7 +367,7 @@
                         <outlet property="backButton" destination="jrt-rM-UjR" id="poJ-Nu-Rxt"/>
                         <outlet property="backButtonView" destination="klx-nU-6MZ" id="bqa-co-LxX"/>
                         <outlet property="backgroundImage" destination="DFh-Hu-iau" id="N2D-9T-X2Y"/>
-                        <outlet property="cpfField" destination="82V-rM-xSO" id="cfs-C2-GIT"/>
+                        <outlet property="cpfField" destination="82V-rM-xSO" id="mPu-5A-O54"/>
                         <outlet property="cpfFieldSupportView" destination="NKz-HW-Fpp" id="IwK-nD-Yeb"/>
                         <outlet property="emailField" destination="L5U-wa-EpO" id="jzh-fG-uPP"/>
                         <outlet property="emailFieldSupportView" destination="j73-R4-TRi" id="bIV-fx-OMF"/>
