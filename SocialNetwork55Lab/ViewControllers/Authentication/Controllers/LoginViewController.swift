@@ -48,8 +48,11 @@ class LoginViewController: UIViewController {
             
             if alertController.textFields![0].text! != "" {
               
-                
-                self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+                self.view.loadAnimation()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+                    self.view.unload()
+                }
                 
                 
             }else {
@@ -96,7 +99,6 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
    
-        
         if let _ = segue.destination as? AuthenticationMainViewController {
             UIView.animate(withDuration: 0.5, animations: {
                 self.view.alpha = 0

@@ -66,7 +66,12 @@ class CreateAccountViewController: UIViewController {
             if alertController.textFields![0].text! != "" {
                 
                 
-                self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+                self.view.loadAnimation()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+                    
+                    self.view.unload()
+                }
                 
                 
             }else {
