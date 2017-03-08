@@ -57,6 +57,7 @@
 		D42E1AE11E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */; };
 		D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */; };
 		D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */; };
+		D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F39DDB1E6F766A00EA4728 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldUtility.swift; sourceTree = "<group>"; };
 		D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
 		D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
+		D4F39DDB1E6F766A00EA4728 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAC9F1F42C53F856E6388C8B /* Pods-SocialNetwork55LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55LabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55LabTests/Pods-SocialNetwork55LabTests.release.xcconfig"; sourceTree = "<group>"; };
 		E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork55LabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F1611213A3F6E266EA5C74 /* Pods-SocialNetwork55LabTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55LabTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55LabTests/Pods-SocialNetwork55LabTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -226,15 +228,7 @@
 		A4E462E71DCAEA7F00A611C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D42E1AC91E6F1921004EDBD1 /* AKMaskField.h */,
-				D42E1ACA1E6F1921004EDBD1 /* AKMaskField.swift */,
-				D42E1ACB1E6F1921004EDBD1 /* AKMaskFieldBlock.swift */,
-				D42E1ACC1E6F1921004EDBD1 /* AKMaskFieldBlockCharacter.swift */,
-				D42E1ACD1E6F1921004EDBD1 /* AKMaskFieldBrackets.swift */,
-				D42E1ACE1E6F1921004EDBD1 /* AKMaskFieldEvent.swift */,
-				D42E1ACF1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift */,
-				D42E1AD01E6F1921004EDBD1 /* AKMaskFieldStatus.swift */,
-				D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */,
+				D42E1AF31E6F73BD004EDBD1 /* Frameworks */,
 				A489B1F31DDA7D0300B239D5 /* Authentication */,
 				A4E462EA1DCAEA7F00A611C0 /* Home */,
 			);
@@ -264,6 +258,7 @@
 			children = (
 				A4AFBB0C1DD35D4600F270C7 /* Colors.swift */,
 				A4D5DA221DDEBC7900EB9EC5 /* URLS.swift */,
+				D4F39DDB1E6F766A00EA4728 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -388,6 +383,22 @@
 			children = (
 				8072D6F2EC636560C10EDBAE /* Pods_SocialNetwork55Lab.framework */,
 				E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D42E1AF31E6F73BD004EDBD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D42E1AC91E6F1921004EDBD1 /* AKMaskField.h */,
+				D42E1ACA1E6F1921004EDBD1 /* AKMaskField.swift */,
+				D42E1ACB1E6F1921004EDBD1 /* AKMaskFieldBlock.swift */,
+				D42E1ACC1E6F1921004EDBD1 /* AKMaskFieldBlockCharacter.swift */,
+				D42E1ACD1E6F1921004EDBD1 /* AKMaskFieldBrackets.swift */,
+				D42E1ACE1E6F1921004EDBD1 /* AKMaskFieldEvent.swift */,
+				D42E1ACF1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift */,
+				D42E1AD01E6F1921004EDBD1 /* AKMaskFieldStatus.swift */,
+				D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -648,6 +659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */,
 				D42E1ADA1E6F1921004EDBD1 /* AKMaskFieldEvent.swift in Sources */,
 				D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */,
 				A4CB02691DD261D900B01A6B /* IconNavigationBar.swift in Sources */,

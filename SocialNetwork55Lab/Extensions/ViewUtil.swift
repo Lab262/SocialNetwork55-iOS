@@ -10,23 +10,16 @@ import UIKit
 
 class ViewUtil: NSObject {
     
-
-    
     class func viewControllerFromStoryboardWithIdentifier(_ name: String, identifier: String = "")->UIViewController?{
+        let storyboard = UIStoryboard(name: name, bundle: nil)
         
-        if let storyboard : UIStoryboard = UIStoryboard(name: name as String, bundle: nil){
-            if identifier != "" {
-                return storyboard.instantiateViewController(withIdentifier: identifier as String)
-            }else{
-                return storyboard.instantiateInitialViewController()!
-            }
+        if identifier != "" {
+            return storyboard.instantiateViewController(withIdentifier: identifier as String)
         }else{
-            return nil
+            return storyboard.instantiateInitialViewController()!
         }
-        
     }
     
-  
     static func alertControllerWithTitle (_title: String, _withMessage _message: String) -> UIAlertController {
         
         let alert = UIAlertController(title: _title, message: _message, preferredStyle: .alert)
@@ -55,9 +48,6 @@ class ViewUtil: NSObject {
         return image
         
     }
-
-
-
 }
 
 extension UIView {

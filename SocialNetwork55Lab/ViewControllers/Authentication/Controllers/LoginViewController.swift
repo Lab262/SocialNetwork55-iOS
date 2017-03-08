@@ -10,53 +10,52 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var backButtonView: UIView!
-    @IBOutlet weak var backButton: UIButton!
+
     @IBOutlet weak var cpfField: AKMaskField!
   
     @IBOutlet weak var passField: UITextField!
     
-    @IBOutlet weak var cpfFieldSupportView: UIView!
-    @IBOutlet weak var passFieldSupportView: UIView!
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.view.alpha = 1
+        })
+    }
     
-    @IBOutlet weak var forgetButton: UIButton!
     
-    @IBOutlet weak var loginButton: UIButton!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        setPlaceholderColorsInFields()
+        setMaskInField()
+    }
+    
+    func setPlaceholderColorsInFields(){
         cpfField.attributedPlaceholder = NSAttributedString(string: "CPF",
-                                                               attributes: [NSForegroundColorAttributeName: UIColor.white])
-        
-        passField.attributedPlaceholder = NSAttributedString(string: "Senha",
                                                             attributes: [NSForegroundColorAttributeName: UIColor.white])
         
-        self.cpfField.setMask("{ddd}.{ddd}.{ddd}-{dd}", withMaskTemplate: "")
-
-        // Do any additional setup after loading the view.
+        passField.attributedPlaceholder = NSAttributedString(string: "Senha",
+                                                             attributes: [NSForegroundColorAttributeName: UIColor.white])
+    }
+    
+    func setMaskInField(){
+        cpfField.setMask(MaskField.cpf.rawValue, withMaskTemplate: "")
     }
     
     @IBAction func forgetPass(_ sender: Any) {
-        
+       showAlertControllerWithField()
+    }
+    
+    func showAlertControllerWithField(){
         let alertController = UIAlertController(title: "Esqueci a Senha", message: "", preferredStyle: .alert)
         
-        let saveAction = UIAlertAction(title: "Enviar", style: .default, handler: {
+        let sendAction = UIAlertAction(title: "Enviar", style: .default, handler: {
             alert -> Void in
             
             if alertController.textFields![0].text! != "" {
-              
-                self.view.loadAnimation()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
-                    self.view.unload()
-                }
-                
-                
+                self.sendEmail()
             }else {
-               
                 self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: "Email inválido."), animated: true, completion: nil)
                 
             }
@@ -65,46 +64,39 @@ class LoginViewController: UIViewController {
         let cancelAction = UIAlertAction(title: "Cancelar", style: .default, handler: nil)
         
         alertController.addTextField { (textField : UITextField!) -> Void in
-            
             textField.placeholder = "E-mail para recuperar conta."
             textField.keyboardType = .emailAddress
         }
         
-        alertController.addAction(saveAction)
+        alertController.addAction(sendAction)
         alertController.addAction(cancelAction)
         
         self.present(alertController, animated: true, completion: nil)
-
-        
+    }
+    
+    func sendEmail(){
+        self.view.loadAnimation()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+            self.view.unload()
+        }
     }
 
     @IBAction func backButtonAction(_ sender: Any) {
-        NotificationCenter.default.post(name: Notification.Name(rawValue: keyNotificationChangeBackground), object: nil)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: NotificationKeyNames.notificationChangeBackground), object: nil)
         _ = self.navigationController?.popViewController(animated: true)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIView.animate(withDuration: 0.5, animations: {
-            self.view.alpha = 1
-        })
-        
-    }
-    
-    
     @IBAction func loginButtonAction(_ sender: Any) {
+        
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-   
         if let _ = segue.destination as? AuthenticationMainViewController {
             UIView.animate(withDuration: 0.5, animations: {
                 self.view.alpha = 0
             })
         }
     }
-
-
 }

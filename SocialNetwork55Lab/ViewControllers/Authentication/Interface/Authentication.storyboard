@@ -104,15 +104,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="QcC-OP-ohb"/>
-                    <connections>
-                        <outlet property="apresentationDescriptionLabel" destination="xp9-St-yYK" id="E3j-9e-Lkr"/>
-                        <outlet property="apresentationTitleLabel" destination="CXm-h2-CWE" id="Ztq-Hj-q6U"/>
-                        <outlet property="backgroundImage" destination="BXd-EY-6FV" id="2EV-W5-Xsd"/>
-                        <outlet property="firstBlurImage" destination="Enf-Bg-BMY" id="9fv-63-uwv"/>
-                        <outlet property="loginButton" destination="aON-W5-U2Z" id="f3d-gZ-qVV"/>
-                        <outlet property="registerButton" destination="gn5-eN-bFz" id="n35-sK-UYg"/>
-                        <outlet property="secondBlurImage" destination="l30-xA-pdL" id="nDg-r6-Hdl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3OH-Qp-fbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,15 +219,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="EJS-DQ-OSt" id="8bN-yn-drk"/>
-                        <outlet property="backButtonView" destination="pCH-SX-buG" id="9VS-6U-ha8"/>
-                        <outlet property="backgroundImage" destination="HIf-mX-03s" id="lzW-pP-HEn"/>
                         <outlet property="cpfField" destination="b6M-YY-DkK" id="LR0-CT-KMU"/>
-                        <outlet property="cpfFieldSupportView" destination="G5J-aX-ShS" id="Oyo-go-wdS"/>
-                        <outlet property="forgetButton" destination="zcw-Ue-N8K" id="2X4-0b-1eX"/>
-                        <outlet property="loginButton" destination="6GR-j3-KDc" id="Tsh-qj-BvY"/>
                         <outlet property="passField" destination="0pW-9Z-SfN" id="ufi-8y-lSh"/>
-                        <outlet property="passFieldSupportView" destination="R35-1f-ZlC" id="Hdi-PU-Kcg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ov-UN-V77" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -364,22 +348,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="jrt-rM-UjR" id="poJ-Nu-Rxt"/>
-                        <outlet property="backButtonView" destination="klx-nU-6MZ" id="bqa-co-LxX"/>
-                        <outlet property="backgroundImage" destination="DFh-Hu-iau" id="N2D-9T-X2Y"/>
                         <outlet property="cpfField" destination="82V-rM-xSO" id="mPu-5A-O54"/>
-                        <outlet property="cpfFieldSupportView" destination="NKz-HW-Fpp" id="IwK-nD-Yeb"/>
                         <outlet property="emailField" destination="L5U-wa-EpO" id="jzh-fG-uPP"/>
-                        <outlet property="emailFieldSupportView" destination="j73-R4-TRi" id="bIV-fx-OMF"/>
-                        <outlet property="enterButton" destination="cQC-u7-oCB" id="Awy-Z0-lPg"/>
-                        <outlet property="forgetButton" destination="ZCV-4E-QuN" id="w4V-ac-WuD"/>
                         <outlet property="passField" destination="nKf-C7-OS9" id="meW-To-bXI"/>
-                        <outlet property="passFieldSupportView" destination="g0h-Gc-LZP" id="TnS-9c-Me2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXP-aT-f5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.8000000000002" y="473.6131934032984"/>
+            <point key="canvasLocation" x="2361" y="437"/>
         </scene>
         <!--Authentication Container View Controller-->
         <scene sceneID="I0T-7i-VGK">
@@ -433,7 +409,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gpk-uH-Zpj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9jI-av-U0T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9jI-av-U0T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
