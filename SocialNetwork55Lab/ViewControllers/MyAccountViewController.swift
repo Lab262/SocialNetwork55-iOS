@@ -9,10 +9,11 @@
 import UIKit
 
 class MyAccountViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpNavigationBar()
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +21,11 @@ class MyAccountViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setUpNavigationBar() {
+        navigationController?.navigationBar.isHidden = true
+    }
+
     
 
     /*

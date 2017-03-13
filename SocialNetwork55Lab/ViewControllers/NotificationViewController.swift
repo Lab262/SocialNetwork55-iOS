@@ -12,6 +12,7 @@ class NotificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpNavigationBar()
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +20,10 @@ class NotificationViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setUpNavigationBar() {
+        navigationController?.navigationBar.isHidden = true
     }
     
 
