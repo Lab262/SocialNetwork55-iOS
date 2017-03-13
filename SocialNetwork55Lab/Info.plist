@@ -38,6 +38,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>aleo-regular-webfont.ttf</string>
 		<string>ufonts.com_gotham-book.ttf</string>
 		<string>ufonts.com_gotham-bold.ttf</string>
 		<string>Montserrat-Black.otf</string>

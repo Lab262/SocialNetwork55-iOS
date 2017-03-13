@@ -20,6 +20,8 @@ class ProfileViewController: UIViewController {
     
     func registerNibs() {
         tableView.registerNibFrom(UserInformationTableViewCell.self)
+        tableView.registerNibFrom(InformationDescriptionTableViewCell.self)
+        tableView.registerNibFrom(HeaderTableViewCell.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,6 +33,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         registerNibs()
         tableView.contentInset = UIEdgeInsetsMake(tableViewTopInset, 0, 0, 0)
+        tableView.estimatedRowHeight = 350.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         navigationBarView.leftOfRightButton.addTarget(self, action: #selector(editProfile(_:)), for: .touchUpInside)
 
         // Do any additional setup after loading the view.
@@ -46,30 +50,77 @@ class ProfileViewController: UIViewController {
     }
     
     func generateUserInformations(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: UserInformationTableViewCell.identifier, for: indexPath)
         
         return cell
+    }
+    
+    func generateDescriptionInformation(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: InformationDescriptionTableViewCell.identifier, for: indexPath)
         
+        return cell
+    }
+    
+    
+    
+    func generateHeader(_ tableView: UITableView, viewForHeaderInSection section: Int) -> HeaderTableViewCell {
+        
+        let header = tableView.dequeueReusableCell(withIdentifier: HeaderTableViewCell.identifier) as! HeaderTableViewCell
+        
+        return header
     }
 }
 
 extension ProfileViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        return generateUserInformations(tableView, cellForRowAt: indexPath)
+        switch indexPath.section {
+        case 0:
+            switch indexPath.row {
+            case 0: return generateUserInformations(tableView, cellForRowAt: indexPath)
+            default: return UITableViewCell()
+            }
+        case 1:
+            switch indexPath.row {
+            case 0: return generateDescriptionInformation(tableView, cellForRowAt: indexPath)
+            default: return UITableViewCell()
+            }
+        default: return UITableViewCell()
+        }
     }
 }
 
 extension ProfileViewController: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        switch section {
+        case 0:
+            return HeaderTableViewCell()
+        case 1:
+            return generateHeader(tableView, viewForHeaderInSection: section)
+        default:
+            return HeaderTableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        switch section {
+        case 1:
+            return 100
+        default:
+            return 0.1
+        }
     }
 }
 

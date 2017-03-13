@@ -70,6 +70,13 @@
 		D4C65E2E1E76301900834122 /* UserInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E2C1E76301900834122 /* UserInformationTableViewCell.swift */; };
 		D4C65E2F1E76301900834122 /* UserInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E2D1E76301900834122 /* UserInformationTableViewCell.xib */; };
 		D4C65E311E76311B00834122 /* UITableViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */; };
+		D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E331E76493C00834122 /* HeaderTableViewCell.swift */; };
+		D4C65E361E76493C00834122 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E341E76493C00834122 /* HeaderTableViewCell.xib */; };
+		D4C65E391E764AC000834122 /* InformationDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E371E764AC000834122 /* InformationDescriptionTableViewCell.swift */; };
+		D4C65E3A1E764AC000834122 /* InformationDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E381E764AC000834122 /* InformationDescriptionTableViewCell.xib */; };
+		D4C65E3D1E764B8700834122 /* aleo-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E3C1E764B8700834122 /* aleo-regular-webfont.ttf */; };
+		D4C65E401E7671F800834122 /* ContactInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E3E1E7671F800834122 /* ContactInformationTableViewCell.swift */; };
+		D4C65E411E7671F800834122 /* ContactInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E3F1E7671F800834122 /* ContactInformationTableViewCell.xib */; };
 		D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F39DDB1E6F766A00EA4728 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +151,13 @@
 		D4C65E2C1E76301900834122 /* UserInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformationTableViewCell.swift; sourceTree = "<group>"; };
 		D4C65E2D1E76301900834122 /* UserInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInformationTableViewCell.xib; sourceTree = "<group>"; };
 		D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
+		D4C65E331E76493C00834122 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		D4C65E341E76493C00834122 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		D4C65E371E764AC000834122 /* InformationDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		D4C65E381E764AC000834122 /* InformationDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		D4C65E3C1E764B8700834122 /* aleo-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aleo-regular-webfont.ttf"; sourceTree = "<group>"; };
+		D4C65E3E1E7671F800834122 /* ContactInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactInformationTableViewCell.swift; sourceTree = "<group>"; };
+		D4C65E3F1E7671F800834122 /* ContactInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactInformationTableViewCell.xib; sourceTree = "<group>"; };
 		D4F39DDB1E6F766A00EA4728 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAC9F1F42C53F856E6388C8B /* Pods-SocialNetwork55LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55LabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55LabTests/Pods-SocialNetwork55LabTests.release.xcconfig"; sourceTree = "<group>"; };
 		E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork55LabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +207,7 @@
 		A44E0C5D1DD092650028F06C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D4C65E3B1E764B7700834122 /* aleo */,
 				D48A00771E6E604500468DE0 /* gotham */,
 				A44E0C5E1DD092650028F06C /* montserrat  */,
 			);
@@ -526,10 +541,32 @@
 		D4C65E2B1E762FDC00834122 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D4C65E321E76490700834122 /* Headers */,
 				D4C65E2C1E76301900834122 /* UserInformationTableViewCell.swift */,
 				D4C65E2D1E76301900834122 /* UserInformationTableViewCell.xib */,
+				D4C65E371E764AC000834122 /* InformationDescriptionTableViewCell.swift */,
+				D4C65E381E764AC000834122 /* InformationDescriptionTableViewCell.xib */,
+				D4C65E3E1E7671F800834122 /* ContactInformationTableViewCell.swift */,
+				D4C65E3F1E7671F800834122 /* ContactInformationTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		D4C65E321E76490700834122 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E331E76493C00834122 /* HeaderTableViewCell.swift */,
+				D4C65E341E76493C00834122 /* HeaderTableViewCell.xib */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D4C65E3B1E764B7700834122 /* aleo */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E3C1E764B8700834122 /* aleo-regular-webfont.ttf */,
+			);
+			name = aleo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -627,17 +664,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A44E0C691DD092650028F06C /* Montserrat-ExtraBold.otf in Resources */,
+				D4C65E411E7671F800834122 /* ContactInformationTableViewCell.xib in Resources */,
 				A44E0C6D1DD092650028F06C /* Montserrat-SemiBold.otf in Resources */,
 				D4C65E271E761F9900834122 /* Profile.storyboard in Resources */,
 				A4CB02671DD261B200B01A6B /* IconNavigationBar.xib in Resources */,
 				A489B1F71DDA7D1100B239D5 /* Authentication.storyboard in Resources */,
 				D4C65E121E760CE600834122 /* Benefits.storyboard in Resources */,
+				D4C65E361E76493C00834122 /* HeaderTableViewCell.xib in Resources */,
 				A44E0C6A1DD092650028F06C /* Montserrat-Hairline.otf in Resources */,
 				D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */,
 				D4C65E161E760D3900834122 /* Notifications.storyboard in Resources */,
 				D4C65E2F1E76301900834122 /* UserInformationTableViewCell.xib in Resources */,
 				A44E0C6E1DD092650028F06C /* Montserrat-UltraLight.otf in Resources */,
 				A4E462FD1DCAEAF800A611C0 /* Timeline.storyboard in Resources */,
+				D4C65E3A1E764AC000834122 /* InformationDescriptionTableViewCell.xib in Resources */,
 				A44E0C6C1DD092650028F06C /* Montserrat-Regular.otf in Resources */,
 				A44E0C671DD092650028F06C /* Montserrat-Black.otf in Resources */,
 				A4E463041DCAEC4F00A611C0 /* Assets.xcassets in Resources */,
@@ -646,6 +686,7 @@
 				D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */,
 				A44E0C681DD092650028F06C /* Montserrat-Bold.otf in Resources */,
 				D4C65E141E760CFD00834122 /* Account.storyboard in Resources */,
+				D4C65E3D1E764B8700834122 /* aleo-regular-webfont.ttf in Resources */,
 				A44E0C6B1DD092650028F06C /* Montserrat-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,6 +831,7 @@
 				D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */,
 				A4CB02691DD261D900B01A6B /* IconNavigationBar.swift in Sources */,
 				D42E1ADE1E6F1921004EDBD1 /* AKMaskFieldStatus.swift in Sources */,
+				D4C65E391E764AC000834122 /* InformationDescriptionTableViewCell.swift in Sources */,
 				D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,
 				D42E1AD41E6F1921004EDBD1 /* AKMaskFieldBlock.swift in Sources */,
@@ -801,6 +843,7 @@
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
+				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
 				D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */,
 				D42E1A931E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift in Sources */,
@@ -810,6 +853,7 @@
 				D42E1AD81E6F1921004EDBD1 /* AKMaskFieldBrackets.swift in Sources */,
 				A4AFBB0D1DD35D4600F270C7 /* Colors.swift in Sources */,
 				D42E1AD61E6F1921004EDBD1 /* AKMaskFieldBlockCharacter.swift in Sources */,
+				D4C65E401E7671F800834122 /* ContactInformationTableViewCell.swift in Sources */,
 				A4D5DA231DDEBC7900EB9EC5 /* URLS.swift in Sources */,
 				A4FE063B1DD0A13E00BFDC4D /* Dictionary+Indexable.swift in Sources */,
 				D4C65E2E1E76301900834122 /* UserInformationTableViewCell.swift in Sources */,
