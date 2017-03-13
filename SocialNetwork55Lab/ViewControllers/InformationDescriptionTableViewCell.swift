@@ -1,25 +1,25 @@
 //
-//  UserInformationTableViewCell.swift
+//  InformationDescriptionTableViewCell.swift
 //  SocialNetwork55Lab
 //
-//  Created by Huallyd Smadi on 12/03/17.
+//  Created by Huallyd Smadi on 13/03/17.
 //  Copyright © 2017 Lab262. All rights reserved.
 //
 
 import UIKit
 
-class UserInformationTableViewCell: UITableViewCell {
+class InformationDescriptionTableViewCell: UITableViewCell {
     
     static var identifier: String {
-        return "userInformationCell"
+        return "descriptionInformationCell"
     }
     
     static var cellHeight: CGFloat {
-        return 50.0
+        return 300.0
     }
     
     static var nibName: String {
-        return "UserInformationTableViewCell"
+        return "InformationDescriptionTableViewCell"
     }
 
     override func awakeFromNib() {

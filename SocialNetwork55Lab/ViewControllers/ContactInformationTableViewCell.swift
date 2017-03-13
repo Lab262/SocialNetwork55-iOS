@@ -1,25 +1,28 @@
 //
-//  UserInformationTableViewCell.swift
+//  ContactInformationTableViewCell.swift
 //  SocialNetwork55Lab
 //
-//  Created by Huallyd Smadi on 12/03/17.
+//  Created by Huallyd Smadi on 13/03/17.
 //  Copyright © 2017 Lab262. All rights reserved.
 //
 
 import UIKit
 
-class UserInformationTableViewCell: UITableViewCell {
+class ContactInformationTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var contactTitleLabel: UILabel!
+    @IBOutlet weak var contactDescriptionLabel: UILabel!
+
     static var identifier: String {
-        return "userInformationCell"
+        return "contactCell"
     }
     
     static var cellHeight: CGFloat {
-        return 50.0
+        return 300.0
     }
     
     static var nibName: String {
-        return "UserInformationTableViewCell"
+        return "ContactInformationTableViewCell"
     }
 
     override func awakeFromNib() {
