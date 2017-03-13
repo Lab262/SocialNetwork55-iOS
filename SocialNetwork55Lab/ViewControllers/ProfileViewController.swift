@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var backgroundImageHeight: CGFloat = 208
-    let tableViewTopInset: CGFloat = 150.0
+    let tableViewTopInset: CGFloat = 121.0
     
     @IBOutlet weak var navigationBarView: IconNavigationBar!
     @IBOutlet weak var backgroundImageHeightConstraint: NSLayoutConstraint!
