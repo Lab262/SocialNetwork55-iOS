@@ -67,6 +67,9 @@
 		D4C65E231E76175D00834122 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E221E76175D00834122 /* TabBarViewController.swift */; };
 		D4C65E271E761F9900834122 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E261E761F9900834122 /* Profile.storyboard */; };
 		D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E291E761FAE00834122 /* ProfileViewController.swift */; };
+		D4C65E2E1E76301900834122 /* UserInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E2C1E76301900834122 /* UserInformationTableViewCell.swift */; };
+		D4C65E2F1E76301900834122 /* UserInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E2D1E76301900834122 /* UserInformationTableViewCell.xib */; };
+		D4C65E311E76311B00834122 /* UITableViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */; };
 		D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F39DDB1E6F766A00EA4728 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +141,9 @@
 		D4C65E221E76175D00834122 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D4C65E261E761F9900834122 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D4C65E291E761FAE00834122 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D4C65E2C1E76301900834122 /* UserInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformationTableViewCell.swift; sourceTree = "<group>"; };
+		D4C65E2D1E76301900834122 /* UserInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInformationTableViewCell.xib; sourceTree = "<group>"; };
+		D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utils.swift"; sourceTree = "<group>"; };
 		D4F39DDB1E6F766A00EA4728 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAC9F1F42C53F856E6388C8B /* Pods-SocialNetwork55LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55LabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55LabTests/Pods-SocialNetwork55LabTests.release.xcconfig"; sourceTree = "<group>"; };
 		E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork55LabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,6 +304,7 @@
 				D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */,
 				A4FE063A1DD0A13E00BFDC4D /* Dictionary+Indexable.swift */,
 				A427680B1DD3A09D00363343 /* UIColorExtension.swift */,
+				D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -494,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				D4C65E281E761F9F00834122 /* Controller */,
+				D4C65E2B1E762FDC00834122 /* Cells */,
 				D4C65E251E761F8F00834122 /* Interface */,
 			);
 			name = Profile;
@@ -513,6 +521,15 @@
 				D4C65E291E761FAE00834122 /* ProfileViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D4C65E2B1E762FDC00834122 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E2C1E76301900834122 /* UserInformationTableViewCell.swift */,
+				D4C65E2D1E76301900834122 /* UserInformationTableViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,6 +635,7 @@
 				A44E0C6A1DD092650028F06C /* Montserrat-Hairline.otf in Resources */,
 				D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */,
 				D4C65E161E760D3900834122 /* Notifications.storyboard in Resources */,
+				D4C65E2F1E76301900834122 /* UserInformationTableViewCell.xib in Resources */,
 				A44E0C6E1DD092650028F06C /* Montserrat-UltraLight.otf in Resources */,
 				A4E462FD1DCAEAF800A611C0 /* Timeline.storyboard in Resources */,
 				A44E0C6C1DD092650028F06C /* Montserrat-Regular.otf in Resources */,
@@ -786,6 +804,7 @@
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
 				D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */,
 				D42E1A931E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift in Sources */,
+				D4C65E311E76311B00834122 /* UITableViewCell+Utils.swift in Sources */,
 				D4C65E231E76175D00834122 /* TabBarViewController.swift in Sources */,
 				A40A252B1DCBD4C000DF9523 /* TimelineViewController.swift in Sources */,
 				D42E1AD81E6F1921004EDBD1 /* AKMaskFieldBrackets.swift in Sources */,
@@ -793,6 +812,7 @@
 				D42E1AD61E6F1921004EDBD1 /* AKMaskFieldBlockCharacter.swift in Sources */,
 				A4D5DA231DDEBC7900EB9EC5 /* URLS.swift in Sources */,
 				A4FE063B1DD0A13E00BFDC4D /* Dictionary+Indexable.swift in Sources */,
+				D4C65E2E1E76301900834122 /* UserInformationTableViewCell.swift in Sources */,
 				D42E1AD21E6F1921004EDBD1 /* AKMaskField.swift in Sources */,
 				A427680C1DD3A09D00363343 /* UIColorExtension.swift in Sources */,
 				A489B1F91DDA7D3E00B239D5 /* AuthenticationMainViewController.swift in Sources */,

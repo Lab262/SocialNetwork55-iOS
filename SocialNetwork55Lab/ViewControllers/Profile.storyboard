@@ -8,11 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="ufonts.com_gotham-bold.ttf">
-            <string>GothamBold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Profile View Controller-->
         <scene sceneID="l4C-jv-La3">
@@ -26,20 +21,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypt-II-frd">
-                                <rect key="frame" x="151" y="293" width="73" height="81"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundDefaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="Jdx-G2-sJc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="8Do-Rm-cki"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8ID-O1-ST0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zet-lI-D0W" id="Jsh-Vb-Zc6"/>
+                                    <outlet property="delegate" destination="zet-lI-D0W" id="zMe-Xf-KnJ"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUT-q6-btm" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightBarIconImage" value="settings-icon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ipt-gh-ElG" firstAttribute="top" secondItem="8ID-O1-ST0" secondAttribute="bottom" id="9vN-2m-1mt"/>
+                            <constraint firstAttribute="trailing" secondItem="Jdx-G2-sJc" secondAttribute="trailing" id="BgI-Bj-ftA"/>
+                            <constraint firstItem="Jdx-G2-sJc" firstAttribute="leading" secondItem="oHB-hE-PoK" secondAttribute="leading" id="Lsk-pD-yin"/>
+                            <constraint firstItem="8ID-O1-ST0" firstAttribute="leading" secondItem="oHB-hE-PoK" secondAttribute="leading" id="RqO-qr-q44"/>
+                            <constraint firstItem="8ID-O1-ST0" firstAttribute="top" secondItem="oHB-hE-PoK" secondAttribute="top" id="XhL-3z-U5K"/>
+                            <constraint firstItem="Jdx-G2-sJc" firstAttribute="top" secondItem="Tz4-9q-maL" secondAttribute="bottom" constant="-20" id="pmB-vZ-wL9"/>
+                            <constraint firstAttribute="trailing" secondItem="8ID-O1-ST0" secondAttribute="trailing" id="vdM-N6-jJz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageHeightConstraint" destination="8Do-Rm-cki" id="eSQ-9S-EcC"/>
+                        <outlet property="navigationBarView" destination="zUT-q6-btm" id="XbP-7B-Bsh"/>
+                        <outlet property="tableView" destination="8ID-O1-ST0" id="vWd-ee-22E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPg-eo-Zyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7.2000000000000002" y="265.81709145427288"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backgroundDefaultProfile" width="375" height="208"/>
+        <image name="settings-icon" width="41" height="41"/>
+    </resources>
 </document>

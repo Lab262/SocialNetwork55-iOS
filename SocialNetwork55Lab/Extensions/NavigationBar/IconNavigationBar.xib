@@ -9,9 +9,16 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ufonts.com_gotham-bold.ttf">
+            <string>GothamBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconNavigationBar" customModule="SocialNetwork55Lab">
             <connections>
+                <outlet property="leftOfRightButton" destination="2U9-cb-xQV" id="Q27-8e-8sJ"/>
+                <outlet property="rightButton" destination="1jS-Xl-YNC" id="epV-Vw-wD5"/>
                 <outlet property="rightIcon" destination="203-Af-QFl" id="Rse-ca-hDW"/>
                 <outlet property="view" destination="iN0-l3-epB" id="AeI-ye-a1z"/>
             </connections>
@@ -41,12 +48,26 @@
                         <action selector="rightButtonAction:" destination="-1" eventType="touchUpInside" id="eqh-IS-lH9"/>
                     </connections>
                 </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U9-cb-xQV">
+                    <rect key="frame" x="213" y="33" width="81" height="23"/>
+                    <color key="backgroundColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2U9-cb-xQV" secondAttribute="height" multiplier="81:23" id="7Ga-KQ-kmn"/>
+                        <constraint firstAttribute="width" constant="81" id="FkY-Sa-7e8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="12"/>
+                    <state key="normal" title="Editar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="1jS-Xl-YNC" firstAttribute="centerY" secondItem="203-Af-QFl" secondAttribute="centerY" id="Rhw-74-cqZ"/>
+                <constraint firstItem="2U9-cb-xQV" firstAttribute="centerY" secondItem="1jS-Xl-YNC" secondAttribute="centerY" id="YYq-U3-TyD"/>
                 <constraint firstItem="203-Af-QFl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26.5" id="Yv7-Eh-giT"/>
                 <constraint firstItem="1jS-Xl-YNC" firstAttribute="centerX" secondItem="203-Af-QFl" secondAttribute="centerX" id="hUO-hS-Lg0"/>
+                <constraint firstItem="1jS-Xl-YNC" firstAttribute="leading" secondItem="2U9-cb-xQV" secondAttribute="trailing" constant="21" id="uHI-nz-GNH"/>
                 <constraint firstAttribute="trailing" secondItem="203-Af-QFl" secondAttribute="trailing" constant="15" id="z09-YD-stq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
