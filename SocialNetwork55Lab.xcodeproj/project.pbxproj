@@ -55,6 +55,8 @@
 		D42E1ADF1E6F1921004EDBD1 /* AKMaskFieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1AD01E6F1921004EDBD1 /* AKMaskFieldStatus.swift */; };
 		D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */; };
 		D42E1AE11E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */; };
+		D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */; };
+		D47BE11B1E77266C00261B01 /* UserWorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */; };
 		D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */; };
 		D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */; };
 		D4C65E101E760BDD00834122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E0F1E760BDD00834122 /* Main.storyboard */; };
@@ -136,6 +138,8 @@
 		D42E1ACF1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldPatternCharacter.swift; sourceTree = "<group>"; };
 		D42E1AD01E6F1921004EDBD1 /* AKMaskFieldStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldStatus.swift; sourceTree = "<group>"; };
 		D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldUtility.swift; sourceTree = "<group>"; };
+		D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkCollectionViewCell.swift; sourceTree = "<group>"; };
+		D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWorkCollectionViewCell.xib; sourceTree = "<group>"; };
 		D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
 		D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
 		D4C65E0F1E760BDD00834122 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -548,6 +552,8 @@
 				D4C65E381E764AC000834122 /* InformationDescriptionTableViewCell.xib */,
 				D4C65E3E1E7671F800834122 /* ContactInformationTableViewCell.swift */,
 				D4C65E3F1E7671F800834122 /* ContactInformationTableViewCell.xib */,
+				D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */,
+				D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -671,6 +677,7 @@
 				A489B1F71DDA7D1100B239D5 /* Authentication.storyboard in Resources */,
 				D4C65E121E760CE600834122 /* Benefits.storyboard in Resources */,
 				D4C65E361E76493C00834122 /* HeaderTableViewCell.xib in Resources */,
+				D47BE11B1E77266C00261B01 /* UserWorkCollectionViewCell.xib in Resources */,
 				A44E0C6A1DD092650028F06C /* Montserrat-Hairline.otf in Resources */,
 				D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */,
 				D4C65E161E760D3900834122 /* Notifications.storyboard in Resources */,
@@ -842,6 +849,7 @@
 				D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
+				D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,

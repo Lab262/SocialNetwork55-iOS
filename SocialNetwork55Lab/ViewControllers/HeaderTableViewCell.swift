@@ -10,6 +10,9 @@ import UIKit
 
 class HeaderTableViewCell: UITableViewCell {
     
+    
+    @IBOutlet weak var titleHeaderLabel: UILabel!
+    
     static var identifier: String {
         return "headerCell"
     }

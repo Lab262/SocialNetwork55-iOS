@@ -9,6 +9,9 @@
 import UIKit
 
 class ContactInformationTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var contactTitleLabel: UILabel!
+    @IBOutlet weak var contactDescriptionLabel: UILabel!
 
     static var identifier: String {
         return "contactCell"
@@ -22,7 +25,6 @@ class ContactInformationTableViewCell: UITableViewCell {
         return "ContactInformationTableViewCell"
     }
 
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

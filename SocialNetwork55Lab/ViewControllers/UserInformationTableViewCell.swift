@@ -15,7 +15,7 @@ class UserInformationTableViewCell: UITableViewCell {
     }
     
     static var cellHeight: CGFloat {
-        return 300.0
+        return 50.0
     }
     
     static var nibName: String {
