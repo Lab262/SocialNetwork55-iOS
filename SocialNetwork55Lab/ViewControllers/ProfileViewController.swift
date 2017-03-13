@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController {
         tableView.registerNibFrom(InformationDescriptionTableViewCell.self)
         tableView.registerNibFrom(HeaderTableViewCell.self)
         tableView.registerNibFrom(ContactInformationTableViewCell.self)
+        tableView.registerNibFrom(UserWorkTableViewCell.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +34,8 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNibs()
-        tableView.contentInset = UIEdgeInsetsMake(tableViewTopInset, 0, 0, 0)
+        navigationBarView.titleTextLabel.isHidden = true
+        tableView.contentInset = UIEdgeInsetsMake(tableViewTopInset, 0, 60, 0)
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -57,6 +59,12 @@ class ProfileViewController: UIViewController {
         return cell
     }
     
+    func generateUserWork(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: UserWorkTableViewCell.identifier, for: indexPath)
+        
+        return cell
+    }
+    
     func generateDescriptionInformation(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: InformationDescriptionTableViewCell.identifier, for: indexPath)
         
@@ -69,6 +77,9 @@ class ProfileViewController: UIViewController {
         if indexPath.section == 2 && indexPath.row == 1 {
             cell.contactTitleLabel.text = "Trabalho com"
             cell.contactDescriptionLabel.isHidden = true
+            cell.bottomConstraint.constant = 5
+            cell.layoutIfNeeded()
+            tableView.layoutIfNeeded()
         }
         
         return cell
@@ -90,13 +101,14 @@ extension ProfileViewController: UITableViewDataSource {
         
         switch section {
         case 0: return 1
-        case 1, 2: return 2
+        case 1: return 2
+        case 2: return 3
         default: return 0
         }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -117,6 +129,7 @@ extension ProfileViewController: UITableViewDataSource {
             switch indexPath.row {
             case 0: return generateDescriptionInformation(tableView, cellForRowAt: indexPath)
             case 1: return generateContactInformation(tableView, cellForRowAt: indexPath)
+            case 2: return generateUserWork(tableView, cellForRowAt: indexPath)
             default: return UITableViewCell()
             }
         default: return UITableViewCell()
@@ -135,6 +148,7 @@ extension ProfileViewController: UITableViewDelegate {
         case 0: return nil
         case 1: headerTitle = "Sobre"
         case 2: headerTitle = "Onde trabalho"
+        case 3: headerTitle = "Atividades recentes"
         default: headerTitle = ""
         }
         
@@ -145,7 +159,7 @@ extension ProfileViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         switch section {
-        case 1, 2:
+        case 1, 2, 3:
             return 100
         default:
             return CGFloat.leastNonzeroMagnitude
@@ -159,8 +173,7 @@ extension ProfileViewController: UITableViewDelegate {
 
 extension ProfileViewController: UIScrollViewDelegate {
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
+    func scrollViewDidScroll(_ scrollView: UIScrollView){
         let yOffset = scrollView.contentOffset.y + scrollView.contentInset.top
         
         updateImageScale(yOffset)

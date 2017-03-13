@@ -35,13 +35,13 @@
                             <constraint firstAttribute="height" constant="4" id="ttq-L4-9In"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT8-53-K26">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT8-53-K26">
                         <rect key="frame" x="28" y="32" width="62" height="13.5"/>
                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="vanessa@lab262.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-bc-ycd">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vanessa@lab262.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-bc-ycd">
                         <rect key="frame" x="28" y="58.5" width="131.5" height="17"/>
                         <fontDescription key="fontDescription" name="Aleo-Regular" family="Aleo" pointSize="14"/>
                         <nil key="textColor"/>
@@ -59,6 +59,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bottomConstraint" destination="vhj-Zf-cLl" id="a0x-ej-9b8"/>
                 <outlet property="contactDescriptionLabel" destination="KM4-bc-ycd" id="pbS-Bq-Ce6"/>
                 <outlet property="contactTitleLabel" destination="gT8-53-K26" id="NsZ-eY-2ac"/>
             </connections>

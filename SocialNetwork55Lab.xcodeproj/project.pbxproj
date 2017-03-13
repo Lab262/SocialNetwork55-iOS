@@ -57,6 +57,9 @@
 		D42E1AE11E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */; };
 		D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */; };
 		D47BE11B1E77266C00261B01 /* UserWorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */; };
+		D47BE11E1E7735FF00261B01 /* UserWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */; };
+		D47BE11F1E7735FF00261B01 /* UserWorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */; };
+		D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */; };
 		D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */; };
 		D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */; };
 		D4C65E101E760BDD00834122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E0F1E760BDD00834122 /* Main.storyboard */; };
@@ -140,6 +143,9 @@
 		D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldUtility.swift; sourceTree = "<group>"; };
 		D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkCollectionViewCell.swift; sourceTree = "<group>"; };
 		D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWorkCollectionViewCell.xib; sourceTree = "<group>"; };
+		D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkTableViewCell.swift; sourceTree = "<group>"; };
+		D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWorkTableViewCell.xib; sourceTree = "<group>"; };
+		D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Utils.swift"; sourceTree = "<group>"; };
 		D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
 		D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
 		D4C65E0F1E760BDD00834122 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -324,6 +330,7 @@
 				A4FE063A1DD0A13E00BFDC4D /* Dictionary+Indexable.swift */,
 				A427680B1DD3A09D00363343 /* UIColorExtension.swift */,
 				D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */,
+				D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -554,6 +561,8 @@
 				D4C65E3F1E7671F800834122 /* ContactInformationTableViewCell.xib */,
 				D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */,
 				D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */,
+				D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */,
+				D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -682,6 +691,7 @@
 				D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */,
 				D4C65E161E760D3900834122 /* Notifications.storyboard in Resources */,
 				D4C65E2F1E76301900834122 /* UserInformationTableViewCell.xib in Resources */,
+				D47BE11F1E7735FF00261B01 /* UserWorkTableViewCell.xib in Resources */,
 				A44E0C6E1DD092650028F06C /* Montserrat-UltraLight.otf in Resources */,
 				A4E462FD1DCAEAF800A611C0 /* Timeline.storyboard in Resources */,
 				D4C65E3A1E764AC000834122 /* InformationDescriptionTableViewCell.xib in Resources */,
@@ -853,11 +863,13 @@
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
+				D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */,
 				D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */,
 				D42E1A931E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift in Sources */,
 				D4C65E311E76311B00834122 /* UITableViewCell+Utils.swift in Sources */,
 				D4C65E231E76175D00834122 /* TabBarViewController.swift in Sources */,
 				A40A252B1DCBD4C000DF9523 /* TimelineViewController.swift in Sources */,
+				D47BE11E1E7735FF00261B01 /* UserWorkTableViewCell.swift in Sources */,
 				D42E1AD81E6F1921004EDBD1 /* AKMaskFieldBrackets.swift in Sources */,
 				A4AFBB0D1DD35D4600F270C7 /* Colors.swift in Sources */,
 				D42E1AD61E6F1921004EDBD1 /* AKMaskFieldBlockCharacter.swift in Sources */,

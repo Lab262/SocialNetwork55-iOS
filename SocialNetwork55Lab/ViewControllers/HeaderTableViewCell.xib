@@ -25,10 +25,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4l-o0-sIt">
-                        <rect key="frame" x="28" y="8" width="309" height="53"/>
+                        <rect key="frame" x="28" y="8" width="289" height="53"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-ba-lwo">
-                                <rect key="frame" x="124.5" y="18" width="60.5" height="18"/>
+                                <rect key="frame" x="114.5" y="18" width="60.5" height="18"/>
                                 <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                     <constraint firstItem="G4l-o0-sIt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="2eZ-pc-vcK"/>
                     <constraint firstAttribute="bottomMargin" secondItem="G4l-o0-sIt" secondAttribute="bottom" constant="30" id="IBf-bh-nTn"/>
                     <constraint firstItem="G4l-o0-sIt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cUY-c7-wIy"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="G4l-o0-sIt" secondAttribute="trailing" constant="30" id="pcX-Zq-wpD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="G4l-o0-sIt" secondAttribute="trailing" constant="50" id="pcX-Zq-wpD"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

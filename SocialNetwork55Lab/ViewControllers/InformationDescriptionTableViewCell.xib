@@ -39,6 +39,9 @@
                     <constraint firstAttribute="trailingMargin" secondItem="Wsd-mx-3ad" secondAttribute="trailing" constant="30" id="s7X-oi-P1F"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="Wsd-mx-3ad" id="zMQ-3S-wEJ"/>
+            </connections>
             <point key="canvasLocation" x="88.5" y="125.5"/>
         </tableViewCell>
     </objects>
