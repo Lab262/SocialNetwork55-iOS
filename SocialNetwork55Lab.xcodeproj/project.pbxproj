@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5EE56B7E45C08D9BBF9B9AED /* Pods_SocialNetwork55LabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */; };
+		60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */; };
+		60237F621E773CE300DBA933 /* BenefitHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60237F601E773CE300DBA933 /* BenefitHeaderTableViewCell.xib */; };
+		60237F991E77431C00DBA933 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60237F981E77431C00DBA933 /* BebasNeue.otf */; };
+		60237F9B1E77491200DBA933 /* String+CharacterSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237F9A1E77491200DBA933 /* String+CharacterSpacing.swift */; };
 		7954B93334819F6F989AFC94 /* Pods_SocialNetwork55Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072D6F2EC636560C10EDBAE /* Pods_SocialNetwork55Lab.framework */; };
 		A40A25181DCB5C2C00DF9523 /* UIView+IBInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */; };
 		A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A25191DCB681A00DF9523 /* UIView+Animations.swift */; };
@@ -93,6 +97,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		60237F601E773CE300DBA933 /* BenefitHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		60237F981E77431C00DBA933 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		60237F9A1E77491200DBA933 /* String+CharacterSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CharacterSpacing.swift"; sourceTree = "<group>"; };
 		7F2D51D0C903269F104DD2E8 /* Pods-SocialNetwork55Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55Lab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55Lab/Pods-SocialNetwork55Lab.debug.xcconfig"; sourceTree = "<group>"; };
 		8072D6F2EC636560C10EDBAE /* Pods_SocialNetwork55Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork55Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspector.swift"; sourceTree = "<group>"; };
@@ -200,6 +208,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		60237F5C1E773B9D00DBA933 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E111E760CE600834122 /* Benefits.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		60237F5D1E773BA400DBA933 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E181E760DCA00834122 /* BenefitViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		60237F5E1E773C3C00DBA933 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */,
+				60237F601E773CE300DBA933 /* BenefitHeaderTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		60237F971E77431C00DBA933 /* bebas_neue */ = {
+			isa = PBXGroup;
+			children = (
+				60237F981E77431C00DBA933 /* BebasNeue.otf */,
+			);
+			path = bebas_neue;
+			sourceTree = "<group>";
+		};
 		A40A25291DCBD4B500DF9523 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +252,7 @@
 		A44E0C5D1DD092650028F06C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				60237F971E77431C00DBA933 /* bebas_neue */,
 				D4C65E3B1E764B7700834122 /* aleo */,
 				D48A00771E6E604500468DE0 /* gotham */,
 				A44E0C5E1DD092650028F06C /* montserrat  */,
@@ -324,6 +366,7 @@
 				A4FE063A1DD0A13E00BFDC4D /* Dictionary+Indexable.swift */,
 				A427680B1DD3A09D00363343 /* UIColorExtension.swift */,
 				D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */,
+				60237F9A1E77491200DBA933 /* String+CharacterSpacing.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -475,7 +518,9 @@
 		D4C65E171E760D9D00834122 /* Benefits */ = {
 			isa = PBXGroup;
 			children = (
-				D4C65E181E760DCA00834122 /* BenefitViewController.swift */,
+				60237F5E1E773C3C00DBA933 /* Cells */,
+				60237F5D1E773BA400DBA933 /* Controller */,
+				60237F5C1E773B9D00DBA933 /* Interface */,
 			);
 			name = Benefits;
 			sourceTree = "<group>";
@@ -500,7 +545,6 @@
 			isa = PBXGroup;
 			children = (
 				D4C65E0F1E760BDD00834122 /* Main.storyboard */,
-				D4C65E111E760CE600834122 /* Benefits.storyboard */,
 				D4C65E131E760CFD00834122 /* Account.storyboard */,
 				D4C65E151E760D3900834122 /* Notifications.storyboard */,
 				A4E462FC1DCAEAF800A611C0 /* Timeline.storyboard */,
@@ -687,6 +731,8 @@
 				D4C65E3A1E764AC000834122 /* InformationDescriptionTableViewCell.xib in Resources */,
 				A44E0C6C1DD092650028F06C /* Montserrat-Regular.otf in Resources */,
 				A44E0C671DD092650028F06C /* Montserrat-Black.otf in Resources */,
+				60237F991E77431C00DBA933 /* BebasNeue.otf in Resources */,
+				60237F621E773CE300DBA933 /* BenefitHeaderTableViewCell.xib in Resources */,
 				A4E463041DCAEC4F00A611C0 /* Assets.xcassets in Resources */,
 				D4C65E101E760BDD00834122 /* Main.storyboard in Resources */,
 				A4F89B341DA809B100949A35 /* LaunchScreen.storyboard in Resources */,
@@ -833,6 +879,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60237F9B1E77491200DBA933 /* String+CharacterSpacing.swift in Sources */,
 				D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */,
 				D42E1ADA1E6F1921004EDBD1 /* AKMaskFieldEvent.swift in Sources */,
 				D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */,
@@ -847,6 +894,7 @@
 				D4C65E1F1E760F1A00834122 /* NotificationViewController.swift in Sources */,
 				A4AFBB021DD272A700F270C7 /* UIApplication+Navigation.swift in Sources */,
 				D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */,
+				60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
 				D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */,
