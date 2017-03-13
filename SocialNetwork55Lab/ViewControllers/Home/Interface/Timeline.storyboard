@@ -20,9 +20,23 @@
                     <view key="view" contentMode="scaleToFill" id="78E-60-gc8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymj-MH-1T7" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightBarIconImage" value="profile_default"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Timeline" id="Nfj-Th-Uk2"/>
+                    <navigationItem key="navigationItem" id="Nfj-Th-Uk2"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="navigationBarView" destination="ymj-MH-1T7" id="jbX-gb-HFn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYt-rM-9sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,7 +49,7 @@
                     <tabBarItem key="tabBarItem" title="Timeline" image="timeline-deselect-icon" selectedImage="timeline-select-icon" id="5FR-Fr-x2g"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="luA-Ll-dRR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="luA-Ll-dRR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -54,6 +68,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="profile_default" width="41" height="41"/>
         <image name="timeline-deselect-icon" width="22" height="23"/>
         <image name="timeline-select-icon" width="22" height="23"/>
     </resources>

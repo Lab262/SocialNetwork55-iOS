@@ -65,6 +65,8 @@
 		D4C65E1C1E760E5000834122 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E1B1E760E5000834122 /* MyAccountViewController.swift */; };
 		D4C65E1F1E760F1A00834122 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E1E1E760F1A00834122 /* NotificationViewController.swift */; };
 		D4C65E231E76175D00834122 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E221E76175D00834122 /* TabBarViewController.swift */; };
+		D4C65E271E761F9900834122 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E261E761F9900834122 /* Profile.storyboard */; };
+		D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E291E761FAE00834122 /* ProfileViewController.swift */; };
 		D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F39DDB1E6F766A00EA4728 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +103,7 @@
 		A4CB02661DD261B200B01A6B /* IconNavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IconNavigationBar.xib; sourceTree = "<group>"; };
 		A4CB02681DD261D900B01A6B /* IconNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconNavigationBar.swift; sourceTree = "<group>"; };
 		A4D5DA221DDEBC7900EB9EC5 /* URLS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
-		A4E462FC1DCAEAF800A611C0 /* Timeline.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
+		A4E462FC1DCAEAF800A611C0 /* Timeline.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Timeline.storyboard; path = Home/Interface/Timeline.storyboard; sourceTree = "<group>"; };
 		A4E463031DCAEC4F00A611C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4F89B261DA809B100949A35 /* SocialNetwork55Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetwork55Lab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F89B291DA809B100949A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,8 @@
 		D4C65E1B1E760E5000834122 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		D4C65E1E1E760F1A00834122 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		D4C65E221E76175D00834122 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D4C65E261E761F9900834122 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		D4C65E291E761FAE00834122 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D4F39DDB1E6F766A00EA4728 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DAC9F1F42C53F856E6388C8B /* Pods-SocialNetwork55LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55LabTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55LabTests/Pods-SocialNetwork55LabTests.release.xcconfig"; sourceTree = "<group>"; };
 		E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork55LabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +248,7 @@
 		A4E462E71DCAEA7F00A611C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4C65E241E761F8500834122 /* Profile */,
 				D4C65E1D1E760F0D00834122 /* Notifications */,
 				D4C65E1A1E760E3E00834122 /* Account */,
 				D4C65E171E760D9D00834122 /* Benefits */,
@@ -269,7 +274,6 @@
 		A4E462EB1DCAEA7F00A611C0 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				A4E462FC1DCAEAF800A611C0 /* Timeline.storyboard */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -473,6 +477,7 @@
 				D4C65E111E760CE600834122 /* Benefits.storyboard */,
 				D4C65E131E760CFD00834122 /* Account.storyboard */,
 				D4C65E151E760D3900834122 /* Notifications.storyboard */,
+				A4E462FC1DCAEAF800A611C0 /* Timeline.storyboard */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -481,6 +486,31 @@
 			isa = PBXGroup;
 			children = (
 				D4C65E221E76175D00834122 /* TabBarViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D4C65E241E761F8500834122 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E281E761F9F00834122 /* Controller */,
+				D4C65E251E761F8F00834122 /* Interface */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		D4C65E251E761F8F00834122 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E261E761F9900834122 /* Profile.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		D4C65E281E761F9F00834122 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D4C65E291E761FAE00834122 /* ProfileViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -581,6 +611,7 @@
 			files = (
 				A44E0C691DD092650028F06C /* Montserrat-ExtraBold.otf in Resources */,
 				A44E0C6D1DD092650028F06C /* Montserrat-SemiBold.otf in Resources */,
+				D4C65E271E761F9900834122 /* Profile.storyboard in Resources */,
 				A4CB02671DD261B200B01A6B /* IconNavigationBar.xib in Resources */,
 				A489B1F71DDA7D1100B239D5 /* Authentication.storyboard in Resources */,
 				D4C65E121E760CE600834122 /* Benefits.storyboard in Resources */,
@@ -748,6 +779,7 @@
 				D4C65E191E760DCA00834122 /* BenefitViewController.swift in Sources */,
 				D4C65E1F1E760F1A00834122 /* NotificationViewController.swift in Sources */,
 				A4AFBB021DD272A700F270C7 /* UIApplication+Navigation.swift in Sources */,
+				D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,

@@ -9,6 +9,12 @@
 import UIKit
 
 class TimelineViewController: UIViewController {
+    
+    @IBOutlet weak var navigationBarView: IconNavigationBar!
+    
+    override func viewDidLoad() {
+        setUpNavigationBar()
+    }
 
     @IBAction func logout(_ sender: Any) {
         
@@ -20,6 +26,12 @@ class TimelineViewController: UIViewController {
         self.show(vcToShow!, sender: self)
 
     }
+    
+    func setUpNavigationBar() {
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    
   
     
 }

@@ -12,19 +12,24 @@ import UIKit
 class IconNavigationBar: UIView {
 
     @IBOutlet var view: UIView!
-    @IBOutlet weak var leftButtonIcon: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var titleIcon: UIImageView!
+//    @IBOutlet weak var leftButtonIcon: UIImageView!
+//    @IBOutlet weak var titleLabel: UILabel!
+//    @IBOutlet weak var titleIcon: UIImageView!
     @IBOutlet weak var rightIcon: UIImageView!
     
     
-    @IBAction func leftAction(_ sender: Any) {
-        
+//    @IBAction func leftAction(_ sender: Any) {
+//        
+//        if let navController = UIApplication.topViewController()?.navigationController {
+//            navController.popViewController(animated: true)
+//        }
+//    }
+    
+    @IBAction func rightButtonAction(_ sender: Any) {
         if let navController = UIApplication.topViewController()?.navigationController {
-            navController.popViewController(animated: true)
+            navController.pushViewController(ViewUtil.viewControllerFromStoryboardWithIdentifier("Profile")!, animated: true)
         }
     }
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,23 +46,25 @@ class IconNavigationBar: UIView {
         view.frame = self.bounds
     }
     
-    @IBInspectable var leftButtonIconImage: UIImage? {
-        set {
-            self.leftButtonIcon.image = newValue
-        }
-        get {
-            return self.leftButtonIcon.image
-        }
-    }
     
-    @IBInspectable var titleIconImage: UIImage? {
-        set {
-            self.titleIcon.image = newValue
-        }
-        get {
-            return self.titleIcon.image
-        }
-    }
+    
+//    @IBInspectable var leftButtonIconImage: UIImage? {
+//        set {
+//            self.leftButtonIcon.image = newValue
+//        }
+//        get {
+//            return self.leftButtonIcon.image
+//        }
+//    }
+//    
+//    @IBInspectable var titleIconImage: UIImage? {
+//        set {
+//            self.titleIcon.image = newValue
+//        }
+//        get {
+//            return self.titleIcon.image
+//        }
+//    }
     
     @IBInspectable var rightBarIconImage: UIImage? {
         set {
@@ -69,14 +76,14 @@ class IconNavigationBar: UIView {
     }
 
     
-    @IBInspectable var titleLabelText: String? {
-        set {
-            self.titleLabel.text = newValue
-        }
-        get {
-            return self.titleLabel.text
-        }
-    }
+//    @IBInspectable var titleLabelText: String? {
+//        set {
+//            self.titleLabel.text = newValue
+//        }
+//        get {
+//            return self.titleLabel.text
+//        }
+//    }
     
 }
 
