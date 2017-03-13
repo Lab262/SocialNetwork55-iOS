@@ -1,5 +1,5 @@
 //
-//  HomeMainViewController.swift
+//  TimelineViewController.swift
 //  SocialNetwork55Lab
 //
 //  Created by Thiago-Bernardes on 03/11/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeMainViewController: UIViewController {
+class TimelineViewController: UIViewController {
 
     @IBAction func logout(_ sender: Any) {
         

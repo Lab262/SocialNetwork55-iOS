@@ -88,7 +88,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
-        
+        present(ViewUtil.viewControllerFromStoryboardWithIdentifier("Main")!, animated: true, completion: nil)
         
     }
     

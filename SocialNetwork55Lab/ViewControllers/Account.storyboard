@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2pG-Hq-2Fg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ufonts.com_gotham-bold.ttf">
+            <string>GothamBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Minha Conta-->
+        <scene sceneID="hKx-2b-qk1">
+            <objects>
+                <viewController id="pIc-SH-zcv" customClass="MyAccountViewController" customModule="SocialNetwork55Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cn8-7a-hR6"/>
+                        <viewControllerLayoutGuide type="bottom" id="lka-FP-gWf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Gz-Sx-fGd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minha Conta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdz-Tt-12J">
+                                <rect key="frame" x="133" y="293" width="108" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Minha Conta" id="6sI-HK-fgb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jon-Rt-RGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567.2" y="-213.64317841079463"/>
+        </scene>
+        <!--Minha Conta-->
+        <scene sceneID="i4E-v0-jwR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2pG-Hq-2Fg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Minha Conta" image="account-deselect-icon" selectedImage="account-select-icon" id="dIK-SL-jV2"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3fN-dI-alu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pIc-SH-zcv" kind="relationship" relationship="rootViewController" id="Pcn-m4-Gey"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9U-VO-uhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-213.64317841079463"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account-deselect-icon" width="22" height="22"/>
+        <image name="account-select-icon" width="22" height="22"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>

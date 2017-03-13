@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XjU-VP-sLs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timeline-->
+        <scene sceneID="tgi-Tq-cjX">
+            <objects>
+                <viewController title="Timeline" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y4o-Ot-Hoh" customClass="TimelineViewController" customModule="SocialNetwork55Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6nA-1m-uaN"/>
+                        <viewControllerLayoutGuide type="bottom" id="PbL-Ml-ivy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="78E-60-gc8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Timeline" id="Nfj-Th-Uk2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYt-rM-9sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="145.27736131934034"/>
+        </scene>
+        <!--Timeline-->
+        <scene sceneID="bGB-aO-o8k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XjU-VP-sLs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Timeline" image="timeline-deselect-icon" selectedImage="timeline-select-icon" id="5FR-Fr-x2g"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="luA-Ll-dRR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="olI-JZ-715">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Y4o-Ot-Hoh" kind="relationship" relationship="rootViewController" id="pna-uP-yur"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1J-M9-Mxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.80000000000001" y="145.27736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="timeline-deselect-icon" width="22" height="23"/>
+        <image name="timeline-select-icon" width="22" height="23"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>

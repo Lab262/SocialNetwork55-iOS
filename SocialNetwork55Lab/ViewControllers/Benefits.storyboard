@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5gF-hJ-De6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ufonts.com_gotham-bold.ttf">
+            <string>GothamBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Benefícios-->
+        <scene sceneID="sPl-pO-Her">
+            <objects>
+                <viewController id="Vq7-oc-y8E" customClass="BenefitViewController" customModule="SocialNetwork55Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xU0-co-Md1"/>
+                        <viewControllerLayoutGuide type="bottom" id="N0b-Cb-N1i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HQP-Qi-vbo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Benefícios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1L-YQ-q6l">
+                                <rect key="frame" x="142" y="293" width="91" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Benefícios" id="Fm2-Hc-7sr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKF-1R-eFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="86.806596701649184"/>
+        </scene>
+        <!--Benefícios-->
+        <scene sceneID="2zm-aW-KN1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5gF-hJ-De6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Benefícios" image="benefit-deselect-icon" selectedImage="benefit-select-icon" id="W3V-hm-GLL"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UsE-dM-zwB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vq7-oc-y8E" kind="relationship" relationship="rootViewController" id="lWw-F9-JNk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2R4-qR-e8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="86.806596701649184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="benefit-deselect-icon" width="25" height="25"/>
+        <image name="benefit-select-icon" width="25" height="25"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>
