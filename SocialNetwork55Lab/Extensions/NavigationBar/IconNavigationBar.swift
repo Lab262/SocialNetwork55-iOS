@@ -20,6 +20,7 @@ class IconNavigationBar: UIView {
     
     @IBOutlet weak var leftOfRightButton: UIButton!
     
+    @IBOutlet weak var titleTextLabel: UILabel!
 //    @IBAction func leftAction(_ sender: Any) {
 //        
 //        if let navController = UIApplication.topViewController()?.navigationController {
@@ -74,6 +75,15 @@ class IconNavigationBar: UIView {
         }
         get {
             return self.rightIcon.image
+        }
+    }
+    
+    @IBInspectable var titleLabel: String? {
+        set {
+            self.titleTextLabel.text = newValue
+        }
+        get {
+            return self.titleTextLabel.text
         }
     }
 
