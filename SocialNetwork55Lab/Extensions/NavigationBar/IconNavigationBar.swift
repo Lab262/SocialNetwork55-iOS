@@ -78,7 +78,7 @@ class IconNavigationBar: UIView {
         }
     }
     
-    @IBInspectable var titleLabel: String? {
+    @IBInspectable var titleBarLabel: String? {
         set {
             self.titleTextLabel.text = newValue
         }

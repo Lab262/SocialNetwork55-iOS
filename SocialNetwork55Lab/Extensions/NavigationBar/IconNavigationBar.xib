@@ -26,7 +26,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" restorationIdentifier="IconNavigationBar" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="203-Af-QFl">
@@ -61,10 +61,16 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-Hw-MgU">
-                    <rect key="frame" x="16" y="70" width="84.5" height="27"/>
-                    <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="30"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewd-Hw-MgU">
+                    <rect key="frame" x="16" y="70" width="319" height="65"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Bem vindo a 55Lab.co community, Vanessa">
+                            <attributes>
+                                <font key="NSFont" size="28" name="GothamBold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -76,6 +82,8 @@
                 <constraint firstItem="2U9-cb-xQV" firstAttribute="centerY" secondItem="1jS-Xl-YNC" secondAttribute="centerY" id="YYq-U3-TyD"/>
                 <constraint firstItem="203-Af-QFl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="Yv7-Eh-giT"/>
                 <constraint firstItem="1jS-Xl-YNC" firstAttribute="centerX" secondItem="203-Af-QFl" secondAttribute="centerX" constant="-0.5" id="hUO-hS-Lg0"/>
+                <constraint firstAttribute="trailing" secondItem="Ewd-Hw-MgU" secondAttribute="trailing" constant="40" id="lTW-kp-siH"/>
+                <constraint firstAttribute="bottom" secondItem="Ewd-Hw-MgU" secondAttribute="bottom" constant="15" id="oqU-H3-ioF"/>
                 <constraint firstItem="1jS-Xl-YNC" firstAttribute="leading" secondItem="2U9-cb-xQV" secondAttribute="trailing" constant="23" id="uHI-nz-GNH"/>
                 <constraint firstAttribute="trailing" secondItem="203-Af-QFl" secondAttribute="trailing" constant="15" id="z09-YD-stq"/>
             </constraints>
