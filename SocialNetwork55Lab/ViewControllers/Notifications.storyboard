@@ -30,11 +30,23 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleBarLabel" value="Notificações"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TBP-lE-JvR">
+                                <rect key="frame" x="0.0" y="150" width="375" height="468"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jqw-9A-90L" id="W6U-tx-mdQ"/>
+                                    <outlet property="delegate" destination="jqw-9A-90L" id="XvT-jY-R83"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Notificações" id="HE7-h4-GqB"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="TBP-lE-JvR" id="QGA-SO-iZn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jzt-ZM-n3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
