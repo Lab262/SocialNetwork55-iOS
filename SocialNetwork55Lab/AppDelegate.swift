@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
         
         if let _ = PFUser.current() {
-            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
+            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Authentication", identifier: "")
         }else {
             initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Authentication", identifier: "")
         }
