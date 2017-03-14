@@ -45,6 +45,7 @@
                     <navigationItem key="navigationItem" title="Notificações" id="HE7-h4-GqB"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="navigationBarView" destination="QHB-9P-ljj" id="ZMO-k2-0R0"/>
                         <outlet property="tableView" destination="TBP-lE-JvR" id="QGA-SO-iZn"/>
                     </connections>
                 </viewController>

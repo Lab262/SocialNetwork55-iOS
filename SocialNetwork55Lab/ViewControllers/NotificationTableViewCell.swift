@@ -30,15 +30,33 @@ class NotificationTableViewCell: UITableViewCell {
         return "NotificationTableViewCell"
     }
 
+    var notificationModel: NotificationModel? {
+        didSet{
+            updateNotificationUI()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
+    }
+    
+    func updateNotificationUI(){
+        textNotificationLabel.text = ("\(notificationModel!.profileName!) \(notificationModel!.textNotification!) \(notificationModel!.hourNotification!)")
+            //(notificationModel?.profileName)! + (notificationModel?.textNotification)! + notificationModel?.hourNotification
+        if (notificationModel!.isFollowNotification)! {
+            actionFollowButton.isHidden = false
+            constraintSpaceRightLabel.constant = 125.0
+        }else{
+            actionFollowButton.isHidden = true
+            constraintSpaceRightLabel.constant = 38.0
+        }
     }
     
     @IBInspectable var profileImage: UIImage? {

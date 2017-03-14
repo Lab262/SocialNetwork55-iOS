@@ -58,7 +58,9 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="itr-cS-Win" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="AIF-qn-aqJ"/>
                     <constraint firstAttribute="trailing" secondItem="hhZ-1s-cyx" secondAttribute="trailing" constant="25" id="PW0-vw-ngu"/>
+                    <constraint firstAttribute="bottom" secondItem="itr-cS-Win" secondAttribute="bottom" constant="19" id="e3i-Qd-hcM"/>
                     <constraint firstAttribute="trailing" secondItem="HWL-Gk-evF" secondAttribute="trailing" constant="124" id="ee5-eB-hNR"/>
                     <constraint firstItem="HWL-Gk-evF" firstAttribute="leading" secondItem="itr-cS-Win" secondAttribute="trailing" constant="20" id="gUJ-ls-FhL"/>
                     <constraint firstItem="itr-cS-Win" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kCy-E2-4pC"/>
