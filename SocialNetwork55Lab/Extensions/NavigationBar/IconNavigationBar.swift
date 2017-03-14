@@ -80,7 +80,7 @@ class IconNavigationBar: UIView {
     
     @IBInspectable var titleBarLabel: String? {
         set {
-            self.titleTextLabel.text = newValue
+            self.titleTextLabel.attributedText = newValue?.with(lineSpacing: 15.0)
         }
         get {
             return self.titleTextLabel.text
