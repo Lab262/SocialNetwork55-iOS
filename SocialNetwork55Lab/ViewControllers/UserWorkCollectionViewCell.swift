@@ -9,10 +9,24 @@
 import UIKit
 
 class UserWorkCollectionViewCell: UICollectionViewCell {
-
+    
+    
+    @IBOutlet weak var photoButton: UIButton!
+    
+    static var identifier: String {
+        return "userWorkCollectionCell"
+    }
+    
+    static var cellHeight: CGFloat {
+        return 50.0
+    }
+    
+    static var nibName: String {
+        return "UserWorkCollectionViewCell"
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
 }

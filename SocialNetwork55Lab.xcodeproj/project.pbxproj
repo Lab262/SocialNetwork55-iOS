@@ -63,6 +63,12 @@
 		D42E1AE11E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */; };
 		D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */; };
 		D47BE11B1E77266C00261B01 /* UserWorkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */; };
+		D47BE11E1E7735FF00261B01 /* UserWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */; };
+		D47BE11F1E7735FF00261B01 /* UserWorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */; };
+		D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */; };
+		D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
+		D47BE1271E7760F000261B01 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1261E7760F000261B01 /* UserRequest.swift */; };
+		D47BE12A1E77614C00261B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1291E77614C00261B01 /* User.swift */; };
 		D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */; };
 		D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */; };
 		D4C65E101E760BDD00834122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E0F1E760BDD00834122 /* Main.storyboard */; };
@@ -152,6 +158,12 @@
 		D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKMaskFieldUtility.swift; sourceTree = "<group>"; };
 		D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkCollectionViewCell.swift; sourceTree = "<group>"; };
 		D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWorkCollectionViewCell.xib; sourceTree = "<group>"; };
+		D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkTableViewCell.swift; sourceTree = "<group>"; };
+		D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWorkTableViewCell.xib; sourceTree = "<group>"; };
+		D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Utils.swift"; sourceTree = "<group>"; };
+		D47BE1231E7760B400261B01 /* ParseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseRequest.swift; sourceTree = "<group>"; };
+		D47BE1261E7760F000261B01 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		D47BE1291E77614C00261B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
 		D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
 		D4C65E0F1E760BDD00834122 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -284,6 +296,7 @@
 		A489B1F31DDA7D0300B239D5 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				D47BE1251E7760D100261B01 /* Request */,
 				A489B1F41DDA7D0300B239D5 /* Controllers */,
 				A489B1F51DDA7D0300B239D5 /* Interface */,
 			);
@@ -373,6 +386,7 @@
 				A427680B1DD3A09D00363343 /* UIColorExtension.swift */,
 				D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */,
 				60237F9A1E77491200DBA933 /* String+CharacterSpacing.swift */,
+				D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -441,6 +455,7 @@
 		A4F89B281DA809B100949A35 /* SocialNetwork55Lab */ = {
 			isa = PBXGroup;
 			children = (
+				D47BE1221E77609100261B01 /* Request */,
 				A4E462F41DCAEAC200A611C0 /* Constants */,
 				A4E462F51DCAEAC200A611C0 /* Extensions */,
 				A4E462F61DCAEAC200A611C0 /* Persistence */,
@@ -501,6 +516,30 @@
 				D42E1AD11E6F1921004EDBD1 /* AKMaskFieldUtility.swift */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D47BE1221E77609100261B01 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D47BE1231E7760B400261B01 /* ParseRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		D47BE1251E7760D100261B01 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D47BE1261E7760F000261B01 /* UserRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		D47BE1281E77610800261B01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D47BE1291E77614C00261B01 /* User.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D48A00771E6E604500468DE0 /* gotham */ = {
@@ -569,6 +608,7 @@
 		D4C65E241E761F8500834122 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D47BE1281E77610800261B01 /* Model */,
 				D4C65E281E761F9F00834122 /* Controller */,
 				D4C65E2B1E762FDC00834122 /* Cells */,
 				D4C65E251E761F8F00834122 /* Interface */,
@@ -604,6 +644,8 @@
 				D4C65E3F1E7671F800834122 /* ContactInformationTableViewCell.xib */,
 				D47BE1181E77266C00261B01 /* UserWorkCollectionViewCell.swift */,
 				D47BE1191E77266C00261B01 /* UserWorkCollectionViewCell.xib */,
+				D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */,
+				D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -733,6 +775,7 @@
 				D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */,
 				D4C65E161E760D3900834122 /* Notifications.storyboard in Resources */,
 				D4C65E2F1E76301900834122 /* UserInformationTableViewCell.xib in Resources */,
+				D47BE11F1E7735FF00261B01 /* UserWorkTableViewCell.xib in Resources */,
 				A44E0C6E1DD092650028F06C /* Montserrat-UltraLight.otf in Resources */,
 				A4E462FD1DCAEAF800A611C0 /* Timeline.storyboard in Resources */,
 				D4C65E3A1E764AC000834122 /* InformationDescriptionTableViewCell.xib in Resources */,
@@ -895,6 +938,7 @@
 				D4C65E391E764AC000834122 /* InformationDescriptionTableViewCell.swift in Sources */,
 				D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,
+				D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */,
 				D42E1AD41E6F1921004EDBD1 /* AKMaskFieldBlock.swift in Sources */,
 				D4C65E1C1E760E5000834122 /* MyAccountViewController.swift in Sources */,
 				D4C65E191E760DCA00834122 /* BenefitViewController.swift in Sources */,
@@ -906,14 +950,18 @@
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
 				D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */,
+				D47BE12A1E77614C00261B01 /* User.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
+				D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */,
 				D42E1A8F1E6E802B004EDBD1 /* CreateAccountViewController.swift in Sources */,
 				D42E1A931E6EEF9B004EDBD1 /* AuthenticationContainerViewController.swift in Sources */,
 				D4C65E311E76311B00834122 /* UITableViewCell+Utils.swift in Sources */,
 				D4C65E231E76175D00834122 /* TabBarViewController.swift in Sources */,
 				A40A252B1DCBD4C000DF9523 /* TimelineViewController.swift in Sources */,
+				D47BE11E1E7735FF00261B01 /* UserWorkTableViewCell.swift in Sources */,
+				D47BE1271E7760F000261B01 /* UserRequest.swift in Sources */,
 				D42E1AD81E6F1921004EDBD1 /* AKMaskFieldBrackets.swift in Sources */,
 				A4AFBB0D1DD35D4600F270C7 /* Colors.swift in Sources */,
 				D42E1AD61E6F1921004EDBD1 /* AKMaskFieldBlockCharacter.swift in Sources */,

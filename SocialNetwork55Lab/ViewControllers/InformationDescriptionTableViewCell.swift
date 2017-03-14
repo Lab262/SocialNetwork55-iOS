@@ -10,6 +10,9 @@ import UIKit
 
 class InformationDescriptionTableViewCell: UITableViewCell {
     
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
     static var identifier: String {
         return "descriptionInformationCell"
     }

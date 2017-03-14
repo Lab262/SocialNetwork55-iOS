@@ -13,6 +13,7 @@ class ContactInformationTableViewCell: UITableViewCell {
     @IBOutlet weak var contactTitleLabel: UILabel!
     @IBOutlet weak var contactDescriptionLabel: UILabel!
 
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     static var identifier: String {
         return "contactCell"
     }
@@ -32,8 +33,9 @@ class ContactInformationTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
+        
 
-        // Configure the view for the selected state
     }
     
 }

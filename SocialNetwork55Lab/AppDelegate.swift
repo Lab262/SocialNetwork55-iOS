@@ -19,19 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Crashlytics.self])
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vcToShow = storyboard.instantiateInitialViewController()
-        self.window?.rootViewController = vcToShow
+       // let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let vcToShow = storyboard.instantiateInitialViewController()
+        //self.window?.rootViewController = vcToShow
         
-//        if DefaultsHelper.sharedInstance.email == ""  || DefaultsHelper.sharedInstance.email == nil {
-//            let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
-//            let vcToShow = storyboard.instantiateInitialViewController()
-//            self.window?.rootViewController = vcToShow
-//        } else {
-//            let storyboard = UIStoryboard(name: "Timeline", bundle: nil)
-//            let vcToShow = storyboard.instantiateInitialViewController()
-//            self.window?.rootViewController = vcToShow
-//        }
+        if DefaultsHelper.sharedInstance.email == ""  || DefaultsHelper.sharedInstance.email == nil {
+            let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
+            let vcToShow = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vcToShow
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vcToShow = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vcToShow
+        }
       
     
         return true
