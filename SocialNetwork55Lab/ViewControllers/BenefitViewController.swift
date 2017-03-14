@@ -9,7 +9,15 @@
 import UIKit
 
 class BenefitViewController: UIViewController {
+    
+    var allBenefits = [Benefit]()
 
+    func dummyContent() {
+        for _ in 0...4{
+            
+            allBenefits.append(Benefit(bannerImage: nil, bannerTitle: "BE FREE", bannerSubTitle: "Seguro de vida", title: "Desconto de 30% no Seguros Bradesco", descriptionBenefit: "As we grow, we do so in fits and starts, lurching forward then back, sometimes looking more like clowns than seekers. Winston Churchill wrote: “Man will occasionally stumble over the truth, but most of…"))
+        }
+    }
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navigationBarView: IconNavigationBar!
@@ -23,6 +31,7 @@ class BenefitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dummyContent()
         setUpNavigationBar()
         registerNibs()
         tableView.estimatedRowHeight = 100.0

@@ -16,6 +16,7 @@
 		60237F9F1E7757BD00DBA933 /* BenefitTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60237F9D1E7757BD00DBA933 /* BenefitTitleTableViewCell.xib */; };
 		60237FA21E77802200DBA933 /* ActionButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA01E77802200DBA933 /* ActionButtonTableViewCell.swift */; };
 		60237FA31E77802200DBA933 /* ActionButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60237FA11E77802200DBA933 /* ActionButtonTableViewCell.xib */; };
+		60237FA51E778B2300DBA933 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA41E778B2300DBA933 /* Benefit.swift */; };
 		7954B93334819F6F989AFC94 /* Pods_SocialNetwork55Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072D6F2EC636560C10EDBAE /* Pods_SocialNetwork55Lab.framework */; };
 		A40A25181DCB5C2C00DF9523 /* UIView+IBInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */; };
 		A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A25191DCB681A00DF9523 /* UIView+Animations.swift */; };
@@ -115,6 +116,7 @@
 		60237F9D1E7757BD00DBA933 /* BenefitTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitTitleTableViewCell.xib; sourceTree = "<group>"; };
 		60237FA01E77802200DBA933 /* ActionButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButtonTableViewCell.swift; sourceTree = "<group>"; };
 		60237FA11E77802200DBA933 /* ActionButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionButtonTableViewCell.xib; sourceTree = "<group>"; };
+		60237FA41E778B2300DBA933 /* Benefit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Benefit.swift; path = SocialNetwork55Lab/ViewControllers/Benefit.swift; sourceTree = SOURCE_ROOT; };
 		7F2D51D0C903269F104DD2E8 /* Pods-SocialNetwork55Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55Lab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55Lab/Pods-SocialNetwork55Lab.debug.xcconfig"; sourceTree = "<group>"; };
 		8072D6F2EC636560C10EDBAE /* Pods_SocialNetwork55Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetwork55Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspector.swift"; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 		A4FE06371DD09D6400BFDC4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				60237FA41E778B2300DBA933 /* Benefit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -945,6 +948,7 @@
 				D4C65E391E764AC000834122 /* InformationDescriptionTableViewCell.swift in Sources */,
 				60237FA21E77802200DBA933 /* ActionButtonTableViewCell.swift in Sources */,
 				D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */,
+				60237FA51E778B2300DBA933 /* Benefit.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,
 				D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */,
 				D42E1AD41E6F1921004EDBD1 /* AKMaskFieldBlock.swift in Sources */,
