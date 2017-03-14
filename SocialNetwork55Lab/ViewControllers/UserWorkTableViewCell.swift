@@ -12,6 +12,8 @@ class UserWorkTableViewCell: UITableViewCell {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var arrayImages: [UIImage]?
+    
     static var identifier: String {
         return "userWorkTableCell"
     }
@@ -27,7 +29,11 @@ class UserWorkTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         registerNibs()
-        
+        dummyContent()
+    }
+    
+    func dummyContent() {
+        arrayImages = [#imageLiteral(resourceName: "user-work-default"), #imageLiteral(resourceName: "user-work-default-2"), #imageLiteral(resourceName: "user-work-default-3"), #imageLiteral(resourceName: "user-work-default-4"), #imageLiteral(resourceName: "user-work-default-5"), #imageLiteral(resourceName: "user-work-default-6"), #imageLiteral(resourceName: "user-work-default-7"), #imageLiteral(resourceName: "user-work-default-8")]
     }
     
     func registerNibs() {
@@ -39,14 +45,16 @@ extension UserWorkTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UserWorkCollectionViewCell.identifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UserWorkCollectionViewCell.identifier, for: indexPath) as! UserWorkCollectionViewCell
+        
+        cell.photoButton.setImage(arrayImages?[indexPath.row], for: .normal)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return arrayImages!.count
     }
 }
 
