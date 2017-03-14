@@ -88,7 +88,6 @@ extension BenefitViewController: UITableViewDataSource {
         let modelIndex = indexPath.row / 4
         
         switch indexPath.row % 4 {
-            
         case 0:
             return generateBenefitHeader(tableView, cellForRowAt: indexPath, modelIndex: modelIndex)
         case 1:

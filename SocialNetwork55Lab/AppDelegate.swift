@@ -8,6 +8,7 @@
 
 import UIKit
 import Fabric
+import Parse
 import Crashlytics
 
 @UIApplicationMain
@@ -15,26 +16,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         Fabric.with([Crashlytics.self])
-        
-       // let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //let vcToShow = storyboard.instantiateInitialViewController()
-        //self.window?.rootViewController = vcToShow
-        
-        if DefaultsHelper.sharedInstance.email == ""  || DefaultsHelper.sharedInstance.email == nil {
-            let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
-            let vcToShow = storyboard.instantiateInitialViewController()
-            self.window?.rootViewController = vcToShow
-        } else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vcToShow = storyboard.instantiateInitialViewController()
-            self.window?.rootViewController = vcToShow
-        }
       
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "socialnetwork55lab"
+            $0.clientKey = ""
+            $0.server = "http://socialnetwork55lab.herokuapp.com/parse"
+        }
+        
+        Parse.initialize(with: configuration)
+        
+        self.window!.rootViewController = self.setInitialStoryboardBySeasonUser()
     
         return true
+    }
+    
+    func setInitialStoryboardBySeasonUser() -> UIViewController? {
+        
+        var initialViewController: UIViewController? = nil
+        initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
+        
+        if let _ = PFUser.current() {
+            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
+            
+        }else {
+            
+            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Authentication", identifier: "")
+        }
+        
+        return initialViewController
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

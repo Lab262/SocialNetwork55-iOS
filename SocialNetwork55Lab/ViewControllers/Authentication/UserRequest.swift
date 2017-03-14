@@ -20,7 +20,6 @@ class UserRequest: NSObject {
         pfUser.email = user.email
         
         pfUser.signUpInBackground { (success, error) in
-            
             if error == nil {
                 completionHandler(true, "Sucesso")
             } else {
