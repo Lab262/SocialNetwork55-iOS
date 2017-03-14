@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fabric.with([Crashlytics.self])
       
         let configuration = ParseClientConfiguration {
-            $0.applicationId = "socialnetwork55lab"
+            $0.applicationId = "lab262_55lab_social_network"
             $0.clientKey = ""
             $0.server = "http://socialnetwork55lab.herokuapp.com/parse"
         }
@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let _ = PFUser.current() {
             initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
         }else {
-            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
+            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Authentication", identifier: "")
         }
         
         return initialViewController

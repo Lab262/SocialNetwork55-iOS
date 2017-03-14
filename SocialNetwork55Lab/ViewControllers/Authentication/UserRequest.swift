@@ -40,7 +40,11 @@ class UserRequest: NSObject {
             if success {
                 completionHandler(true, "Success")
             } else {
-                completionHandler(false, error.debugDescription)
+                if error!.localizedDescription.contains("No user found with email") {
+                    
+                    completionHandler(false, "Email não encontrado.")
+                }
+                completionHandler(false, error!.localizedDescription)
             }
         }
     }
@@ -51,7 +55,12 @@ class UserRequest: NSObject {
             if error == nil {
                 completionHandler(true, "Sucesso")
             } else {
-                completionHandler(false, error.debugDescription)
+                if error?.localizedDescription == "Invalid username/password." {
+                    
+                    completionHandler(false, "CPF ou senha inválida.")
+                }
+                
+                completionHandler(false, error!.localizedDescription)
             }
         }
     }
