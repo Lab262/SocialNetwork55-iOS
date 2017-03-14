@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
             alert -> Void in
             
             if alertController.textFields![0].text! != "" {
-                self.sendEmail()
+                self.sendEmail(email: alertController.textFields![0].text!)
             }else {
                 self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: "Email inválido."), animated: true, completion: nil)
                 
@@ -74,11 +74,17 @@ class LoginViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    func sendEmail(){
+    func sendEmail(email: String){
         self.view.loadAnimation()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
-            self.view.unload()
+        
+        UserRequest.forgotPass(email: email) { (success, msg) in
+            if success{
+               self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+                self.view.unload()
+            } else {
+                self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: msg), animated: true, completion: nil)
+                self.view.unload()
+            }
         }
     }
 
@@ -88,8 +94,49 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
-        present(ViewUtil.viewControllerFromStoryboardWithIdentifier("Main")!, animated: true, completion: nil)
+        if let error = verifyTextFields() {
+            present(ViewUtil.alertControllerWithTitle(_title: "Error", _withMessage: error), animated: true, completion: nil)
+            return
+        }
         
+        let cpf = cpfField.text?.replacingOccurrences(of: "[|.-]", with: "", options: [.regularExpression])
+        
+        view.loadAnimation()
+        UserRequest.loginUser(email: cpf!, pass: passField.text!) { (success, msg) in
+            if success{
+                self.view.unload()
+                self.present(ViewUtil.viewControllerFromStoryboardWithIdentifier("Main")!, animated: true, completion: nil)
+            } else {
+                self.view.unload()
+                self.present(ViewUtil.alertControllerWithTitle(_title: "Error", _withMessage: msg), animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func verifyTextFields() -> String? {
+        let fields = [cpfField, passField]
+        
+        for field in fields {
+            if field!.isKind(of: AKMaskField.self) {
+                if let msgError = self.verifyMaskField(field: field as! AKMaskField) {
+                    return msgError
+                }
+            } else {
+                if field?.text == ""{
+                    return field!.placeholder!.lowercased() + " inválido."
+                }
+            }
+        }
+        return nil
+    }
+    
+    func verifyMaskField(field: AKMaskField) -> String? {
+        switch field.maskStatus {
+        case .clear, .incomplete:
+            return field.placeholder!.lowercased() + " inválido."
+        default:
+            return nil
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

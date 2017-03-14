@@ -77,7 +77,7 @@ class ProfileViewController: UIViewController {
         if indexPath.section == 2 && indexPath.row == 1 {
             cell.contactTitleLabel.text = "Trabalho com"
             cell.contactDescriptionLabel.isHidden = true
-            cell.bottomConstraint.constant = 5
+            cell.bottomConstraint.constant = 2
             cell.layoutIfNeeded()
             tableView.layoutIfNeeded()
         }

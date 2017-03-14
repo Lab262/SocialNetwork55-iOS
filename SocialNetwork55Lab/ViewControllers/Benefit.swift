@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class Benefit: PFObject {
+class Benefit: NSObject {
     
     var bannerImage: UIImage?
     var bannerTitle: String?

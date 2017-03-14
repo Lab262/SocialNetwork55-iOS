@@ -73,7 +73,8 @@
 		D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */; };
 		D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
 		D47BE1271E7760F000261B01 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1261E7760F000261B01 /* UserRequest.swift */; };
-		D47BE12A1E77614C00261B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1291E77614C00261B01 /* User.swift */; };
+		D47BE12C1E77837500261B01 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE12B1E77837500261B01 /* ApplicationState.swift */; };
+		D47BE12F1E782F5600261B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE12E1E782F5600261B01 /* User.swift */; };
 		D48A007A1E6E618300468DE0 /* ufonts.com_gotham-book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */; };
 		D48A007B1E6E618300468DE0 /* ufonts.com_gotham-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */; };
 		D4C65E101E760BDD00834122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C65E0F1E760BDD00834122 /* Main.storyboard */; };
@@ -173,7 +174,8 @@
 		D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Utils.swift"; sourceTree = "<group>"; };
 		D47BE1231E7760B400261B01 /* ParseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseRequest.swift; sourceTree = "<group>"; };
 		D47BE1261E7760F000261B01 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
-		D47BE1291E77614C00261B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D47BE12B1E77837500261B01 /* ApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		D47BE12E1E782F5600261B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = SocialNetwork55Lab/ViewControllers/User.swift; sourceTree = SOURCE_ROOT; };
 		D48A00781E6E618300468DE0 /* ufonts.com_gotham-book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-book.ttf"; sourceTree = "<group>"; };
 		D48A00791E6E618300468DE0 /* ufonts.com_gotham-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-bold.ttf"; sourceTree = "<group>"; };
 		D4C65E0F1E760BDD00834122 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 		A4E462F71DCAEAC200A611C0 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				D47BE12B1E77837500261B01 /* ApplicationState.swift */,
 				A44967751DDA300100990008 /* DefaultsHelper.swift */,
 			);
 			path = Local;
@@ -526,6 +529,7 @@
 		A4FE06371DD09D6400BFDC4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D47BE12E1E782F5600261B01 /* User.swift */,
 				60237FA41E778B2300DBA933 /* Benefit.swift */,
 			);
 			path = Models;
@@ -575,7 +579,6 @@
 		D47BE1281E77610800261B01 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D47BE1291E77614C00261B01 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -990,10 +993,10 @@
 				60237F9E1E7757BD00DBA933 /* BenefitTitleTableViewCell.swift in Sources */,
 				D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */,
 				60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */,
+				D47BE12F1E782F5600261B01 /* User.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
 				D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */,
-				D47BE12A1E77614C00261B01 /* User.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
@@ -1012,6 +1015,7 @@
 				D4C65E401E7671F800834122 /* ContactInformationTableViewCell.swift in Sources */,
 				A4D5DA231DDEBC7900EB9EC5 /* URLS.swift in Sources */,
 				A4FE063B1DD0A13E00BFDC4D /* Dictionary+Indexable.swift in Sources */,
+				D47BE12C1E77837500261B01 /* ApplicationState.swift in Sources */,
 				D4C65E2E1E76301900834122 /* UserInformationTableViewCell.swift in Sources */,
 				D42E1AD21E6F1921004EDBD1 /* AKMaskField.swift in Sources */,
 				A427680C1DD3A09D00363343 /* UIColorExtension.swift in Sources */,
