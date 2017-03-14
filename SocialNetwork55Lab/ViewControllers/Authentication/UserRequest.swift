@@ -15,11 +15,9 @@ class UserRequest: NSObject {
         
         let pfUser = PFUser()
         
-        //pfUser.username = user.name
+        pfUser.username = user.username
         pfUser.password = pass
         pfUser.email = user.email
-        pfUser["emailVerified"] = false
-        
         
         pfUser.signUpInBackground { (success, error) in
             
