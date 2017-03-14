@@ -9,34 +9,61 @@
 import UIKit
 
 class NotificationViewController: UIViewController {
+    
+    var allNotifications = [NotificationModel]()
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navigationBarView: IconNavigationBar!
+    
+    func dummyContent() {
+        for _ in 0...3 {
+            allNotifications.append(NotificationModel(profileImage:nil, profileName: "Maria Luiza", textNotification: " fez um comentário em seu post.", hourNotification: "2h", isFollowNotification: false))
+        }
+        allNotifications.append(NotificationModel(profileImage:nil, profileName: "Thiago Bernardes", textNotification: " começou a te seguir.", hourNotification: "2h", isFollowNotification: true))
+    }
+    
+    func registerNibs() {
+        tableView.registerNibFrom(NotificationTableViewCell.self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dummyContent()
         setUpNavigationBar()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        registerNibs()
+        tableView.estimatedRowHeight = 100.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     func setUpNavigationBar() {
         navigationController?.navigationBar.isHidden = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func generateNotification (_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: NotificationTableViewCell.identifier, for: indexPath) as! NotificationTableViewCell
+        
+        cell.notificationModel = allNotifications[modelIndex]
+        
+        return cell
     }
-    */
-
+    
 }
+
+extension NotificationViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.allNotifications.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        return generateNotification(tableView, cellForRowAt: indexPath, modelIndex: indexPath.row)
+        
+        }
+}
+
