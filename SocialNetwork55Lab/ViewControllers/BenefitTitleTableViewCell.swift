@@ -10,6 +10,8 @@ import UIKit
 
 class BenefitTitleTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     static var identifier: String {
         return "benefitTitleCell"
     }
@@ -21,26 +23,20 @@ class BenefitTitleTableViewCell: UITableViewCell {
     static var nibName: String {
         return "BenefitTitleTableViewCell"
     }
+    
+    var benefit: Benefit? {
+        didSet{
+            updateBenefitsUI()
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    @IBOutlet weak var titleLabel: UILabel!
     
-    @IBInspectable var title: String? {
-        set {
-            self.titleLabel.text = newValue
-        }
-        get {
-            return self.titleLabel.text
-        }
+    func updateBenefitsUI(){
+        titleLabel.text = benefit?.title
     }
     
     
