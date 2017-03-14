@@ -63,7 +63,7 @@ class CreateAccountViewController: UIViewController {
             alert -> Void in
             
             if alertController.textFields![0].text! != "" {
-                self.sendEmail()
+                self.sendEmail(email: alertController.textFields![0].text!)
             }else {
                 self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: "Email inválido."), animated: true, completion: nil)
             }
@@ -82,11 +82,17 @@ class CreateAccountViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    func sendEmail(){
+    func sendEmail(email: String){
         self.view.loadAnimation()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
-            self.view.unload()
+        
+        UserRequest.forgotPass(email: email) { (success, msg) in
+            if success{
+                self.present(ViewUtil.alertControllerWithTitle(_title: "Sucesso!", _withMessage: "Um email de recuperação foi enviado para seu email."), animated: true, completion: nil)
+                self.view.unload()
+            } else {
+                self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: msg), animated: true, completion: nil)
+                self.view.unload()
+            }
         }
     }
     
