@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,10 +41,18 @@
                     <constraint firstItem="o8U-bW-6u5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Clr-ff-fgy"/>
                     <constraint firstItem="o8U-bW-6u5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="J7g-PO-w2i"/>
                     <constraint firstAttribute="bottom" secondItem="o8U-bW-6u5" secondAttribute="bottom" constant="32" id="KsW-Ot-k0H"/>
+                    <constraint firstItem="o8U-bW-6u5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="e2Z-0z-OWJ"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="e2Z-0z-OWJ"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="actionButton" destination="o8U-bW-6u5" id="uyL-4M-8c0"/>
+                <outlet property="centerConstraint" destination="e2Z-0z-OWJ" id="OHZ-Lb-xYt"/>
+                <outlet property="leadingConstraint" destination="Clr-ff-fgy" id="07Z-56-IJb"/>
             </connections>
             <point key="canvasLocation" x="51.5" y="54"/>
         </tableViewCell>

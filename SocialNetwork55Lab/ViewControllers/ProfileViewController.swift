@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController {
         tableView.registerNibFrom(HeaderTableViewCell.self)
         tableView.registerNibFrom(ContactInformationTableViewCell.self)
         tableView.registerNibFrom(UserWorkTableViewCell.self)
+        tableView.registerNibFrom(ActionButtonTableViewCell.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,6 +62,18 @@ class ProfileViewController: UIViewController {
     
     func generateUserWork(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserWorkTableViewCell.identifier, for: indexPath)
+        
+        
+        
+        return cell
+    }
+    
+    func generateSeeMoreButton(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonTableViewCell.identifier, for: indexPath) as! ActionButtonTableViewCell
+        
+        cell.updateForMoreButton()
+        cell.layoutIfNeeded()
+        tableView.layoutIfNeeded()
         
         return cell
     }
@@ -130,6 +143,7 @@ extension ProfileViewController: UITableViewDataSource {
             case 0: return generateDescriptionInformation(tableView, cellForRowAt: indexPath)
             case 1: return generateContactInformation(tableView, cellForRowAt: indexPath)
             case 2: return generateUserWork(tableView, cellForRowAt: indexPath)
+            case 3: return generateSeeMoreButton(tableView, cellForRowAt: indexPath)
             default: return UITableViewCell()
             }
         default: return UITableViewCell()
@@ -153,6 +167,7 @@ extension ProfileViewController: UITableViewDelegate {
         }
         
         header.titleHeaderLabel.text = headerTitle
+        
         return header
     }
     

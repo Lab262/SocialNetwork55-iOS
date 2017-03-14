@@ -11,6 +11,10 @@ import UIKit
 class ActionButtonTableViewCell: UITableViewCell {
     
     @IBOutlet weak var actionButton: UIButton!
+    
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var centerConstraint: NSLayoutConstraint!
 
     
     static var identifier: String {
@@ -29,12 +33,15 @@ class ActionButtonTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
     
+    func updateForMoreButton(){
+        //actionButton.backgroundColor = UIColor.white
+        actionButton.setTitle("Veja mais", for: .normal)
+        actionButton.titleLabel?.font = UIFont(name: "Aleo-Regular", size: 14)
+        actionButton.titleLabel?.textColor = UIColor.colorWithHexString("484848")
+        
+        leadingConstraint.isActive = false
+        centerConstraint.isActive = true
+        self.layoutIfNeeded()
+    }
 }
