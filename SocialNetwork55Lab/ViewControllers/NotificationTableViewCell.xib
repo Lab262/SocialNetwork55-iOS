@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-work-default" translatesAutoresizingMaskIntoConstraints="NO" id="itr-cS-Win">
@@ -45,21 +45,27 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhZ-1s-cyx">
-                        <rect key="frame" x="287" y="33.5" width="63" height="18"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <rect key="frame" x="287" y="33.5" width="71" height="18"/>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.21176470588235294" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="hhZ-1s-cyx" secondAttribute="height" multiplier="7:2" id="S93-aB-kYr"/>
+                            <constraint firstAttribute="width" secondItem="hhZ-1s-cyx" secondAttribute="height" multiplier="7:2" constant="8" id="S93-aB-kYr"/>
                             <constraint firstAttribute="height" constant="18" id="UsG-F0-r1G"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="10"/>
                         <state key="normal" title="Seguir">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="1.1100000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </button>
                 </subviews>
+                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="itr-cS-Win" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="AIF-qn-aqJ"/>
-                    <constraint firstAttribute="trailing" secondItem="hhZ-1s-cyx" secondAttribute="trailing" constant="25" id="PW0-vw-ngu"/>
+                    <constraint firstAttribute="trailing" secondItem="hhZ-1s-cyx" secondAttribute="trailing" constant="17" id="PW0-vw-ngu"/>
                     <constraint firstAttribute="bottom" secondItem="itr-cS-Win" secondAttribute="bottom" constant="19" id="e3i-Qd-hcM"/>
                     <constraint firstAttribute="trailing" secondItem="HWL-Gk-evF" secondAttribute="trailing" constant="124" id="ee5-eB-hNR"/>
                     <constraint firstItem="HWL-Gk-evF" firstAttribute="leading" secondItem="itr-cS-Win" secondAttribute="trailing" constant="20" id="gUJ-ls-FhL"/>

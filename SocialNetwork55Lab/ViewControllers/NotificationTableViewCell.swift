@@ -57,9 +57,9 @@ class NotificationTableViewCell: UITableViewCell {
         let fontGothamBook = UIFont(name: "Gotham Book", size: textNotificationLabel.font.pointSize)
         
         
-        let customProfileName = NSMutableAttributedString(string: "\(notificationModel!.profileName!) ", attributes: [NSFontAttributeName:fontGothamBold!])
+        let customProfileName = NSMutableAttributedString(string: "\(notificationModel!.profileName!) ", attributes: [NSFontAttributeName:fontGothamBold!, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
         
-        let customTextNotification = NSMutableAttributedString(string: notificationModel!.textNotification!, attributes: [NSFontAttributeName:fontGothamBook!])
+        let customTextNotification = NSMutableAttributedString(string: notificationModel!.textNotification!, attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.colorWithHexString("252525")])
         
         let customHourNotification = NSMutableAttributedString(string: " \(notificationModel!.hourNotification!)", attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.colorWithHexString("7B7B7B")])
         
