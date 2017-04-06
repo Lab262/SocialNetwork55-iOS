@@ -17,9 +17,9 @@ class NotificationViewController: UIViewController {
     
     func dummyContent() {
         for _ in 0...3 {
-            allNotifications.append(NotificationModel(profileImage:nil, profileName: "Maria Luiza", textNotification: " fez um comentário em seu post.", hourNotification: "2h", isFollowNotification: false))
+            allNotifications.append(NotificationModel(profileImage:nil, profileName: "Maria Luiza", textNotification: " fez um comentário em seu post.", hourNotification: " 2h", isFollowNotification: false))
         }
-        allNotifications.append(NotificationModel(profileImage:nil, profileName: "Thiago Bernardes", textNotification: " começou a te seguir.", hourNotification: "2h", isFollowNotification: true))
+        allNotifications.append(NotificationModel(profileImage:nil, profileName: "Thiago Bernardes", textNotification: " começou a te seguir.", hourNotification: " 2h", isFollowNotification: true))
     }
     
     func registerNibs() {

@@ -10,6 +10,9 @@ import UIKit
 
 class NotificationTableViewCell: UITableViewCell {
     
+    let constantSpaceRightNotificationFollow:CGFloat = 125.0
+    let constantSpaceRightNotification:CGFloat = 38.0
+    
     @IBOutlet weak var profileImageView: UIImageView!
     
     @IBOutlet weak var textNotificationLabel: UILabel!
@@ -48,14 +51,29 @@ class NotificationTableViewCell: UITableViewCell {
     }
     
     func updateNotificationUI(){
-        textNotificationLabel.text = ("\(notificationModel!.profileName!) \(notificationModel!.textNotification!) \(notificationModel!.hourNotification!)")
-            //(notificationModel?.profileName)! + (notificationModel?.textNotification)! + notificationModel?.hourNotification
+        
+        let fontGothamBold = UIFont(name: "Gotham Bold", size: textNotificationLabel.font.pointSize)
+        
+        let fontGothamBook = UIFont(name: "Gotham Book", size: textNotificationLabel.font.pointSize)
+        
+        
+        let customProfileName = NSMutableAttributedString(string: "\(notificationModel!.profileName!) ", attributes: [NSFontAttributeName:fontGothamBold!])
+        
+        let customTextNotification = NSMutableAttributedString(string: notificationModel!.textNotification!, attributes: [NSFontAttributeName:fontGothamBook!])
+        
+        let customHourNotification = NSMutableAttributedString(string: " \(notificationModel!.hourNotification!)", attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.colorWithHexString("7B7B7B")])
+        
+        customProfileName.append(customTextNotification)
+        customProfileName.append(customHourNotification)
+        
+        textNotificationLabel.attributedText = customProfileName
+        
         if (notificationModel!.isFollowNotification)! {
             actionFollowButton.isHidden = false
-            constraintSpaceRightLabel.constant = 125.0
+            constraintSpaceRightLabel.constant = constantSpaceRightNotificationFollow
         }else{
             actionFollowButton.isHidden = true
-            constraintSpaceRightLabel.constant = 38.0
+            constraintSpaceRightLabel.constant = constantSpaceRightNotification
         }
     }
     
