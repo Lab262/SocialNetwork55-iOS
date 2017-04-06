@@ -10,6 +10,8 @@ import UIKit
 
 class AuthenticationMainViewController: UIViewController {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIView.animate(withDuration: 0.5, animations: {
@@ -19,6 +21,7 @@ class AuthenticationMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupCustomTitleLabel()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,5 +39,23 @@ class AuthenticationMainViewController: UIViewController {
                 self.view.alpha = 0
             })
         }
+    }
+    
+    func setupCustomTitleLabel(){
+        
+        let customTitleWhite = NSMutableAttributedString(string: "Seja Bem vindo a nossa +55lab.", attributes: [NSFontAttributeName:titleLabel.font, NSForegroundColorAttributeName: UIColor.colorWithHexString("FFFFFF")])
+        
+        let customTitleBlue = NSMutableAttributedString(string: " Community", attributes: [NSFontAttributeName:titleLabel.font, NSForegroundColorAttributeName: UIColor.colorWithHexString("87A7DE")])
+        
+        customTitleWhite.append(customTitleBlue)
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 12
+        
+        customTitleWhite.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, customTitleWhite.length))
+
+        titleLabel.attributedText = customTitleWhite
+        
+        self.loadViewIfNeeded()
     }
 }
