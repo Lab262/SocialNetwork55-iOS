@@ -32,11 +32,9 @@ class LoginViewController: UIViewController {
     }
     
     func setPlaceholderColorsInFields(){
-        cpfField.attributedPlaceholder = NSAttributedString(string: "CPF",
-                                                            attributes: [NSForegroundColorAttributeName: UIColor.white])
+        cpfField.attributedPlaceholder = NSAttributedString(string: "CPF",   attributes: [NSForegroundColorAttributeName: UIColor.white])
         
-        passField.attributedPlaceholder = NSAttributedString(string: "Senha",
-                                                             attributes: [NSForegroundColorAttributeName: UIColor.white])
+        passField.attributedPlaceholder = NSAttributedString(string: "Senha", attributes: [NSForegroundColorAttributeName: UIColor.white])
     }
     
     func setMaskInField(){

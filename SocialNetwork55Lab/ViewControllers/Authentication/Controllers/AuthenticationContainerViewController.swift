@@ -14,6 +14,8 @@ class AuthenticationContainerViewController: UIViewController {
     @IBOutlet weak var firstBackground: UIImageView!
     @IBOutlet weak var secondBackground: UIImageView!
     
+    @IBOutlet weak var detailLeftImage: UIImageView!
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.window?.endEditing(true)
     }
@@ -31,8 +33,10 @@ class AuthenticationContainerViewController: UIViewController {
         UIView.animate(withDuration: 0.5) { 
             if self.firstBackground.alpha == 1 {
                 self.firstBackground.alpha = 0
+                self.detailLeftImage.alpha = 0
             } else {
                 self.firstBackground.alpha = 1
+                self.detailLeftImage.alpha = 0.2
             }
             
             if self.secondBackground.alpha == 1 {

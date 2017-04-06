@@ -185,7 +185,7 @@
                                 <rect key="frame" x="121" y="344" width="151" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
-                                <state key="normal" title="Esqueci a Senha">
+                                <state key="normal" title="Esqueceu a Senha?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -193,35 +193,37 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GR-j3-KDc">
-                                <rect key="frame" x="111" y="406" width="154" height="45"/>
+                                <rect key="frame" x="119" y="421" width="154" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="16"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.88235294119999996" green="0.28627450980000002" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Log in"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginButtonAction:" destination="kNL-rd-Mgg" eventType="touchUpInside" id="mNW-HR-wrG"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCH-SX-buG">
-                                <rect key="frame" x="16" y="28" width="24" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCH-SX-buG">
+                                <rect key="frame" x="25" y="34" width="24" height="4"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="2Ru-pl-hQS"/>
+                                    <constraint firstAttribute="width" constant="24" id="Cwc-el-sfu"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJS-DQ-OSt">
-                                <rect key="frame" x="19" y="29" width="58" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJS-DQ-OSt">
+                                <rect key="frame" x="25" y="50" width="37" height="23"/>
                                 <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="12"/>
                                 <state key="normal" title="Voltar">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="backButtonAction:" destination="kNL-rd-Mgg" eventType="touchUpInside" id="KAj-ng-nYg"/>
@@ -254,11 +256,17 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="second-blur" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-F8-2tR">
-                                <rect key="frame" x="1" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EJS-DQ-OSt" firstAttribute="top" secondItem="pCH-SX-buG" secondAttribute="bottom" constant="12" id="8pR-QN-4YS"/>
+                            <constraint firstItem="pCH-SX-buG" firstAttribute="top" secondItem="qix-Mc-jWk" secondAttribute="bottom" constant="34" id="MzU-Af-hf4"/>
+                            <constraint firstItem="pCH-SX-buG" firstAttribute="leading" secondItem="gNV-Ke-kxw" secondAttribute="leading" constant="25" id="caw-EX-iep"/>
+                            <constraint firstItem="EJS-DQ-OSt" firstAttribute="leading" secondItem="gNV-Ke-kxw" secondAttribute="leading" constant="25" id="npB-FZ-E2b"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cpfField" destination="b6M-YY-DkK" id="LR0-CT-KMU"/>
@@ -289,32 +297,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrt-rM-UjR">
-                                <rect key="frame" x="19" y="29" width="58" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrt-rM-UjR">
+                                <rect key="frame" x="25" y="47" width="37" height="23"/>
                                 <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="12"/>
                                 <state key="normal" title="Voltar">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="backButtonAction:" destination="xLi-5D-Hh3" eventType="touchUpInside" id="NSH-aT-auA"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="klx-nU-6MZ">
-                                <rect key="frame" x="16" y="28" width="24" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klx-nU-6MZ">
+                                <rect key="frame" x="25" y="30" width="24" height="4"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="6xo-uw-qmP"/>
+                                    <constraint firstAttribute="height" constant="4" id="Vs1-AD-b1J"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NKz-HW-Fpp">
-                                <rect key="frame" x="42" y="205" width="292" height="1"/>
+                                <rect key="frame" x="40" y="205" width="295" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCV-4E-QuN">
-                                <rect key="frame" x="121" y="384" width="151" height="30"/>
+                                <rect key="frame" x="120" y="384" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="14"/>
-                                <state key="normal" title="Esqueci a Senha">
+                                <state key="normal" title="Esqueceu a Senha?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -322,29 +332,34 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j73-R4-TRi">
-                                <rect key="frame" x="41" y="284" width="292" height="1"/>
+                                <rect key="frame" x="40" y="284" width="295" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g0h-Gc-LZP">
-                                <rect key="frame" x="41" y="363" width="292" height="1"/>
+                                <rect key="frame" x="40" y="363" width="295" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-u7-oCB">
-                                <rect key="frame" x="111" y="446" width="154" height="45"/>
+                                <rect key="frame" x="110" y="463" width="154" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.28627450980000002" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="16"/>
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="enterApp:" destination="xLi-5D-Hh3" eventType="touchUpInside" id="rMI-Br-nk2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="82V-rM-xSO" customClass="AKMaskField" customModule="SocialNetwork55Lab" customModuleProvider="target">
-                                <rect key="frame" x="42" y="176" width="292" height="30"/>
+                                <rect key="frame" x="40" y="189" width="295" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -357,7 +372,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5U-wa-EpO">
-                                <rect key="frame" x="42" y="255" width="292" height="30"/>
+                                <rect key="frame" x="40" y="255" width="295" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -370,7 +385,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nKf-C7-OS9">
-                                <rect key="frame" x="42" y="334" width="292" height="30"/>
+                                <rect key="frame" x="40" y="334" width="295" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -383,11 +398,17 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="second-blur" translatesAutoresizingMaskIntoConstraints="NO" id="9pg-Tv-9ab">
-                                <rect key="frame" x="1" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="klx-nU-6MZ" firstAttribute="top" secondItem="TIa-dV-xfV" secondAttribute="bottom" constant="30" id="8Tw-G3-hUO"/>
+                            <constraint firstItem="jrt-rM-UjR" firstAttribute="leading" secondItem="KZG-6c-NzC" secondAttribute="leading" constant="25" id="8ks-lQ-0rx"/>
+                            <constraint firstItem="jrt-rM-UjR" firstAttribute="top" secondItem="klx-nU-6MZ" secondAttribute="bottom" constant="13" id="LsD-qT-UuL"/>
+                            <constraint firstItem="klx-nU-6MZ" firstAttribute="leading" secondItem="KZG-6c-NzC" secondAttribute="leading" constant="25" id="ymD-09-RQY"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="cpfField" destination="82V-rM-xSO" id="mPu-5A-O54"/>
@@ -397,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXP-aT-f5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="437"/>
+            <point key="canvasLocation" x="2360.8000000000002" y="436.73163418290858"/>
         </scene>
         <!--Authentication Container View Controller-->
         <scene sceneID="I0T-7i-VGK">
@@ -456,6 +477,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detailLeftImage" destination="Pdi-pv-SsC" id="vSo-U8-ceJ"/>
                         <outlet property="firstBackground" destination="H1s-dK-EHr" id="hrt-0S-ZDU"/>
                         <outlet property="secondBackground" destination="3iM-ea-Nbw" id="Qpk-Ye-k5V"/>
                     </connections>
