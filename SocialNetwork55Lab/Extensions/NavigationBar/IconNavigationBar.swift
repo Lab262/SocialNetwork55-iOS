@@ -21,17 +21,27 @@ class IconNavigationBar: UIView {
     @IBOutlet weak var leftOfRightButton: UIButton!
     
     @IBOutlet weak var titleTextLabel: UILabel!
+    @IBOutlet weak var leftDetailImage: UIImageView!
 //    @IBAction func leftAction(_ sender: Any) {
 //        
 //        if let navController = UIApplication.topViewController()?.navigationController {
 //            navController.popViewController(animated: true)
 //        }
 //    }
+    @IBOutlet weak var detailBackView: UIView!
+    @IBOutlet weak var backLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
     
     @IBAction func rightButtonAction(_ sender: Any) {
         if let navController = UIApplication.topViewController()?.navigationController {
             navController.pushViewController(ViewUtil.viewControllerFromStoryboardWithIdentifier("Profile")!, animated: true)
         }
+    }
+    @IBAction func backAction(_ sender: Any) {
+        if let navController = UIApplication.topViewController()?.navigationController {
+            navController.popViewController(animated: true)
+        }
+
     }
     
     override init(frame: CGRect) {

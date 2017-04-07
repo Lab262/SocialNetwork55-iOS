@@ -33,7 +33,7 @@ class BenefitViewController: UIViewController {
         dummyContent()
         setUpNavigationBar()
         registerNibs()
-        tableView.estimatedRowHeight = 100.0
+        tableView.estimatedRowHeight = 150.0
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
@@ -61,6 +61,8 @@ class BenefitViewController: UIViewController {
     
     func generateDescriptionInformation(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: InformationDescriptionTableViewCell.identifier, for: indexPath)
+        
+        cell.contentView.backgroundColor = UIColor.white
         
         return cell
     }

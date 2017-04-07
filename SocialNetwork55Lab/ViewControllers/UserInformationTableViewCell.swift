@@ -36,12 +36,47 @@ class UserInformationTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        updateUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func updateUI(){
+        
+        let fontGothamBook = UIFont(name: "Gotham Book", size: professionLabel.font.pointSize)!
+        
+        
+        //Set Profession Label
+        let customProfessionFunction = NSMutableAttributedString(string:"Fundadora", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        
+        let customProfessionConector = NSMutableAttributedString(string:" da ", attributes: [NSFontAttributeName:professionLabel.font!, NSForegroundColorAttributeName: UIColor.colorWithHexString("1C1C1C")])
+        
+        let customProfessionEnterprise = NSMutableAttributedString(string:"Lab262", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        
+        customProfessionFunction.append(customProfessionConector)
+        customProfessionFunction.append(customProfessionEnterprise)
+        
+        professionLabel.attributedText = customProfessionFunction
+        
+        //Set Following and Followers Labels
+        let customFollowingNumber = NSMutableAttributedString(string:"35", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        
+        let customFollowingName = NSMutableAttributedString(string:" following", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("7B7B7B")])
+        
+        let customFollowersNumber = NSMutableAttributedString(string:"10", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        
+        let customFollowersName = NSMutableAttributedString(string:" followers", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("7B7B7B")])
+        
+        customFollowingNumber.append(customFollowingName)
+        customFollowersNumber.append(customFollowersName)
+        
+        followingLabel.attributedText = customFollowingNumber
+        followersLabel.attributedText = customFollowersNumber
+        
     }
     
 }

@@ -13,10 +13,17 @@
         <array key="ufonts.com_gotham-bold.ttf">
             <string>GothamBold</string>
         </array>
+        <array key="ufonts.com_gotham-book.ttf">
+            <string>GothamBook</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IconNavigationBar" customModule="SocialNetwork55Lab">
             <connections>
+                <outlet property="backButton" destination="0eR-If-mBz" id="w97-uv-nuL"/>
+                <outlet property="backLabel" destination="gu8-NF-CeJ" id="6G9-6d-ZBi"/>
+                <outlet property="detailBackView" destination="2tD-41-UKG" id="g2n-oo-9jT"/>
+                <outlet property="leftDetailImage" destination="ub9-tc-5T0" id="Nyf-3s-bk4"/>
                 <outlet property="leftOfRightButton" destination="2U9-cb-xQV" id="Q27-8e-8sJ"/>
                 <outlet property="rightButton" destination="1jS-Xl-YNC" id="epV-Vw-wD5"/>
                 <outlet property="rightIcon" destination="203-Af-QFl" id="Rse-ca-hDW"/>
@@ -29,7 +36,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="177"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="203-Af-QFl">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="203-Af-QFl">
                     <rect key="frame" x="320" y="20" width="35" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="35" id="rNd-Sl-czA"/>
@@ -51,7 +58,7 @@
                 </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U9-cb-xQV">
                     <rect key="frame" x="201" y="26" width="81" height="23"/>
-                    <color key="backgroundColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.039215686274509803" green="0.21176470588235294" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="2U9-cb-xQV" secondAttribute="height" multiplier="81:23" id="7Ga-KQ-kmn"/>
                         <constraint firstAttribute="width" constant="81" id="FkY-Sa-7e8"/>
@@ -79,6 +86,32 @@
                         <constraint firstAttribute="width" secondItem="ub9-tc-5T0" secondAttribute="height" multiplier="2:1" id="5Vp-hU-74q"/>
                     </constraints>
                 </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tD-41-UKG">
+                    <rect key="frame" x="25" y="25" width="24" height="4"/>
+                    <color key="backgroundColor" red="0.3529411764705882" green="0.49019607843137253" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="2CF-WB-KKr"/>
+                        <constraint firstAttribute="height" constant="4" id="h2x-u8-zUa"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voltar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu8-NF-CeJ">
+                    <rect key="frame" x="25" y="41" width="39.5" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gu8-NF-CeJ" secondAttribute="height" multiplier="2:1" id="C4R-ec-Hwr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eR-If-mBz">
+                    <rect key="frame" x="25" y="25" width="39.5" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0eR-If-mBz" secondAttribute="height" multiplier="46:35" id="Wmd-cF-f8R"/>
+                    </constraints>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="Km7-Cq-p63"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -87,16 +120,23 @@
                 <constraint firstItem="1jS-Xl-YNC" firstAttribute="centerY" secondItem="203-Af-QFl" secondAttribute="centerY" id="Rhw-74-cqZ"/>
                 <constraint firstItem="2U9-cb-xQV" firstAttribute="centerY" secondItem="1jS-Xl-YNC" secondAttribute="centerY" id="YYq-U3-TyD"/>
                 <constraint firstItem="203-Af-QFl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Yv7-Eh-giT"/>
+                <constraint firstItem="2tD-41-UKG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="bTe-Ko-wjC"/>
+                <constraint firstItem="gu8-NF-CeJ" firstAttribute="leading" secondItem="2tD-41-UKG" secondAttribute="leading" id="fRg-r4-Zf3"/>
+                <constraint firstItem="gu8-NF-CeJ" firstAttribute="top" secondItem="2tD-41-UKG" secondAttribute="bottom" constant="12" id="fti-Eb-dHd"/>
                 <constraint firstItem="ub9-tc-5T0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="fuo-C2-nKB"/>
+                <constraint firstItem="0eR-If-mBz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="h9u-b5-oos"/>
                 <constraint firstItem="1jS-Xl-YNC" firstAttribute="centerX" secondItem="203-Af-QFl" secondAttribute="centerX" constant="-0.5" id="hUO-hS-Lg0"/>
                 <constraint firstAttribute="trailing" secondItem="Ewd-Hw-MgU" secondAttribute="trailing" constant="20" id="lTW-kp-siH"/>
                 <constraint firstAttribute="bottom" secondItem="Ewd-Hw-MgU" secondAttribute="bottom" constant="30" id="oqU-H3-ioF"/>
                 <constraint firstItem="1jS-Xl-YNC" firstAttribute="leading" secondItem="2U9-cb-xQV" secondAttribute="trailing" constant="30" id="uHI-nz-GNH"/>
+                <constraint firstItem="0eR-If-mBz" firstAttribute="width" secondItem="gu8-NF-CeJ" secondAttribute="width" id="ydt-1s-UPa"/>
                 <constraint firstAttribute="trailing" secondItem="203-Af-QFl" secondAttribute="trailing" constant="20" id="z09-YD-stq"/>
+                <constraint firstItem="0eR-If-mBz" firstAttribute="leading" secondItem="2tD-41-UKG" secondAttribute="leading" id="z0G-bu-qDc"/>
                 <constraint firstItem="ub9-tc-5T0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="z2B-x8-Kam"/>
+                <constraint firstItem="2tD-41-UKG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="zCK-mz-xle"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="128.5" y="259"/>
+            <point key="canvasLocation" x="128.5" y="258.5"/>
         </view>
     </objects>
     <resources>

@@ -41,6 +41,10 @@ class ProfileViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         navigationBarView.leftOfRightButton.addTarget(self, action: #selector(editProfile(_:)), for: .touchUpInside)
+        navigationBarView.leftDetailImage.isHidden = true
+        navigationBarView.detailBackView.isHidden = false
+        navigationBarView.backLabel.isHidden = false
+        navigationBarView.backButton.isHidden = false
 
         // Do any additional setup after loading the view.
     }
@@ -160,9 +164,9 @@ extension ProfileViewController: UITableViewDelegate {
         
         switch section {
         case 0: return nil
-        case 1: headerTitle = "Sobre"
-        case 2: headerTitle = "Onde trabalho"
-        case 3: headerTitle = "Atividades recentes"
+        case 1: headerTitle = "SOBRE"
+        case 2: headerTitle = "ONDE TRABALHO"
+        case 3: headerTitle = "ATIVIDADES RECENTES"
         default: headerTitle = ""
         }
         
