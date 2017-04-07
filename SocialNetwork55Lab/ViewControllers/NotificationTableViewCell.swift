@@ -21,6 +21,8 @@ class NotificationTableViewCell: UITableViewCell {
     
     @IBOutlet weak var constraintSpaceRightLabel: NSLayoutConstraint!
     
+    var isFollow = false
+    
     static var identifier: String {
         return "notificationCell"
     }
@@ -95,4 +97,17 @@ class NotificationTableViewCell: UITableViewCell {
         }
     }
     
+    @IBAction func follow(_ sender: Any) {
+        if !isFollow {
+            isFollow = true
+            actionFollowButton.bouncingAnimation(duration:0.25)
+            actionFollowButton.backgroundColor = UIColor.colorWithHexString("E1495F")
+            actionFollowButton.setTitle("Seguindo", for: UIControlState.normal)
+        }else{
+            isFollow = false
+            actionFollowButton.bouncingAnimation(duration:0.25)
+            actionFollowButton.backgroundColor = UIColor.colorWithHexString("0A365C")
+            actionFollowButton.setTitle("Seguir", for: UIControlState.normal)
+        }
+    }
 }
