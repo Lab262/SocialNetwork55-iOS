@@ -94,7 +94,7 @@
                         </subviews>
                     </stackView>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.0" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="YDz-OR-gw8" firstAttribute="top" secondItem="taM-Jj-9yM" secondAttribute="bottom" constant="18" id="8LO-74-CdE"/>
                     <constraint firstItem="HgB-V4-POE" firstAttribute="top" secondItem="8mI-FJ-5pd" secondAttribute="bottom" constant="17" id="B70-n5-LgY"/>
@@ -113,7 +113,7 @@
                     <constraint firstItem="8mI-FJ-5pd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="u37-xq-SoN"/>
                 </constraints>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.0" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="facebookButton" destination="2wU-qk-IRN" id="1wJ-NF-LXl"/>
                 <outlet property="followersLabel" destination="Wb7-Lk-evF" id="Bwo-zv-1HF"/>
