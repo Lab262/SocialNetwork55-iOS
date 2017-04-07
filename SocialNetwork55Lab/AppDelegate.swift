@@ -36,15 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialViewController: UIViewController? = nil
         
         //MARK-DOWN: Comment for initialize in Main
-        
+//        
 //        if let _ = PFUser.current() {
 //            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
 //        }else {
 //            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Authentication", identifier: "")
 //        }
-        
-        initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
-        
+//
+       initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
+//        
         return initialViewController
     }
 
