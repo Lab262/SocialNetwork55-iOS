@@ -17,6 +17,7 @@ class AuthenticationMainViewController: UIViewController {
         UIView.animate(withDuration: 0.5, animations: {
             self.view.alpha = 1
         })
+        UIApplication.shared.statusBarStyle = .lightContent
     }
 
     override func viewDidLoad() {

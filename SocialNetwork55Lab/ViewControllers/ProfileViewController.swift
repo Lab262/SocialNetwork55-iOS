@@ -14,7 +14,8 @@ class ProfileViewController: UIViewController {
     
     var backgroundImageHeight: CGFloat = 208
     let tableViewTopInset: CGFloat = 131.0
-    let constantOffsetTableView: CGFloat = 70.0
+    let constantOffsetBackLabelTableView: CGFloat = 70.0
+    let constantOffsetStatusBarTableView: CGFloat = 120.0
     
     @IBOutlet weak var navigationBarView: IconNavigationBar!
     @IBOutlet weak var backgroundImageHeightConstraint: NSLayoutConstraint!
@@ -31,6 +32,7 @@ class ProfileViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationBarView.leftOfRightButton.isHidden = false
         navigationBarView.rightButton.isEnabled = false
+        UIApplication.shared.statusBarStyle = .lightContent
     }
     
     override func viewDidLoad() {
@@ -57,6 +59,7 @@ class ProfileViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         navigationBarView.leftOfRightButton.isHidden = true
         navigationBarView.rightButton.isEnabled = true
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
     }
     
     func generateUserInformations(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -217,16 +220,24 @@ extension ProfileViewController: UIScrollViewDelegate {
             print("yofset \(yOffset)")
             cell?.backgroundColor = cell!.backgroundColor?.withAlphaComponent(alpha)
             
-            //Change color back-label based on position
-            if yOffset > constantOffsetTableView {
+            //Change color back label based on position
+            if yOffset > constantOffsetBackLabelTableView {
                 navigationBarView.backLabel.textColor = UIColor.babyBlueLabelColor()
             }else{
                 navigationBarView.backLabel.textColor = UIColor.white
             }
             
+            //Change color status bar based on position
+            if yOffset > constantOffsetStatusBarTableView {
+                UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+            }else{
+                UIApplication.shared.statusBarStyle = .lightContent
+            }
+            
         } else {
             cell?.backgroundColor = cell!.backgroundColor?.withAlphaComponent(0.0)
             navigationBarView.backLabel.textColor = UIColor.white
+            UIApplication.shared.statusBarStyle = .lightContent
         }
     }
 

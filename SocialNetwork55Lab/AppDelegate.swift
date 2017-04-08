@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Authentication", identifier: "")
 //        }
 //
-       initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Main", identifier: "")
+       initialViewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Authentication", identifier: "")
 //        
         return initialViewController
     }

@@ -21,6 +21,12 @@ class LoginViewController: UIViewController {
         UIView.animate(withDuration: 0.5, animations: {
             self.view.alpha = 1
         })
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
     }
     
     
