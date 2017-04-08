@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2pG-Hq-2Fg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2pG-Hq-2Fg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,10 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAp-Rt-JmJ" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAp-Rt-JmJ" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="SHP-EQ-f42"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightBarIconImage" value="profile_default"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleBarLabel" value="Minha Conta +55lab.co"/>
@@ -32,6 +34,11 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EAp-Rt-JmJ" firstAttribute="leading" secondItem="6Gz-Sx-fGd" secondAttribute="leading" id="7B8-IC-W9E"/>
+                            <constraint firstItem="EAp-Rt-JmJ" firstAttribute="top" secondItem="6Gz-Sx-fGd" secondAttribute="top" id="GhO-0s-y9l"/>
+                            <constraint firstAttribute="trailing" secondItem="EAp-Rt-JmJ" secondAttribute="trailing" id="bbX-uG-Aru"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Minha Conta" id="6sI-HK-fgb"/>
                     <nil key="simulatedTopBarMetrics"/>
