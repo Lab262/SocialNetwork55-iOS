@@ -43,9 +43,9 @@ class AuthenticationMainViewController: UIViewController {
     
     func setupCustomTitleLabel(){
         
-        let customTitleWhite = NSMutableAttributedString(string: "Seja Bem vindo a nossa +55lab.", attributes: [NSFontAttributeName:titleLabel.font, NSForegroundColorAttributeName: UIColor.colorWithHexString("FFFFFF")])
+        let customTitleWhite = NSMutableAttributedString(string: "Seja Bem vindo a nossa +55lab.", attributes: [NSFontAttributeName:titleLabel.font, NSForegroundColorAttributeName: UIColor.white])
         
-        let customTitleBlue = NSMutableAttributedString(string: " Community", attributes: [NSFontAttributeName:titleLabel.font, NSForegroundColorAttributeName: UIColor.colorWithHexString("87A7DE")])
+        let customTitleBlue = NSMutableAttributedString(string: " Community", attributes: [NSFontAttributeName:titleLabel.font, NSForegroundColorAttributeName: UIColor.lightBlueLabelColor()])
         
         customTitleWhite.append(customTitleBlue)
         

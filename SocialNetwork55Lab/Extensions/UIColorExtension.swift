@@ -63,18 +63,34 @@ extension UIColor {
     //Pragma MARK : - Constants
 
     
-    class func readingPurpleColor()->UIColor{
-        return colorWithHexString("632686")
+    class func greyLabelColor()->UIColor{
+        return colorWithHexString("1C1C1C")
     }
     
-    class func readingModeNightBackground () -> UIColor {
-        return colorWithHexString("190126")
+    class func blueLabelColor()->UIColor{
+        return colorWithHexString("0A365C")
     }
-   
-    class func readingBlueColor()->UIColor{
-        return colorWithHexString("1BDBAD")
-        
+    
+    class func backgroundGreyColor()->UIColor{
+        return colorWithHexString("7B7B7B")
     }
+    
+    class func lightBlueLabelColor()->UIColor{
+        return colorWithHexString("87A7DE")
+    }
+    
+    class func babyBlueLabelColor()->UIColor{
+        return colorWithHexString("5A7DBB")
+    }
+    
+    class func blackLabelColor()->UIColor{
+        return colorWithHexString("252525")
+    }
+    
+    class func pinkLabelColor()->UIColor{
+        return colorWithHexString("E1495F")
+    }
+    
 
     class var backgroundColor: UIColor {
         get {

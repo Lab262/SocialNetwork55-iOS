@@ -51,11 +51,11 @@ class UserInformationTableViewCell: UITableViewCell {
         
         
         //Set Profession Label
-        let customProfessionFunction = NSMutableAttributedString(string:"Fundadora", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        let customProfessionFunction = NSMutableAttributedString(string:"Fundadora", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.blueLabelColor()])
         
-        let customProfessionConector = NSMutableAttributedString(string:" da ", attributes: [NSFontAttributeName:professionLabel.font!, NSForegroundColorAttributeName: UIColor.colorWithHexString("1C1C1C")])
+        let customProfessionConector = NSMutableAttributedString(string:" da ", attributes: [NSFontAttributeName:professionLabel.font!, NSForegroundColorAttributeName: UIColor.greyLabelColor()])
         
-        let customProfessionEnterprise = NSMutableAttributedString(string:"Lab262", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        let customProfessionEnterprise = NSMutableAttributedString(string:"Lab262", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.blueLabelColor()])
         
         customProfessionFunction.append(customProfessionConector)
         customProfessionFunction.append(customProfessionEnterprise)
@@ -63,13 +63,13 @@ class UserInformationTableViewCell: UITableViewCell {
         professionLabel.attributedText = customProfessionFunction
         
         //Set Following and Followers Labels
-        let customFollowingNumber = NSMutableAttributedString(string:"35", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        let customFollowingNumber = NSMutableAttributedString(string:"35", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.blueLabelColor()])
         
-        let customFollowingName = NSMutableAttributedString(string:" following", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("7B7B7B")])
+        let customFollowingName = NSMutableAttributedString(string:" following", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.backgroundGreyColor()])
         
-        let customFollowersNumber = NSMutableAttributedString(string:"10", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        let customFollowersNumber = NSMutableAttributedString(string:"10", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.blueLabelColor()])
         
-        let customFollowersName = NSMutableAttributedString(string:" followers", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.colorWithHexString("7B7B7B")])
+        let customFollowersName = NSMutableAttributedString(string:" followers", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.backgroundGreyColor()])
         
         customFollowingNumber.append(customFollowingName)
         customFollowersNumber.append(customFollowersName)

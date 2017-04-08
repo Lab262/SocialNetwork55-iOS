@@ -59,11 +59,11 @@ class NotificationTableViewCell: UITableViewCell {
         let fontGothamBook = UIFont(name: "Gotham Book", size: textNotificationLabel.font.pointSize)
         
         
-        let customProfileName = NSMutableAttributedString(string: "\(notificationModel!.profileName!) ", attributes: [NSFontAttributeName:fontGothamBold!, NSForegroundColorAttributeName: UIColor.colorWithHexString("0A365C")])
+        let customProfileName = NSMutableAttributedString(string: "\(notificationModel!.profileName!) ", attributes: [NSFontAttributeName:fontGothamBold!, NSForegroundColorAttributeName: UIColor.blueLabelColor()])
         
-        let customTextNotification = NSMutableAttributedString(string: notificationModel!.textNotification!, attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.colorWithHexString("252525")])
+        let customTextNotification = NSMutableAttributedString(string: notificationModel!.textNotification!, attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.blackLabelColor()])
         
-        let customHourNotification = NSMutableAttributedString(string: " \(notificationModel!.hourNotification!)", attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.colorWithHexString("7B7B7B")])
+        let customHourNotification = NSMutableAttributedString(string: " \(notificationModel!.hourNotification!)", attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.backgroundGreyColor()])
         
         customProfileName.append(customTextNotification)
         customProfileName.append(customHourNotification)
@@ -101,12 +101,12 @@ class NotificationTableViewCell: UITableViewCell {
         if !isFollow {
             isFollow = true
             actionFollowButton.bouncingAnimation(duration:0.25)
-            actionFollowButton.backgroundColor = UIColor.colorWithHexString("E1495F")
+            actionFollowButton.backgroundColor = UIColor.pinkLabelColor()
             actionFollowButton.setTitle("Seguindo", for: UIControlState.normal)
         }else{
             isFollow = false
             actionFollowButton.bouncingAnimation(duration:0.25)
-            actionFollowButton.backgroundColor = UIColor.colorWithHexString("0A365C")
+            actionFollowButton.backgroundColor = UIColor.blueLabelColor()
             actionFollowButton.setTitle("Seguir", for: UIControlState.normal)
         }
     }

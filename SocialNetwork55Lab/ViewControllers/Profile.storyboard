@@ -22,10 +22,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundDefaultProfile" translatesAutoresizingMaskIntoConstraints="NO" id="Jdx-G2-sJc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="208" id="8Do-Rm-cki"/>
+                                    <constraint firstAttribute="height" constant="223" id="8Do-Rm-cki"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="208" id="fbz-Qw-ofc"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="132" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="8ID-O1-ST0">
@@ -36,10 +37,12 @@
                                     <outlet property="delegate" destination="zet-lI-D0W" id="zMe-Xf-KnJ"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUT-q6-btm" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUT-q6-btm" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="AZn-Lb-JT9"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightBarIconImage" value="settings-icon"/>
                                 </userDefinedRuntimeAttributes>
@@ -47,13 +50,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8ID-O1-ST0" secondAttribute="trailing" id="0mU-zk-bmr"/>
+                            <constraint firstItem="8ID-O1-ST0" firstAttribute="top" secondItem="oHB-hE-PoK" secondAttribute="top" id="4r4-qT-XeP"/>
+                            <constraint firstItem="zUT-q6-btm" firstAttribute="top" secondItem="oHB-hE-PoK" secondAttribute="top" id="4rp-lz-wFu"/>
                             <constraint firstItem="Ipt-gh-ElG" firstAttribute="top" secondItem="8ID-O1-ST0" secondAttribute="bottom" id="9vN-2m-1mt"/>
                             <constraint firstAttribute="trailing" secondItem="Jdx-G2-sJc" secondAttribute="trailing" id="BgI-Bj-ftA"/>
+                            <constraint firstItem="Ipt-gh-ElG" firstAttribute="top" secondItem="8ID-O1-ST0" secondAttribute="bottom" id="HaF-bg-lIx"/>
                             <constraint firstItem="Jdx-G2-sJc" firstAttribute="leading" secondItem="oHB-hE-PoK" secondAttribute="leading" id="Lsk-pD-yin"/>
+                            <constraint firstItem="8ID-O1-ST0" firstAttribute="leading" secondItem="oHB-hE-PoK" secondAttribute="leading" id="P1y-YB-h3R"/>
                             <constraint firstItem="8ID-O1-ST0" firstAttribute="leading" secondItem="oHB-hE-PoK" secondAttribute="leading" id="RqO-qr-q44"/>
                             <constraint firstItem="8ID-O1-ST0" firstAttribute="top" secondItem="oHB-hE-PoK" secondAttribute="top" id="XhL-3z-U5K"/>
+                            <constraint firstItem="Jdx-G2-sJc" firstAttribute="leading" secondItem="oHB-hE-PoK" secondAttribute="leading" id="YyQ-fP-JcM"/>
+                            <constraint firstAttribute="trailing" secondItem="Jdx-G2-sJc" secondAttribute="trailing" id="ab8-3u-0FM"/>
+                            <constraint firstItem="Jdx-G2-sJc" firstAttribute="top" secondItem="oHB-hE-PoK" secondAttribute="top" id="c8Y-b6-vp7"/>
+                            <constraint firstAttribute="trailing" secondItem="zUT-q6-btm" secondAttribute="trailing" id="hed-jS-K0f"/>
                             <constraint firstItem="Jdx-G2-sJc" firstAttribute="top" secondItem="Tz4-9q-maL" secondAttribute="bottom" constant="-20" id="pmB-vZ-wL9"/>
                             <constraint firstAttribute="trailing" secondItem="8ID-O1-ST0" secondAttribute="trailing" id="vdM-N6-jJz"/>
+                            <constraint firstItem="zUT-q6-btm" firstAttribute="leading" secondItem="oHB-hE-PoK" secondAttribute="leading" id="zVr-ju-Wkl"/>
                         </constraints>
                     </view>
                     <connections>

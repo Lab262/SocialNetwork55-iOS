@@ -13,7 +13,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var backgroundImageHeight: CGFloat = 208
-    let tableViewTopInset: CGFloat = 101.0
+    let tableViewTopInset: CGFloat = 131.0
+    let constantOffsetTableView: CGFloat = 70.0
     
     @IBOutlet weak var navigationBarView: IconNavigationBar!
     @IBOutlet weak var backgroundImageHeightConstraint: NSLayoutConstraint!
@@ -171,6 +172,7 @@ extension ProfileViewController: UITableViewDelegate {
         }
         
         header.titleHeaderLabel.text = headerTitle
+        header.titleHeaderLabel.font = UIFont(name: header.titleHeaderLabel.font.fontName, size: self.view.getConstantWidth()*header.sizeFontTitleHeaderLabel)
         
         return header
     }
@@ -215,8 +217,16 @@ extension ProfileViewController: UIScrollViewDelegate {
             print("yofset \(yOffset)")
             cell?.backgroundColor = cell!.backgroundColor?.withAlphaComponent(alpha)
             
+            //Change color back-label based on position
+            if yOffset > constantOffsetTableView {
+                navigationBarView.backLabel.textColor = UIColor.babyBlueLabelColor()
+            }else{
+                navigationBarView.backLabel.textColor = UIColor.white
+            }
+            
         } else {
             cell?.backgroundColor = cell!.backgroundColor?.withAlphaComponent(0.0)
+            navigationBarView.backLabel.textColor = UIColor.white
         }
     }
 
@@ -235,7 +245,11 @@ extension ProfileViewController: UIScrollViewDelegate {
         
         if yOffset > (backgroundImageHeight - navbarAlphaThreshold) {
             
-            let alpha = (yOffset - backgroundImageHeight + navbarAlphaThreshold)/navbarAlphaThreshold
+            var alpha = (yOffset - backgroundImageHeight + navbarAlphaThreshold)/navbarAlphaThreshold
+            
+            if alpha>0.9{
+                alpha = 0.9
+            }
             
             navigationBarView.view.backgroundColor = navigationBarView.view.backgroundColor?.withAlphaComponent(alpha)
         } else {

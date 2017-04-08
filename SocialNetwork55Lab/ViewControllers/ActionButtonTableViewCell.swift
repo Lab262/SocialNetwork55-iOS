@@ -38,7 +38,7 @@ class ActionButtonTableViewCell: UITableViewCell {
         //actionButton.backgroundColor = UIColor.white
         actionButton.setTitle("Veja mais", for: .normal)
         actionButton.titleLabel?.font = UIFont(name: "Aleo-Regular", size: 14)
-        actionButton.titleLabel?.textColor = UIColor.colorWithHexString("484848")
+        actionButton.titleLabel?.textColor = UIColor.black
         
         leadingConstraint.isActive = false
         centerConstraint.isActive = true
