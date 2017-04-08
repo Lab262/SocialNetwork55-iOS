@@ -11,10 +11,19 @@ import UIKit
 class BenefitViewController: UIViewController {
     
     var allBenefits = [Benefit]()
+    let  tableViewTopInset: CGFloat = 145
+    
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navigationBarView: IconNavigationBar!
 
+    @IBOutlet weak var allBenefitsButton: UIButton!
+    
+    @IBOutlet weak var healthBenefitsButton: UIButton!
+    
+    @IBOutlet weak var studyBenefitsButton: UIButton!
+    
+    
     func dummyContent() {
         for _ in 0...4 {
             allBenefits.append(Benefit(bannerImage: nil, bannerTitle: "BE FREE", bannerSubTitle: "Seguro de vida", title: "Desconto de 30% no Seguros Bradesco", descriptionBenefit: "As we grow, we do so in fits and starts, lurching forward then back, sometimes looking more like clowns than seekers. Winston Churchill wrote: “Man will occasionally stumble over the truth, but most of…"))
@@ -33,13 +42,35 @@ class BenefitViewController: UIViewController {
         dummyContent()
         setUpNavigationBar()
         registerNibs()
+        setupTableView()
+        setupNavigationBarView()
+        
+    }
+    
+    func setupTableView() {
+        tableView.contentInset = UIEdgeInsetsMake(tableViewTopInset, 0, 0, 0)
         tableView.estimatedRowHeight = 150.0
         tableView.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    func setupNavigationBarView() {
+        navigationBarView.rightIcon.isHidden = true
+        navigationBarView.rightButton.isHidden = true
     }
     
     func setUpNavigationBar() {
         navigationController?.navigationBar.isHidden = true
     }
+    
+    @IBAction func filterAllBenefitsAction(_ sender: Any) {
+    }
+    
+    @IBAction func filterHealthBenefitsAction(_ sender: Any) {
+    }
+    
+    @IBAction func filterStudyBenefitsAction(_ sender: Any) {
+    }
+    
     
     func generateBenefitHeader(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
         

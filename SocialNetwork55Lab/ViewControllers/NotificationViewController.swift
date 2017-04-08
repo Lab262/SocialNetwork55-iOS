@@ -14,6 +14,8 @@ class NotificationViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navigationBarView: IconNavigationBar!
+    let tableViewBottomInset: CGFloat = 10
+    let tableViewTopInset: CGFloat = 95
     
     func dummyContent() {
         for _ in 0...3 {
@@ -31,13 +33,28 @@ class NotificationViewController: UIViewController {
         dummyContent()
         setUpNavigationBar()
         registerNibs()
+        setupTableView()
+        setupNavigationBarView()
+        
+    }
+    
+    func setupTableView() {
+        tableView.contentInset = UIEdgeInsetsMake(tableViewTopInset, 0, tableViewBottomInset, 0)
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
+    func setupNavigationBarView() {
+        navigationBarView.rightIcon.isHidden = true
+        navigationBarView.rightButton.isHidden = true
+    }
+    
     func setUpNavigationBar() {
         navigationController?.navigationBar.isHidden = true
+        
     }
+    
+    
     
     func generateNotification (_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
         
