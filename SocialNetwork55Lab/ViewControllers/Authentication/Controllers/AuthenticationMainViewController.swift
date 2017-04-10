@@ -11,6 +11,11 @@ import UIKit
 class AuthenticationMainViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var firstAccessButton: UIButton!
+    
+    let sizeFontButton: CGFloat = 16.0
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -56,6 +61,10 @@ class AuthenticationMainViewController: UIViewController {
         customTitleWhite.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, customTitleWhite.length))
 
         titleLabel.attributedText = customTitleWhite
+        
+        loginButton.titleLabel?.font = UIFont(name: (loginButton.titleLabel?.font.fontName)!, size: self.view.getConstantWidth()*sizeFontButton)
+        
+        firstAccessButton.titleLabel?.font = UIFont(name: (firstAccessButton.titleLabel?.font.fontName)!, size: self.view.getConstantWidth()*sizeFontButton)
         
         self.loadViewIfNeeded()
     }

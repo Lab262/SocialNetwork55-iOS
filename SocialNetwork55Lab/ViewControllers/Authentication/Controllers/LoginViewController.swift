@@ -48,6 +48,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgetPass(_ sender: Any) {
+ 
        showAlertControllerWithField()
     }
     
