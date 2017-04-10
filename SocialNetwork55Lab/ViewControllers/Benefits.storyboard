@@ -153,7 +153,7 @@
                     <tabBarItem key="tabBarItem" title="Benefícios" image="benefit-deselect-icon" selectedImage="benefit-select-icon" id="W3V-hm-GLL"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UsE-dM-zwB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UsE-dM-zwB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
