@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5EE56B7E45C08D9BBF9B9AED /* Pods_SocialNetwork55LabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */; };
+		60144CC71E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60144CC51E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift */; };
+		60144CC81E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60144CC61E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib */; };
 		60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */; };
 		60237F621E773CE300DBA933 /* BenefitHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60237F601E773CE300DBA933 /* BenefitHeaderTableViewCell.xib */; };
 		60237F991E77431C00DBA933 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 60237F981E77431C00DBA933 /* BebasNeue.otf */; };
@@ -113,6 +115,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60144CC51E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitDetailFormTableViewCell.swift; sourceTree = "<group>"; };
+		60144CC61E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitDetailFormTableViewCell.xib; sourceTree = "<group>"; };
 		60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		60237F601E773CE300DBA933 /* BenefitHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		60237F981E77431C00DBA933 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 				60237F9D1E7757BD00DBA933 /* BenefitTitleTableViewCell.xib */,
 				60237FA01E77802200DBA933 /* ActionButtonTableViewCell.swift */,
 				60237FA11E77802200DBA933 /* ActionButtonTableViewCell.xib */,
+				60144CC51E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift */,
+				60144CC61E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -842,6 +848,7 @@
 				A44E0C681DD092650028F06C /* Montserrat-Bold.otf in Resources */,
 				D4C65E141E760CFD00834122 /* Account.storyboard in Resources */,
 				D4C65E3D1E764B8700834122 /* aleo-regular-webfont.ttf in Resources */,
+				60144CC81E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib in Resources */,
 				A44E0C6B1DD092650028F06C /* Montserrat-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -989,6 +996,7 @@
 				D42E1ADE1E6F1921004EDBD1 /* AKMaskFieldStatus.swift in Sources */,
 				D4C65E391E764AC000834122 /* InformationDescriptionTableViewCell.swift in Sources */,
 				60237FA21E77802200DBA933 /* ActionButtonTableViewCell.swift in Sources */,
+				60144CC71E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift in Sources */,
 				D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */,
 				60237FA51E778B2300DBA933 /* Benefit.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,

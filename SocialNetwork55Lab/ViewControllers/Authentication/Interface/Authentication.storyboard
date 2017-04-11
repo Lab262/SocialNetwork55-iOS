@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn5-eN-bFz">
-                                <rect key="frame" x="20" y="415" width="155" height="45"/>
+                                <rect key="frame" x="20" y="415.5" width="155" height="45"/>
                                 <color key="backgroundColor" red="0.88235294117647056" green="0.28627450980392155" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="1SF-iH-fHO"/>
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp9-St-yYK">
-                                <rect key="frame" x="32.5" y="300.5" width="291" height="49.5"/>
+                                <rect key="frame" x="32.5" y="301" width="291" height="49.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Em nossa Rede você ainda poderá explorar todos os benefícios de participar da Network +55Lab.co.">
                                         <attributes>
@@ -74,7 +74,7 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXm-h2-CWE">
-                                <rect key="frame" x="38" y="163.5" width="291" height="107"/>
+                                <rect key="frame" x="38" y="164" width="291" height="107"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Seja Bem vindo a nossa +55lab.  Community">
                                         <attributes>
@@ -87,7 +87,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aON-W5-U2Z">
-                                <rect key="frame" x="200" y="415" width="155" height="45"/>
+                                <rect key="frame" x="200" y="415.5" width="155" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GothamBold" family="Gotham Bold" pointSize="16"/>
                                 <color key="tintColor" red="0.88235294119999996" green="0.28627450980000002" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -551,7 +551,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="gpk-uH-Zpj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9jI-av-U0T">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9jI-av-U0T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
