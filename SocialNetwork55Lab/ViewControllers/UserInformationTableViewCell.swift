@@ -47,7 +47,7 @@ class UserInformationTableViewCell: UITableViewCell {
     
     func updateUI(){
         
-        let fontGothamBook = UIFont(name: "Gotham Book", size: professionLabel.font.pointSize)!
+        let fontGothamBook = UIFont.gothamBook(size: professionLabel.font.pointSize)
         
         
         //Set Profession Label

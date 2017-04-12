@@ -99,7 +99,7 @@ extension UIView {
         }
     }
     
-    func getConstantWidth() -> CGFloat{
+    func getConstantHeight() -> CGFloat{
         return UIScreen.main.bounds.size.height/667
     }
 }

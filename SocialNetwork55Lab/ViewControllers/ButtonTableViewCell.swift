@@ -44,7 +44,7 @@ class ButtonTableViewCell: UITableViewCell {
         self.contentView.backgroundColor = UIColor.backgroundLightGreyColor()
         actionButton.backgroundColor = UIColor.clear
         actionButton.setTitle("Veja mais", for: .normal)
-        actionButton.titleLabel?.font = UIFont(name: "Aleo-Regular", size: 14)
+        actionButton.titleLabel?.font = UIFont.aleoRegular(size: 14)
         actionButton.setTitleColor(UIColor.pinkLabelColor(), for: .normal)
         actionButton.shadowColor = UIColor.clear
         actionButton.shadowRadius = 0.0

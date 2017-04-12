@@ -54,16 +54,17 @@ class NotificationTableViewCell: UITableViewCell {
     
     func updateNotificationUI(){
         
-        let fontGothamBold = UIFont(name: "Gotham Bold", size: textNotificationLabel.font.pointSize)
+        let fontGothamBold = UIFont.gothamBold(size: textNotificationLabel.font.pointSize)
         
-        let fontGothamBook = UIFont(name: "Gotham Book", size: textNotificationLabel.font.pointSize)
+        let fontGothamBook = UIFont.gothamBook(size: textNotificationLabel.font.pointSize)
         
         
-        let customProfileName = NSMutableAttributedString(string: "\(notificationModel!.profileName!) ", attributes: [NSFontAttributeName:fontGothamBold!, NSForegroundColorAttributeName: UIColor.blueLabelColor()])
         
-        let customTextNotification = NSMutableAttributedString(string: notificationModel!.textNotification!, attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.blackLabelColor()])
+        let customProfileName = NSMutableAttributedString(string: "\(notificationModel!.profileName!) ", attributes: [NSFontAttributeName:fontGothamBold, NSForegroundColorAttributeName: UIColor.blueLabelColor()])
         
-        let customHourNotification = NSMutableAttributedString(string: " \(notificationModel!.hourNotification!)", attributes: [NSFontAttributeName:fontGothamBook!, NSForegroundColorAttributeName: UIColor.backgroundGreyColor()])
+        let customTextNotification = NSMutableAttributedString(string: notificationModel!.textNotification!, attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.blackLabelColor()])
+        
+        let customHourNotification = NSMutableAttributedString(string: " \(notificationModel!.hourNotification!)", attributes: [NSFontAttributeName:fontGothamBook, NSForegroundColorAttributeName: UIColor.backgroundGreyColor()])
         
         customProfileName.append(customTextNotification)
         customProfileName.append(customHourNotification)

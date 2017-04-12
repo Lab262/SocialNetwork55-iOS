@@ -175,7 +175,7 @@ extension ProfileViewController: UITableViewDelegate {
         }
         
         header.titleHeaderLabel.text = headerTitle
-        header.titleHeaderLabel.font = UIFont(name: header.titleHeaderLabel.font.fontName, size: self.view.getConstantWidth()*header.sizeFontTitleHeaderLabel)
+        header.titleHeaderLabel.setDynamicFont()
         
         return header
     }

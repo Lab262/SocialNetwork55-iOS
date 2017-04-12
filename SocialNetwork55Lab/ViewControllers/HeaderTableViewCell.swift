@@ -13,8 +13,6 @@ class HeaderTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleHeaderLabel: UILabel!
     
-    let sizeFontTitleHeaderLabel:CGFloat = 20.0
-    
     
     static var identifier: String {
         return "headerCell"

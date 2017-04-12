@@ -45,7 +45,7 @@ class BenefitHeaderTableViewCell: UITableViewCell {
     }
     
     func updateBenefitsUI(){
-        let fontBebasNeue = UIFont(name: "BebasNeue", size: titleLabel.font!.pointSize)!
+        let fontBebasNeue = UIFont.bebasNeue(size: titleLabel.font!.pointSize)
         
         let customTitle = NSMutableAttributedString(string: benefit!.bannerTitle!, attributes: [NSFontAttributeName:fontBebasNeue, NSForegroundColorAttributeName: titleLabel.textColor])
         titleLabel.attributedText = customTitle

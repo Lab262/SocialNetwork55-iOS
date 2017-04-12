@@ -14,9 +14,6 @@ class AuthenticationMainViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var firstAccessButton: UIButton!
     
-    let sizeFontButton: CGFloat = 16.0
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIView.animate(withDuration: 0.5, animations: {
@@ -62,9 +59,9 @@ class AuthenticationMainViewController: UIViewController {
 
         titleLabel.attributedText = customTitleWhite
         
-        loginButton.titleLabel?.font = UIFont(name: (loginButton.titleLabel?.font.fontName)!, size: self.view.getConstantWidth()*sizeFontButton)
+        loginButton.titleLabel?.setDynamicFont()
         
-        firstAccessButton.titleLabel?.font = UIFont(name: (firstAccessButton.titleLabel?.font.fontName)!, size: self.view.getConstantWidth()*sizeFontButton)
+        firstAccessButton.titleLabel?.setDynamicFont()
         
         self.loadViewIfNeeded()
     }
