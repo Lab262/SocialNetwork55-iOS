@@ -31,6 +31,8 @@ class IconNavigationBar: UIView {
     @IBOutlet weak var detailBackView: UIView!
     @IBOutlet weak var backLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
+
+    @IBOutlet weak var smallTitleLabel: UILabel!
     
     @IBAction func rightButtonAction(_ sender: Any) {
         if let navController = UIApplication.topViewController()?.navigationController {

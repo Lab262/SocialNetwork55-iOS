@@ -29,8 +29,26 @@ class BenefitDetailViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
+    func setupNavigationBar() {
+        self.navigationBar.rightIcon.isHidden = true
+        self.navigationBar.rightButton.isHidden = true
+        self.navigationBar.leftOfRightButton.isHidden = true
+        self.navigationBar.titleTextLabel.isHidden = true
+        self.navigationBar.leftDetailImage.isHidden = true
+        
+        self.navigationBar.detailBackView.isHidden = false
+        self.navigationBar.backButton.isHidden = false
+        self.navigationBar.backLabel.isHidden = false
+        self.navigationBar.smallTitleLabel.isHidden = false
+        
+        self.navigationBar.backLabel.textColor = UIColor.babyBlueLabelColor()
+        self.navigationBar.smallTitleLabel.text = "Solicitar Benefício"
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
         registerNibs()
         setupTableView()
 

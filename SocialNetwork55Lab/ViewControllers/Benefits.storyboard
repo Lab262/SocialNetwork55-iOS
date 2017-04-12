@@ -159,10 +159,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVy-7l-dhH" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="jRE-HD-e5S"/>
+                                    <constraint firstAttribute="height" constant="105" id="jRE-HD-e5S"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="rightBarIconImage" value="profile_default"/>
@@ -170,7 +170,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rij-6q-AS8" customClass="TextInputTableView" customModule="SocialNetwork55Lab" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="135" width="375" height="532"/>
+                                <rect key="frame" x="0.0" y="105" width="375" height="562"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="xVq-HW-drw" id="289-j7-zxx"/>
@@ -180,7 +180,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rij-6q-AS8" firstAttribute="top" secondItem="jVy-7l-dhH" secondAttribute="bottom" id="1UW-bt-YLq"/>
                             <constraint firstItem="jVy-7l-dhH" firstAttribute="top" secondItem="rYq-8D-92W" secondAttribute="top" id="2n8-u2-Zc6"/>
                             <constraint firstAttribute="trailing" secondItem="jVy-7l-dhH" secondAttribute="trailing" id="IEq-Za-64m"/>
                             <constraint firstItem="rij-6q-AS8" firstAttribute="leading" secondItem="rYq-8D-92W" secondAttribute="leading" id="KtT-UC-DNp"/>

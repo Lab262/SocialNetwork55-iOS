@@ -47,6 +47,7 @@ class ProfileViewController: UIViewController {
         navigationBarView.leftDetailImage.isHidden = true
         navigationBarView.detailBackView.isHidden = false
         navigationBarView.backLabel.isHidden = false
+        navigationBarView.backLabel.textColor = UIColor.white
         navigationBarView.backButton.isHidden = false
 
         // Do any additional setup after loading the view.
