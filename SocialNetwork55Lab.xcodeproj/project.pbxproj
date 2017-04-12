@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5EE56B7E45C08D9BBF9B9AED /* Pods_SocialNetwork55LabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E065D0D52171E0895AC7892E /* Pods_SocialNetwork55LabTests.framework */; };
+		6013159F1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6013159D1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.swift */; };
+		601315A01E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6013159E1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.xib */; };
+		601315A21E9D465F00F525F1 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315A11E9D465F00F525F1 /* UITextField+Padding.swift */; };
+		601315A51E9D4B7400F525F1 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315A31E9D4B7400F525F1 /* ButtonTableViewCell.swift */; };
+		601315A61E9D4B7400F525F1 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 601315A41E9D4B7400F525F1 /* ButtonTableViewCell.xib */; };
+		601315A91E9D4F2000F525F1 /* BenefitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315A81E9D4F2000F525F1 /* BenefitDetailViewController.swift */; };
+		601315AB1E9DBA4300F525F1 /* TextInputTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315AA1E9DBA4300F525F1 /* TextInputTableView.swift */; };
 		60144CC71E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60144CC51E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift */; };
 		60144CC81E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60144CC61E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib */; };
 		60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */; };
@@ -115,6 +122,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6013159D1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitDetailRequirementTableViewCell.swift; sourceTree = "<group>"; };
+		6013159E1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitDetailRequirementTableViewCell.xib; sourceTree = "<group>"; };
+		601315A11E9D465F00F525F1 /* UITextField+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		601315A31E9D4B7400F525F1 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonTableViewCell.swift; path = ../ViewControllers/ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		601315A41E9D4B7400F525F1 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonTableViewCell.xib; path = ../ViewControllers/ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		601315A81E9D4F2000F525F1 /* BenefitDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitDetailViewController.swift; sourceTree = "<group>"; };
+		601315AA1E9DBA4300F525F1 /* TextInputTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputTableView.swift; sourceTree = "<group>"; };
 		60144CC51E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitDetailFormTableViewCell.swift; sourceTree = "<group>"; };
 		60144CC61E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BenefitDetailFormTableViewCell.xib; sourceTree = "<group>"; };
 		60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -244,6 +258,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		601315A71E9D4B8900F525F1 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				601315A31E9D4B7400F525F1 /* ButtonTableViewCell.swift */,
+				601315A41E9D4B7400F525F1 /* ButtonTableViewCell.xib */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
 		60237F5C1E773B9D00DBA933 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				D4C65E181E760DCA00834122 /* BenefitViewController.swift */,
+				601315A81E9D4F2000F525F1 /* BenefitDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -271,6 +295,8 @@
 				60237FA11E77802200DBA933 /* ActionButtonTableViewCell.xib */,
 				60144CC51E9C79A300D176FF /* BenefitDetailFormTableViewCell.swift */,
 				60144CC61E9C79A300D176FF /* BenefitDetailFormTableViewCell.xib */,
+				6013159D1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.swift */,
+				6013159E1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -425,6 +451,7 @@
 		A4E462F51DCAEAC200A611C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				601315A71E9D4B8900F525F1 /* Button */,
 				A4CB02651DD261B200B01A6B /* NavigationBar */,
 				A40A25191DCB681A00DF9523 /* UIView+Animations.swift */,
 				A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */,
@@ -435,6 +462,8 @@
 				D4C65E301E76311B00834122 /* UITableViewCell+Utils.swift */,
 				60237F9A1E77491200DBA933 /* String+CharacterSpacing.swift */,
 				D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */,
+				601315A11E9D465F00F525F1 /* UITextField+Padding.swift */,
+				601315AA1E9DBA4300F525F1 /* TextInputTableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -819,8 +848,10 @@
 				60237F9F1E7757BD00DBA933 /* BenefitTitleTableViewCell.xib in Resources */,
 				D4C65E411E7671F800834122 /* ContactInformationTableViewCell.xib in Resources */,
 				A44E0C6D1DD092650028F06C /* Montserrat-SemiBold.otf in Resources */,
+				601315A61E9D4B7400F525F1 /* ButtonTableViewCell.xib in Resources */,
 				D4C65E271E761F9900834122 /* Profile.storyboard in Resources */,
 				607EAA9E1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf in Resources */,
+				601315A01E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.xib in Resources */,
 				A4CB02671DD261B200B01A6B /* IconNavigationBar.xib in Resources */,
 				607EAAA01E99245200F1DD9D /* ufonts.com_gotham-medium.ttf in Resources */,
 				A489B1F71DDA7D1100B239D5 /* Authentication.storyboard in Resources */,
@@ -1003,11 +1034,13 @@
 				D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */,
 				D42E1AD41E6F1921004EDBD1 /* AKMaskFieldBlock.swift in Sources */,
 				D4C65E1C1E760E5000834122 /* MyAccountViewController.swift in Sources */,
+				601315A51E9D4B7400F525F1 /* ButtonTableViewCell.swift in Sources */,
 				D4C65E191E760DCA00834122 /* BenefitViewController.swift in Sources */,
 				D4C65E1F1E760F1A00834122 /* NotificationViewController.swift in Sources */,
 				A4AFBB021DD272A700F270C7 /* UIApplication+Navigation.swift in Sources */,
 				60237F9E1E7757BD00DBA933 /* BenefitTitleTableViewCell.swift in Sources */,
 				D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */,
+				601315AB1E9DBA4300F525F1 /* TextInputTableView.swift in Sources */,
 				60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */,
 				D47BE12F1E782F5600261B01 /* User.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
@@ -1016,6 +1049,7 @@
 				60237FAE1E78534E00DBA933 /* NotificationModel.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
+				6013159F1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.swift in Sources */,
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
 				60237FAB1E7791D300DBA933 /* NotificationTableViewCell.swift in Sources */,
 				D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */,
@@ -1030,6 +1064,8 @@
 				D42E1AD61E6F1921004EDBD1 /* AKMaskFieldBlockCharacter.swift in Sources */,
 				D4C65E401E7671F800834122 /* ContactInformationTableViewCell.swift in Sources */,
 				A4D5DA231DDEBC7900EB9EC5 /* URLS.swift in Sources */,
+				601315A91E9D4F2000F525F1 /* BenefitDetailViewController.swift in Sources */,
+				601315A21E9D465F00F525F1 /* UITextField+Padding.swift in Sources */,
 				A4FE063B1DD0A13E00BFDC4D /* Dictionary+Indexable.swift in Sources */,
 				D47BE12C1E77837500261B01 /* ApplicationState.swift in Sources */,
 				D4C65E2E1E76301900834122 /* UserInformationTableViewCell.swift in Sources */,

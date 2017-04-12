@@ -1,28 +1,27 @@
 //
-//  BenefitDetailFormTableViewCell.swift
+//  BenefitDetailRequirementTableViewCell.swift
 //  SocialNetwork55Lab
 //
-//  Created by Luís Resende on 10/04/17.
+//  Created by Luís Resende on 11/04/17.
 //  Copyright © 2017 Lab262. All rights reserved.
 //
 
 import UIKit
 
-class BenefitDetailFormTableViewCell: UITableViewCell {
+class BenefitDetailRequirementTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var informationMask: AKMaskField!
+    @IBOutlet weak var requirementTextField: TextFieldPadding!
     
     static var identifier: String {
-        return "benefitDetailFormCell"
+        return "benefitDetailRequirementCell"
     }
     
     static var cellHeight: CGFloat {
-        return 65.0
+        return 190.0
     }
     
     static var nibName: String {
-        return "BenefitDetailFormTableViewCell"
+        return "BenefitDetailRequirementTableViewCell"
     }
 
     override func awakeFromNib() {

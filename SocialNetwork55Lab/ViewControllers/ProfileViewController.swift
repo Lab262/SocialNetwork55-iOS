@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController {
         tableView.registerNibFrom(HeaderTableViewCell.self)
         tableView.registerNibFrom(ContactInformationTableViewCell.self)
         tableView.registerNibFrom(UserWorkTableViewCell.self)
-        tableView.registerNibFrom(ActionButtonTableViewCell.self)
+        tableView.registerNibFrom(ButtonTableViewCell.self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,7 +77,7 @@ class ProfileViewController: UIViewController {
     }
     
     func generateSeeMoreButton(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonTableViewCell.identifier, for: indexPath) as! ActionButtonTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ButtonTableViewCell.identifier, for: indexPath) as! ButtonTableViewCell
         
         cell.updateForMoreButton()
         cell.layoutIfNeeded()
@@ -123,7 +123,7 @@ extension ProfileViewController: UITableViewDataSource {
         switch section {
         case 0: return 1
         case 1: return 2
-        case 2: return 3
+        case 2: return 4
         default: return 0
         }
     }

@@ -17,6 +17,15 @@ class Benefit: NSObject {
     var title: String?
     var descriptionBenefit: String?
     
+    override init() {
+        super.init()
+        self.bannerImage = nil
+        self.bannerTitle = ""
+        self.bannerSubTitle = ""
+        self.title = ""
+        self.descriptionBenefit = ""
+    }
+    
     init(bannerImage: UIImage?, bannerTitle: String?, bannerSubTitle: String?, title: String?, descriptionBenefit: String?) {
         super.init()
         self.bannerImage = bannerImage

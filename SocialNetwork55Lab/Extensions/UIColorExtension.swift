@@ -75,6 +75,10 @@ extension UIColor {
         return colorWithHexString("7B7B7B")
     }
     
+    class func backgroundLightGreyColor() -> UIColor {
+        return colorWithHexString("F7F7F7")
+    }
+    
     class func lightBlueLabelColor()->UIColor{
         return colorWithHexString("87A7DE")
     }

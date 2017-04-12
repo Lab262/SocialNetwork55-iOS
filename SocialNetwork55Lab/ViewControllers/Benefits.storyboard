@@ -146,6 +146,60 @@
             </objects>
             <point key="canvasLocation" x="1048.8" y="86.806596701649184"/>
         </scene>
+        <!--Benefit Detail View Controller-->
+        <scene sceneID="D5l-KO-pJg">
+            <objects>
+                <viewController storyboardIdentifier="benefitDetail" id="xVq-HW-drw" customClass="BenefitDetailViewController" customModule="SocialNetwork55Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q6d-x1-Q4K"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z4Q-65-2Je"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rYq-8D-92W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVy-7l-dhH" customClass="IconNavigationBar" customModule="SocialNetwork55Lab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="jRE-HD-e5S"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="rightBarIconImage" value="profile_default"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleBarLabel" value="Benefícios"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rij-6q-AS8" customClass="TextInputTableView" customModule="SocialNetwork55Lab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="135" width="375" height="532"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xVq-HW-drw" id="289-j7-zxx"/>
+                                    <outlet property="delegate" destination="xVq-HW-drw" id="vwR-vJ-LBR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rij-6q-AS8" firstAttribute="top" secondItem="jVy-7l-dhH" secondAttribute="bottom" id="1UW-bt-YLq"/>
+                            <constraint firstItem="jVy-7l-dhH" firstAttribute="top" secondItem="rYq-8D-92W" secondAttribute="top" id="2n8-u2-Zc6"/>
+                            <constraint firstAttribute="trailing" secondItem="jVy-7l-dhH" secondAttribute="trailing" id="IEq-Za-64m"/>
+                            <constraint firstItem="rij-6q-AS8" firstAttribute="leading" secondItem="rYq-8D-92W" secondAttribute="leading" id="KtT-UC-DNp"/>
+                            <constraint firstItem="Z4Q-65-2Je" firstAttribute="top" secondItem="rij-6q-AS8" secondAttribute="bottom" id="VYB-hg-bNz"/>
+                            <constraint firstItem="rij-6q-AS8" firstAttribute="top" secondItem="jVy-7l-dhH" secondAttribute="bottom" id="Vah-eF-uLi"/>
+                            <constraint firstAttribute="trailing" secondItem="rij-6q-AS8" secondAttribute="trailing" id="dJ1-yY-QUN"/>
+                            <constraint firstItem="jVy-7l-dhH" firstAttribute="leading" secondItem="rYq-8D-92W" secondAttribute="leading" id="mVl-sO-QNU"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="jVy-7l-dhH" id="4Ym-Hl-mLB"/>
+                        <outlet property="tableView" destination="rij-6q-AS8" id="G2c-72-pRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qix-nJ-srJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5999999999999" y="86.806596701649184"/>
+        </scene>
         <!--Benefícios-->
         <scene sceneID="2zm-aW-KN1">
             <objects>
@@ -153,7 +207,7 @@
                     <tabBarItem key="tabBarItem" title="Benefícios" image="benefit-deselect-icon" selectedImage="benefit-select-icon" id="W3V-hm-GLL"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UsE-dM-zwB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UsE-dM-zwB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

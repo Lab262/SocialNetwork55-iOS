@@ -99,9 +99,19 @@ class BenefitViewController: UIViewController {
     }
     
     func generateActionButton(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonTableViewCell.identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: ActionButtonTableViewCell.identifier, for: indexPath) as! ActionButtonTableViewCell
         
+        cell.actionButton.tag = indexPath.row/4
+        
+        cell.actionButton.addTarget(self, action: #selector(callBenefitDetailController(_:)), for: .touchUpInside)
+
         return cell
+    }
+    
+    func callBenefitDetailController(_ sender: UIButton) {
+        let viewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Benefits",identifier: "benefitDetail") as! BenefitDetailViewController
+            viewController.benefit = allBenefits[sender.tag]
+            self.navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

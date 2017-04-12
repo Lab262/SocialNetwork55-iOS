@@ -12,11 +12,6 @@ class ActionButtonTableViewCell: UITableViewCell {
     
     @IBOutlet weak var actionButton: UIButton!
     
-    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    
-    @IBOutlet weak var centerConstraint: NSLayoutConstraint!
-
-    
     static var identifier: String {
         return "actionButtonCell"
     }
@@ -32,16 +27,5 @@ class ActionButtonTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
-    
-    func updateForMoreButton(){
-        //actionButton.backgroundColor = UIColor.white
-        actionButton.setTitle("Veja mais", for: .normal)
-        actionButton.titleLabel?.font = UIFont(name: "Aleo-Regular", size: 14)
-        actionButton.titleLabel?.textColor = UIColor.black
-        
-        leadingConstraint.isActive = false
-        centerConstraint.isActive = true
-        self.layoutIfNeeded()
     }
 }
