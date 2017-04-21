@@ -237,6 +237,9 @@
 		A4707A5E1EA992530051E086 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4707A5D1EA992530051E086 /* AppConfig.swift */; };
 		A4707A601EA992680051E086 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4707A5F1EA992680051E086 /* AppConfig.swift */; };
 		A4707A621EA9926E0051E086 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4707A611EA9926E0051E086 /* AppConfig.swift */; };
+		A4707A671EA99EFE0051E086 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4707A661EA99EFE0051E086 /* NotificationsManager.swift */; };
+		A4707A681EA99FBF0051E086 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4707A661EA99EFE0051E086 /* NotificationsManager.swift */; };
+		A4707A691EA99FC00051E086 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4707A661EA99EFE0051E086 /* NotificationsManager.swift */; };
 		A489B1F71DDA7D1100B239D5 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A489B1F61DDA7D1100B239D5 /* Authentication.storyboard */; };
 		A489B1F91DDA7D3E00B239D5 /* AuthenticationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A489B1F81DDA7D3E00B239D5 /* AuthenticationMainViewController.swift */; };
 		A4AFBB021DD272A700F270C7 /* UIApplication+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AFBB011DD272A700F270C7 /* UIApplication+Navigation.swift */; };
@@ -372,6 +375,7 @@
 		A4707A631EA995160051E086 /* lab262.55lab.socialnetwork.dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lab262.55lab.socialnetwork.dev.entitlements; sourceTree = "<group>"; };
 		A4707A641EA9952D0051E086 /* lab262.55lab.socialnetwork.test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lab262.55lab.socialnetwork.test.entitlements; sourceTree = "<group>"; };
 		A4707A651EA9952F0051E086 /* lab262.55lab.socialnetwork.production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lab262.55lab.socialnetwork.production.entitlements; sourceTree = "<group>"; };
+		A4707A661EA99EFE0051E086 /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		A489B1F61DDA7D1100B239D5 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		A489B1F81DDA7D3E00B239D5 /* AuthenticationMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationMainViewController.swift; sourceTree = "<group>"; };
 		A4AFBB011DD272A700F270C7 /* UIApplication+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Navigation.swift"; sourceTree = "<group>"; };
@@ -814,6 +818,7 @@
 				A4E462F91DCAEAC200A611C0 /* Vendor */,
 				A4E462E71DCAEA7F00A611C0 /* ViewControllers */,
 				A4F89B291DA809B100949A35 /* AppDelegate.swift */,
+				A4707A661EA99EFE0051E086 /* NotificationsManager.swift */,
 				A4F89B321DA809B100949A35 /* LaunchScreen.storyboard */,
 			);
 			path = SocialNetwork55Lab;
@@ -1128,6 +1133,9 @@
 					A47079761EA990010051E086 = {
 						DevelopmentTeam = B865ENT4P3;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -1136,6 +1144,9 @@
 					A47079E51EA990FD0051E086 = {
 						DevelopmentTeam = B865ENT4P3;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -1147,6 +1158,9 @@
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -1627,6 +1641,7 @@
 				A47079961EA990010051E086 /* NotificationModel.swift in Sources */,
 				A47079971EA990010051E086 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				A47079981EA990010051E086 /* HeaderTableViewCell.swift in Sources */,
+				A4707A691EA99FC00051E086 /* NotificationsManager.swift in Sources */,
 				A47079991EA990010051E086 /* BenefitDetailRequirementTableViewCell.swift in Sources */,
 				A470799A1EA990010051E086 /* AKMaskFieldUtility.swift in Sources */,
 				A470799B1EA990010051E086 /* NotificationTableViewCell.swift in Sources */,
@@ -1691,6 +1706,7 @@
 				A4707A051EA990FD0051E086 /* NotificationModel.swift in Sources */,
 				A4707A061EA990FD0051E086 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				A4707A071EA990FD0051E086 /* HeaderTableViewCell.swift in Sources */,
+				A4707A671EA99EFE0051E086 /* NotificationsManager.swift in Sources */,
 				A4707A081EA990FD0051E086 /* BenefitDetailRequirementTableViewCell.swift in Sources */,
 				A4707A091EA990FD0051E086 /* AKMaskFieldUtility.swift in Sources */,
 				A4707A0A1EA990FD0051E086 /* NotificationTableViewCell.swift in Sources */,
@@ -1755,6 +1771,7 @@
 				60237FAE1E78534E00DBA933 /* NotificationModel.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
+				A4707A681EA99FBF0051E086 /* NotificationsManager.swift in Sources */,
 				6013159F1E9D3C5300F525F1 /* BenefitDetailRequirementTableViewCell.swift in Sources */,
 				D42E1AE01E6F1921004EDBD1 /* AKMaskFieldUtility.swift in Sources */,
 				60237FAB1E7791D300DBA933 /* NotificationTableViewCell.swift in Sources */,
@@ -1833,7 +1850,7 @@
 				INFOPLIST_FILE = lab262.55lab.socialnetwork.production/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.test;
+				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1853,7 +1870,7 @@
 				INFOPLIST_FILE = lab262.55lab.socialnetwork.production/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DPRODUCTION";
-				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.test;
+				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.production;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1873,7 +1890,7 @@
 				INFOPLIST_FILE = lab262.55lab.socialnetwork.dev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.test;
+				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1893,7 +1910,7 @@
 				INFOPLIST_FILE = lab262.55lab.socialnetwork.dev/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DPRODUCTION";
-				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.test;
+				PRODUCT_BUNDLE_IDENTIFIER = lab262.55lab.socialnetwork.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

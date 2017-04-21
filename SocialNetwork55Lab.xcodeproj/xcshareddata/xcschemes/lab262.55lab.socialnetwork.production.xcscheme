@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A47079E51EA990FD0051E086"
-               BuildableName = "lab262.55lab.socialnetwork.dev.app"
-               BlueprintName = "lab262.55lab.socialnetwork.dev"
+               BlueprintIdentifier = "A47079761EA990010051E086"
+               BuildableName = "lab262.55lab.socialnetwork.production.app"
+               BlueprintName = "lab262.55lab.socialnetwork.production"
                ReferencedContainer = "container:SocialNetwork55Lab.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A47079E51EA990FD0051E086"
-            BuildableName = "lab262.55lab.socialnetwork.dev.app"
-            BlueprintName = "lab262.55lab.socialnetwork.dev"
+            BlueprintIdentifier = "A47079761EA990010051E086"
+            BuildableName = "lab262.55lab.socialnetwork.production.app"
+            BlueprintName = "lab262.55lab.socialnetwork.production"
             ReferencedContainer = "container:SocialNetwork55Lab.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A47079E51EA990FD0051E086"
-            BuildableName = "lab262.55lab.socialnetwork.dev.app"
-            BlueprintName = "lab262.55lab.socialnetwork.dev"
+            BlueprintIdentifier = "A47079761EA990010051E086"
+            BuildableName = "lab262.55lab.socialnetwork.production.app"
+            BlueprintName = "lab262.55lab.socialnetwork.production"
             ReferencedContainer = "container:SocialNetwork55Lab.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A47079E51EA990FD0051E086"
-            BuildableName = "lab262.55lab.socialnetwork.dev.app"
-            BlueprintName = "lab262.55lab.socialnetwork.dev"
+            BlueprintIdentifier = "A47079761EA990010051E086"
+            BuildableName = "lab262.55lab.socialnetwork.production.app"
+            BlueprintName = "lab262.55lab.socialnetwork.production"
             ReferencedContainer = "container:SocialNetwork55Lab.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
