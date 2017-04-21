@@ -15,7 +15,7 @@ class BenefitRequest: NSObject {
         
         var benefits = [Benefit]()
         
-        ParseRequest.getAllObjectsFor(className: "Benefit") { (success, msg, objects) in
+        ParseRequest.getAllObjectsFor(className: "Benefit", includes: ["type"]) { (success, msg, objects) in
             if success {
                 for object in objects! {
                     

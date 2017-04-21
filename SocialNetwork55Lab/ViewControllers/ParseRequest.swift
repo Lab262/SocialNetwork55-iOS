@@ -85,9 +85,15 @@ class ParseRequest: NSObject {
         }
     }
     
-    static func getAllObjectsFor(className: String, completionHandler: @escaping (_ success: Bool, _ msg: String, _ object: [PFObject]?) -> Void) {
+    static func getAllObjectsFor(className: String, includes: [String]? = nil, completionHandler: @escaping (_ success: Bool, _ msg: String, _ object: [PFObject]?) -> Void) {
         
         let query = PFQuery(className: className)
+        
+        if let allIncludes = includes {
+            for include in allIncludes {
+                query.includeKey(include)
+            }
+        }
         
         query.findObjectsInBackground(block: { (objects, error) in
             if error == nil {

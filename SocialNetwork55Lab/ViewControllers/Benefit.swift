@@ -12,12 +12,16 @@ import Parse
 class Benefit: PFObject {
     
     var bannerImage: UIImage?
+    var type: String?
+    
     
 //    @NSManaged var image: PFFile?
     @NSManaged var name: String?
     @NSManaged var nameType: String?
     @NSManaged var shortDescription: String?
     @NSManaged var descriptionBenefit: String?
+    @NSManaged var typeBenefit: PFObject?
+    
     
     
     override init(){
@@ -48,6 +52,11 @@ class Benefit: PFObject {
         
         if let descriptionBenefit = object["descriptionBenefit"] as? String{
             self.descriptionBenefit = descriptionBenefit
+        }
+        
+        if let type = object["type"] as? PFObject{
+            self.typeBenefit = type
+            self.type = type["name"] as? String
         }
         
 //        if let image = object["image"] as? PFFile{
