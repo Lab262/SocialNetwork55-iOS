@@ -36,6 +36,12 @@
 		60597F581EAA585000808D4D /* BenefitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F571EAA585000808D4D /* BenefitRequest.swift */; };
 		60597F5C1EAA5F4400808D4D /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5B1EAA5F4400808D4D /* ParseRequest.swift */; };
 		60597F5F1EAA64F700808D4D /* BenefitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */; };
+		60597F601EAA6D7F00808D4D /* BenefitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */; };
+		60597F611EAA6D8000808D4D /* BenefitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */; };
+		60597F621EAA6D9000808D4D /* BenefitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F571EAA585000808D4D /* BenefitRequest.swift */; };
+		60597F631EAA6D9100808D4D /* BenefitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F571EAA585000808D4D /* BenefitRequest.swift */; };
+		60597F641EAA6DB900808D4D /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5B1EAA5F4400808D4D /* ParseRequest.swift */; };
+		60597F651EAA6DB900808D4D /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5B1EAA5F4400808D4D /* ParseRequest.swift */; };
 		607EAA9E1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607EAA9D1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf */; };
 		607EAAA01E99245200F1DD9D /* ufonts.com_gotham-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607EAA9F1E99245200F1DD9D /* ufonts.com_gotham-medium.ttf */; };
 		A40A25181DCB5C2C00DF9523 /* UIView+IBInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */; };
@@ -64,7 +70,7 @@
 		A47079831EA990010051E086 /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */; };
 		A47079841EA990010051E086 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA41E778B2300DBA933 /* Benefit.swift */; };
 		A47079851EA990010051E086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F89B291DA809B100949A35 /* AppDelegate.swift */; };
-		A47079861EA990010051E086 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
+		A47079861EA990010051E086 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A47079871EA990010051E086 /* AKMaskFieldBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1ACB1E6F1921004EDBD1 /* AKMaskFieldBlock.swift */; };
 		A47079881EA990010051E086 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E1B1E760E5000834122 /* MyAccountViewController.swift */; };
 		A47079891EA990010051E086 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315A31E9D4B7400F525F1 /* ButtonTableViewCell.swift */; };
@@ -157,7 +163,7 @@
 		A47079F21EA990FD0051E086 /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */; };
 		A47079F31EA990FD0051E086 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA41E778B2300DBA933 /* Benefit.swift */; };
 		A47079F41EA990FD0051E086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F89B291DA809B100949A35 /* AppDelegate.swift */; };
-		A47079F51EA990FD0051E086 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
+		A47079F51EA990FD0051E086 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A47079F61EA990FD0051E086 /* AKMaskFieldBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1ACB1E6F1921004EDBD1 /* AKMaskFieldBlock.swift */; };
 		A47079F71EA990FD0051E086 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E1B1E760E5000834122 /* MyAccountViewController.swift */; };
 		A47079F81EA990FD0051E086 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315A31E9D4B7400F525F1 /* ButtonTableViewCell.swift */; };
@@ -1364,7 +1370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		07D4CAFF627B2AC5BC4338AE /* [CP] Embed Pods Frameworks */ = {
@@ -1394,7 +1400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		466954ACF1BCDDB8B5EB8415 /* [CP] Copy Pods Resources */ = {
@@ -1439,7 +1445,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A47079D91EA990010051E086 /* Adding tags to comment */ = {
@@ -1512,7 +1518,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A4707A481EA990FD0051E086 /* Adding tags to comment */ = {
@@ -1629,6 +1635,7 @@
 				A470797C1EA990010051E086 /* LoginViewController.swift in Sources */,
 				A470797D1EA990010051E086 /* UILabelExtension.swift in Sources */,
 				A470797E1EA990010051E086 /* IconNavigationBar.swift in Sources */,
+				60597F601EAA6D7F00808D4D /* BenefitPresenter.swift in Sources */,
 				A470797F1EA990010051E086 /* AKMaskFieldStatus.swift in Sources */,
 				A47079801EA990010051E086 /* InformationDescriptionTableViewCell.swift in Sources */,
 				A47079811EA990010051E086 /* ActionButtonTableViewCell.swift in Sources */,
@@ -1636,7 +1643,7 @@
 				A47079831EA990010051E086 /* ViewUtil.swift in Sources */,
 				A47079841EA990010051E086 /* Benefit.swift in Sources */,
 				A47079851EA990010051E086 /* AppDelegate.swift in Sources */,
-				A47079861EA990010051E086 /* ParseRequest.swift in Sources */,
+				A47079861EA990010051E086 /* (null) in Sources */,
 				A47079871EA990010051E086 /* AKMaskFieldBlock.swift in Sources */,
 				A47079881EA990010051E086 /* MyAccountViewController.swift in Sources */,
 				A47079891EA990010051E086 /* ButtonTableViewCell.swift in Sources */,
@@ -1647,8 +1654,10 @@
 				A470798E1EA990010051E086 /* ProfileViewController.swift in Sources */,
 				A470798F1EA990010051E086 /* UIFontExtension.swift in Sources */,
 				A47079901EA990010051E086 /* TextInputTableView.swift in Sources */,
+				60597F631EAA6D9100808D4D /* BenefitRequest.swift in Sources */,
 				A47079911EA990010051E086 /* BenefitHeaderTableViewCell.swift in Sources */,
 				A47079921EA990010051E086 /* User.swift in Sources */,
+				60597F651EAA6DB900808D4D /* ParseRequest.swift in Sources */,
 				A47079931EA990010051E086 /* UIView+Animations.swift in Sources */,
 				A47079941EA990010051E086 /* DefaultsHelper.swift in Sources */,
 				A47079951EA990010051E086 /* UserWorkCollectionViewCell.swift in Sources */,
@@ -1694,6 +1703,7 @@
 				A47079EB1EA990FD0051E086 /* LoginViewController.swift in Sources */,
 				A47079EC1EA990FD0051E086 /* UILabelExtension.swift in Sources */,
 				A47079ED1EA990FD0051E086 /* IconNavigationBar.swift in Sources */,
+				60597F611EAA6D8000808D4D /* BenefitPresenter.swift in Sources */,
 				A47079EE1EA990FD0051E086 /* AKMaskFieldStatus.swift in Sources */,
 				A47079EF1EA990FD0051E086 /* InformationDescriptionTableViewCell.swift in Sources */,
 				A47079F01EA990FD0051E086 /* ActionButtonTableViewCell.swift in Sources */,
@@ -1701,7 +1711,7 @@
 				A47079F21EA990FD0051E086 /* ViewUtil.swift in Sources */,
 				A47079F31EA990FD0051E086 /* Benefit.swift in Sources */,
 				A47079F41EA990FD0051E086 /* AppDelegate.swift in Sources */,
-				A47079F51EA990FD0051E086 /* ParseRequest.swift in Sources */,
+				A47079F51EA990FD0051E086 /* (null) in Sources */,
 				A47079F61EA990FD0051E086 /* AKMaskFieldBlock.swift in Sources */,
 				A47079F71EA990FD0051E086 /* MyAccountViewController.swift in Sources */,
 				A47079F81EA990FD0051E086 /* ButtonTableViewCell.swift in Sources */,
@@ -1712,8 +1722,10 @@
 				A47079FD1EA990FD0051E086 /* ProfileViewController.swift in Sources */,
 				A47079FE1EA990FD0051E086 /* UIFontExtension.swift in Sources */,
 				A47079FF1EA990FD0051E086 /* TextInputTableView.swift in Sources */,
+				60597F621EAA6D9000808D4D /* BenefitRequest.swift in Sources */,
 				A4707A001EA990FD0051E086 /* BenefitHeaderTableViewCell.swift in Sources */,
 				A4707A011EA990FD0051E086 /* User.swift in Sources */,
+				60597F641EAA6DB900808D4D /* ParseRequest.swift in Sources */,
 				A4707A021EA990FD0051E086 /* UIView+Animations.swift in Sources */,
 				A4707A031EA990FD0051E086 /* DefaultsHelper.swift in Sources */,
 				A4707A041EA990FD0051E086 /* UserWorkCollectionViewCell.swift in Sources */,

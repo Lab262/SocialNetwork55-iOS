@@ -18,6 +18,7 @@ class BenefitRequest: NSObject {
         ParseRequest.getAllObjectsFor(className: "Benefit") { (success, msg, objects) in
             if success {
                 for object in objects! {
+                    
                     let benefit = Benefit(object: object)
                     benefits.append(benefit)
                 }

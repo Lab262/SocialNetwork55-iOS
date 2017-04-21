@@ -13,20 +13,15 @@ class Benefit: PFObject {
     
     var bannerImage: UIImage?
     
-    @NSManaged var image: PFFile?
+//    @NSManaged var image: PFFile?
     @NSManaged var name: String?
     @NSManaged var nameType: String?
     @NSManaged var shortDescription: String?
     @NSManaged var descriptionBenefit: String?
     
-    override init() {
+    
+    override init(){
         super.init()
-        self.bannerImage = nil
-        self.image = nil
-        self.name = ""
-        self.nameType = ""
-        self.shortDescription = ""
-        self.descriptionBenefit = ""
     }
     
     convenience init(object: PFObject) {
@@ -55,9 +50,9 @@ class Benefit: PFObject {
             self.descriptionBenefit = descriptionBenefit
         }
         
-        if let image = object["image"] as? PFFile{
-            self.image = image
-        }
+//        if let image = object["image"] as? PFFile{
+//            self.image = image
+//        }
         
     }
     
