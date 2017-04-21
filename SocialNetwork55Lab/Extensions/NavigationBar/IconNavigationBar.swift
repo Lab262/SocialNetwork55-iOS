@@ -56,7 +56,7 @@ class IconNavigationBar: UIView {
     }
     
     func nibInit() {
-        Bundle.main.loadNibNamed("IconNavigationBar", owner: self, options: nil)?[0]
+        _ = Bundle.main.loadNibNamed("IconNavigationBar", owner: self, options: nil)?[0]
         self.addSubview(view)
         view.frame = self.bounds
     }
