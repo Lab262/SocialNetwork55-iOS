@@ -31,6 +31,9 @@
 		60237FAB1E7791D300DBA933 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA91E7791D300DBA933 /* NotificationTableViewCell.swift */; };
 		60237FAC1E7791D300DBA933 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60237FAA1E7791D300DBA933 /* NotificationTableViewCell.xib */; };
 		60237FAE1E78534E00DBA933 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FAD1E78534E00DBA933 /* NotificationModel.swift */; };
+		60597F581EAA585000808D4D /* BenefitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F571EAA585000808D4D /* BenefitRequest.swift */; };
+		60597F5C1EAA5F4400808D4D /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5B1EAA5F4400808D4D /* ParseRequest.swift */; };
+		60597F5F1EAA64F700808D4D /* BenefitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */; };
 		607EAA9E1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607EAA9D1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf */; };
 		607EAAA01E99245200F1DD9D /* ufonts.com_gotham-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607EAA9F1E99245200F1DD9D /* ufonts.com_gotham-medium.ttf */; };
 		7954B93334819F6F989AFC94 /* Pods_SocialNetwork55Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8072D6F2EC636560C10EDBAE /* Pods_SocialNetwork55Lab.framework */; };
@@ -84,7 +87,6 @@
 		D47BE11E1E7735FF00261B01 /* UserWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */; };
 		D47BE11F1E7735FF00261B01 /* UserWorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */; };
 		D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */; };
-		D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
 		D47BE1271E7760F000261B01 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1261E7760F000261B01 /* UserRequest.swift */; };
 		D47BE12C1E77837500261B01 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE12B1E77837500261B01 /* ApplicationState.swift */; };
 		D47BE12F1E782F5600261B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE12E1E782F5600261B01 /* User.swift */; };
@@ -147,6 +149,9 @@
 		60237FA91E7791D300DBA933 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		60237FAA1E7791D300DBA933 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		60237FAD1E78534E00DBA933 /* NotificationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationModel.swift; path = SocialNetwork55Lab/ViewControllers/NotificationModel.swift; sourceTree = SOURCE_ROOT; };
+		60597F571EAA585000808D4D /* BenefitRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitRequest.swift; sourceTree = "<group>"; };
+		60597F5B1EAA5F4400808D4D /* ParseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseRequest.swift; path = SocialNetwork55Lab/ViewControllers/ParseRequest.swift; sourceTree = SOURCE_ROOT; };
+		60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitPresenter.swift; sourceTree = "<group>"; };
 		607EAA9D1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-light.ttf"; sourceTree = "<group>"; };
 		607EAA9F1E99245200F1DD9D /* ufonts.com_gotham-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-medium.ttf"; sourceTree = "<group>"; };
 		7F2D51D0C903269F104DD2E8 /* Pods-SocialNetwork55Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55Lab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55Lab/Pods-SocialNetwork55Lab.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,7 +203,6 @@
 		D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkTableViewCell.swift; sourceTree = "<group>"; };
 		D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWorkTableViewCell.xib; sourceTree = "<group>"; };
 		D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Utils.swift"; sourceTree = "<group>"; };
-		D47BE1231E7760B400261B01 /* ParseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseRequest.swift; sourceTree = "<group>"; };
 		D47BE1261E7760F000261B01 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		D47BE12B1E77837500261B01 /* ApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
 		D47BE12E1E782F5600261B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = SocialNetwork55Lab/ViewControllers/User.swift; sourceTree = SOURCE_ROOT; };
@@ -336,6 +340,22 @@
 				60237FAA1E7791D300DBA933 /* NotificationTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		60597F561EAA582800808D4D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				60597F571EAA585000808D4D /* BenefitRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		60597F5D1EAA64E200808D4D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 		A40A25291DCBD4B500DF9523 /* Controllers */ = {
@@ -496,6 +516,7 @@
 		A4E462F81DCAEAC200A611C0 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				60597F5B1EAA5F4400808D4D /* ParseRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -539,7 +560,6 @@
 		A4F89B281DA809B100949A35 /* SocialNetwork55Lab */ = {
 			isa = PBXGroup;
 			children = (
-				D47BE1221E77609100261B01 /* Request */,
 				A4E462F41DCAEAC200A611C0 /* Constants */,
 				A4E462F51DCAEAC200A611C0 /* Extensions */,
 				A4E462F61DCAEAC200A611C0 /* Persistence */,
@@ -605,14 +625,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D47BE1221E77609100261B01 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				D47BE1231E7760B400261B01 /* ParseRequest.swift */,
-			);
-			name = Request;
-			sourceTree = "<group>";
-		};
 		D47BE1251E7760D100261B01 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,6 +663,8 @@
 		D4C65E171E760D9D00834122 /* Benefits */ = {
 			isa = PBXGroup;
 			children = (
+				60597F5D1EAA64E200808D4D /* Presenter */,
+				60597F561EAA582800808D4D /* Request */,
 				60237F5E1E773C3C00DBA933 /* Cells */,
 				60237F5D1E773BA400DBA933 /* Controller */,
 				60237F5C1E773B9D00DBA933 /* Interface */,
@@ -1029,7 +1043,9 @@
 				D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */,
 				D42E1ADA1E6F1921004EDBD1 /* AKMaskFieldEvent.swift in Sources */,
 				D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */,
+				60597F581EAA585000808D4D /* BenefitRequest.swift in Sources */,
 				601315AF1E9E5E9E00F525F1 /* UILabelExtension.swift in Sources */,
+				60597F5F1EAA64F700808D4D /* BenefitPresenter.swift in Sources */,
 				A4CB02691DD261D900B01A6B /* IconNavigationBar.swift in Sources */,
 				D42E1ADE1E6F1921004EDBD1 /* AKMaskFieldStatus.swift in Sources */,
 				D4C65E391E764AC000834122 /* InformationDescriptionTableViewCell.swift in Sources */,
@@ -1038,7 +1054,6 @@
 				D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */,
 				60237FA51E778B2300DBA933 /* Benefit.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,
-				D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */,
 				D42E1AD41E6F1921004EDBD1 /* AKMaskFieldBlock.swift in Sources */,
 				D4C65E1C1E760E5000834122 /* MyAccountViewController.swift in Sources */,
 				601315A51E9D4B7400F525F1 /* ButtonTableViewCell.swift in Sources */,
@@ -1049,6 +1064,7 @@
 				D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */,
 				601315AD1E9E5A1400F525F1 /* UIFontExtension.swift in Sources */,
 				601315AB1E9DBA4300F525F1 /* TextInputTableView.swift in Sources */,
+				60597F5C1EAA5F4400808D4D /* ParseRequest.swift in Sources */,
 				60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */,
 				D47BE12F1E782F5600261B01 /* User.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
