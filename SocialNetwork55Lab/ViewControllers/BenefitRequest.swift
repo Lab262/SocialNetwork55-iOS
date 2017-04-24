@@ -29,4 +29,23 @@ class BenefitRequest: NSObject {
             }
         }
     }
+    
+    static func getAllTypesBenefits(completionHandler: @escaping (_ success: Bool, _ msg: String, [String]?) -> ()) {
+        
+        var typesBenefits = [String]()
+        
+        ParseRequest.getAllObjectsFor(className: "TypeBenefit") { (success, msg, objects) in
+            if success {
+                for object in objects! {
+                    
+                    let typeBenefit = object["name"] as! String
+                    typesBenefits.append(typeBenefit)
+                }
+                completionHandler(success, msg, typesBenefits)
+                
+            }else{
+                completionHandler(success, msg, nil)
+            }
+        }
+    }
 }

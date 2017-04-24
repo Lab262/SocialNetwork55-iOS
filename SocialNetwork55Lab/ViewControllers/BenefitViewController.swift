@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class BenefitViewController: UIViewController {
     
@@ -33,7 +34,6 @@ class BenefitViewController: UIViewController {
         registerNibs()
         setupTableView()
         setupNavigationBarView()
-        setUpCollectionPickerView()
         
     }
     
@@ -43,6 +43,7 @@ class BenefitViewController: UIViewController {
     
     func getData() {
         self.presenter.getAllBenefits()
+        self.presenter.getAllTypesBenefits()
     }
     
     func setupTableView() {
@@ -60,17 +61,12 @@ class BenefitViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
-    func setUpCollectionPickerView() {
-        collectionPickerView.collectionPickerOptions = ["Todos", "Seguros", "Academia"]
-        collectionPickerView.collectionPickerHandlers = [{}, {}, {}]
-    }
-    
     
     func generateBenefitHeader(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: BenefitHeaderTableViewCell.identifier, for: indexPath) as! BenefitHeaderTableViewCell
         
-        cell.benefit = self.presenter.getBenefits()[modelIndex]
+        cell.benefit = self.presenter.getFilteredBenefits()[modelIndex]
         
         
         return cell
@@ -79,7 +75,7 @@ class BenefitViewController: UIViewController {
     func generateBenefitTitle(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BenefitTitleTableViewCell.identifier, for: indexPath) as! BenefitTitleTableViewCell
         
-        cell.benefit = self.presenter.getBenefits()[modelIndex]
+        cell.benefit = self.presenter.getFilteredBenefits()[modelIndex]
         
         return cell
     }
@@ -88,7 +84,7 @@ class BenefitViewController: UIViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: InformationDescriptionTableViewCell.identifier, for: indexPath) as! InformationDescriptionTableViewCell
         
         cell.contentView.backgroundColor = UIColor.white
-        cell.descriptionLabel.text = self.presenter.getBenefits()[modelIndex].descriptionBenefit
+        cell.descriptionLabel.text = self.presenter.getFilteredBenefits()[modelIndex].descriptionBenefit
         
         return cell
     }
@@ -106,16 +102,16 @@ class BenefitViewController: UIViewController {
     func callBenefitDetailController(_ sender: UIButton) {
         let viewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Benefits",identifier: "benefitDetail") as! BenefitDetailViewController
         
-            viewController.benefit = self.presenter.getBenefits()[sender.tag]
+            viewController.benefit = self.presenter.getFilteredBenefits()[sender.tag]
             self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
+
 }
 
 extension BenefitViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.presenter.getBenefits().count * 4
+        return self.presenter.getFilteredBenefits().count * 4
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -150,6 +146,12 @@ extension BenefitViewController: BenefitDelegate{
     
     func showMessage(error: String){
         self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: error), animated: true, completion: nil)
+    }
+    
+    func setUpCollectionPickerView() {
+        collectionPickerView.collectionPickerOptions = self.presenter.getTypesBenefits()
+        collectionPickerView.collectionPickerHandlers = self.presenter.getHandlersTypesBenefitss()
+        collectionPickerView.collectionView.reloadData()
     }
     
 }

@@ -32,13 +32,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleBarLabel" value="Benefícios"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDZ-vQ-hV4" customClass="CollectionPickerView" customModule="lab262_55lab_socialnetwork_dev" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="135" width="375" height="47"/>
-                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="hdZ-dB-iCZ"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0FS-gh-szN">
                                 <rect key="frame" x="0.0" y="55" width="375" height="563"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -47,6 +40,13 @@
                                     <outlet property="delegate" destination="Vq7-oc-y8E" id="2Sx-Dw-L0D"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDZ-vQ-hV4" customClass="CollectionPickerView" customModule="lab262_55lab_socialnetwork_dev" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="135" width="375" height="47"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="hdZ-dB-iCZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
