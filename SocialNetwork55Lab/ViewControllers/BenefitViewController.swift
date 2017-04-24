@@ -16,12 +16,7 @@ class BenefitViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navigationBarView: IconNavigationBar!
-
-    @IBOutlet weak var allBenefitsButton: UIButton!
-    
-    @IBOutlet weak var healthBenefitsButton: UIButton!
-    
-    @IBOutlet weak var studyBenefitsButton: UIButton!
+    @IBOutlet weak var collectionPickerView: CollectionPickerView!
     
     func registerNibs() {
         tableView.registerNibFrom(BenefitHeaderTableViewCell.self)
@@ -38,6 +33,7 @@ class BenefitViewController: UIViewController {
         registerNibs()
         setupTableView()
         setupNavigationBarView()
+        setUpCollectionPickerView()
         
     }
     
@@ -64,13 +60,9 @@ class BenefitViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
-    @IBAction func filterAllBenefitsAction(_ sender: Any) {
-    }
-    
-    @IBAction func filterHealthBenefitsAction(_ sender: Any) {
-    }
-    
-    @IBAction func filterStudyBenefitsAction(_ sender: Any) {
+    func setUpCollectionPickerView() {
+        collectionPickerView.collectionPickerOptions = ["Todos", "Seguros", "Academia"]
+        collectionPickerView.collectionPickerHandlers = [{}, {}, {}]
     }
     
     
