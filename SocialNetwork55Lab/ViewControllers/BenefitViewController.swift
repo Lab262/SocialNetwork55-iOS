@@ -7,28 +7,17 @@
 //
 
 import UIKit
+import Parse
 
 class BenefitViewController: UIViewController {
     
-    var allBenefits = [Benefit]()
+    var presenter = BenefitPresenter()
     let  tableViewTopInset: CGFloat = 145
     
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navigationBarView: IconNavigationBar!
-
-    @IBOutlet weak var allBenefitsButton: UIButton!
-    
-    @IBOutlet weak var healthBenefitsButton: UIButton!
-    
-    @IBOutlet weak var studyBenefitsButton: UIButton!
-    
-    
-    func dummyContent() {
-        for _ in 0...4 {
-            allBenefits.append(Benefit(bannerImage: nil, bannerTitle: "BE FREE", bannerSubTitle: "Seguro de vida", title: "Desconto de 30% no Seguros Bradesco", descriptionBenefit: "As we grow, we do so in fits and starts, lurching forward then back, sometimes looking more like clowns than seekers. Winston Churchill wrote: “Man will occasionally stumble over the truth, but most of…"))
-        }
-    }
+    @IBOutlet weak var collectionPickerView: CollectionPickerView!
     
     func registerNibs() {
         tableView.registerNibFrom(BenefitHeaderTableViewCell.self)
@@ -39,12 +28,22 @@ class BenefitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dummyContent()
+        setUpPresenter()
+        getData()
         setUpNavigationBar()
         registerNibs()
         setupTableView()
         setupNavigationBarView()
         
+    }
+    
+    func setUpPresenter(){
+        self.presenter.setViewDelegate(view: self)
+    }
+    
+    func getData() {
+        self.presenter.getAllBenefits()
+        self.presenter.getAllTypesBenefits()
     }
     
     func setupTableView() {
@@ -62,21 +61,12 @@ class BenefitViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
-    @IBAction func filterAllBenefitsAction(_ sender: Any) {
-    }
-    
-    @IBAction func filterHealthBenefitsAction(_ sender: Any) {
-    }
-    
-    @IBAction func filterStudyBenefitsAction(_ sender: Any) {
-    }
-    
     
     func generateBenefitHeader(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: BenefitHeaderTableViewCell.identifier, for: indexPath) as! BenefitHeaderTableViewCell
         
-        cell.benefit = allBenefits[modelIndex]
+        cell.benefit = self.presenter.getFilteredBenefits()[modelIndex]
         
         
         return cell
@@ -85,15 +75,16 @@ class BenefitViewController: UIViewController {
     func generateBenefitTitle(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: BenefitTitleTableViewCell.identifier, for: indexPath) as! BenefitTitleTableViewCell
         
-        cell.benefit = allBenefits[modelIndex]
+        cell.benefit = self.presenter.getFilteredBenefits()[modelIndex]
         
         return cell
     }
     
     func generateDescriptionInformation(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, modelIndex: Int) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: InformationDescriptionTableViewCell.identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: InformationDescriptionTableViewCell.identifier, for: indexPath) as! InformationDescriptionTableViewCell
         
         cell.contentView.backgroundColor = UIColor.white
+        cell.descriptionLabel.text = self.presenter.getFilteredBenefits()[modelIndex].descriptionBenefit
         
         return cell
     }
@@ -110,16 +101,17 @@ class BenefitViewController: UIViewController {
     
     func callBenefitDetailController(_ sender: UIButton) {
         let viewController = ViewUtil.viewControllerFromStoryboardWithIdentifier("Benefits",identifier: "benefitDetail") as! BenefitDetailViewController
-            viewController.benefit = allBenefits[sender.tag]
+        
+            viewController.benefit = self.presenter.getFilteredBenefits()[sender.tag]
             self.navigationController?.pushViewController(viewController, animated: true)
     }
-    
+
 }
 
 extension BenefitViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.allBenefits.count * 4
+        return self.presenter.getFilteredBenefits().count * 4
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -142,6 +134,24 @@ extension BenefitViewController: UITableViewDataSource {
         default:
             return UITableViewCell()
         }
+    }
+    
+}
+
+extension BenefitViewController: BenefitDelegate{
+    
+    func reloadTableView(){
+        self.tableView.reloadData()
+    }
+    
+    func showMessage(error: String){
+        self.present(ViewUtil.alertControllerWithTitle(_title: "Erro", _withMessage: error), animated: true, completion: nil)
+    }
+    
+    func setUpCollectionPickerView() {
+        collectionPickerView.collectionPickerOptions = self.presenter.getTypesBenefits()
+        collectionPickerView.collectionPickerHandlers = self.presenter.getHandlersTypesBenefitss()
+        collectionPickerView.collectionView.reloadData()
     }
     
 }

@@ -9,29 +9,66 @@
 import UIKit
 import Parse
 
-class Benefit: NSObject {
+class Benefit: PFObject {
     
     var bannerImage: UIImage?
-    var bannerTitle: String?
-    var bannerSubTitle: String?
-    var title: String?
-    var descriptionBenefit: String?
+    var type: String?
     
-    override init() {
+    
+//    @NSManaged var image: PFFile?
+    @NSManaged var name: String?
+    @NSManaged var nameType: String?
+    @NSManaged var shortDescription: String?
+    @NSManaged var descriptionBenefit: String?
+    @NSManaged var typeBenefit: PFObject?
+    
+    
+    
+    override init(){
         super.init()
-        self.bannerImage = nil
-        self.bannerTitle = ""
-        self.bannerSubTitle = ""
-        self.title = ""
-        self.descriptionBenefit = ""
     }
     
-    init(bannerImage: UIImage?, bannerTitle: String?, bannerSubTitle: String?, title: String?, descriptionBenefit: String?) {
-        super.init()
-        self.bannerImage = bannerImage
-        self.bannerTitle = bannerTitle
-        self.bannerSubTitle = bannerSubTitle
-        self.title = title
-        self.descriptionBenefit = descriptionBenefit
+    convenience init(object: PFObject) {
+        self.init()
+        setInformationsBenefitByPFObject(object: object)
+    }
+    
+    
+    func setInformationsBenefitByPFObject(object: PFObject){
+        
+        self.objectId = object.objectId
+        
+        if let name = object["name"] as? String{
+            self.name = name
+        }
+        
+        if let nameType = object["nameType"] as? String{
+            self.nameType = nameType
+        }
+        
+        if let shortDescription = object["shortDescription"] as? String{
+            self.shortDescription = shortDescription
+        }
+        
+        if let descriptionBenefit = object["descriptionBenefit"] as? String{
+            self.descriptionBenefit = descriptionBenefit
+        }
+        
+        if let type = object["type"] as? PFObject{
+            self.typeBenefit = type
+            self.type = type["name"] as? String
+        }
+        
+//        if let image = object["image"] as? PFFile{
+//            self.image = image
+//        }
+        
+    }
+    
+}
+
+extension Benefit: PFSubclassing {
+    static func parseClassName() -> String {
+        return "Benefit"
     }
 }

@@ -36,7 +36,7 @@ class BenefitTitleTableViewCell: UITableViewCell {
     }
     
     func updateBenefitsUI(){
-        titleLabel.text = benefit?.title
+        titleLabel.text = benefit?.shortDescription
     }
     
     

@@ -33,6 +33,36 @@
 		60237FAB1E7791D300DBA933 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA91E7791D300DBA933 /* NotificationTableViewCell.swift */; };
 		60237FAC1E7791D300DBA933 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60237FAA1E7791D300DBA933 /* NotificationTableViewCell.xib */; };
 		60237FAE1E78534E00DBA933 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FAD1E78534E00DBA933 /* NotificationModel.swift */; };
+		60597F581EAA585000808D4D /* BenefitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F571EAA585000808D4D /* BenefitRequest.swift */; };
+		60597F5C1EAA5F4400808D4D /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5B1EAA5F4400808D4D /* ParseRequest.swift */; };
+		60597F5F1EAA64F700808D4D /* BenefitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */; };
+		60597F601EAA6D7F00808D4D /* BenefitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */; };
+		60597F611EAA6D8000808D4D /* BenefitPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */; };
+		60597F621EAA6D9000808D4D /* BenefitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F571EAA585000808D4D /* BenefitRequest.swift */; };
+		60597F631EAA6D9100808D4D /* BenefitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F571EAA585000808D4D /* BenefitRequest.swift */; };
+		60597F641EAA6DB900808D4D /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5B1EAA5F4400808D4D /* ParseRequest.swift */; };
+		60597F651EAA6DB900808D4D /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F5B1EAA5F4400808D4D /* ParseRequest.swift */; };
+		60597F6C1EAE360A00808D4D /* CollectionPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F671EAE360A00808D4D /* CollectionPickerController.swift */; };
+		60597F6D1EAE360A00808D4D /* CollectionPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F671EAE360A00808D4D /* CollectionPickerController.swift */; };
+		60597F6E1EAE360A00808D4D /* CollectionPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F671EAE360A00808D4D /* CollectionPickerController.swift */; };
+		60597F6F1EAE360A00808D4D /* CollectionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F681EAE360A00808D4D /* CollectionPickerView.swift */; };
+		60597F701EAE360A00808D4D /* CollectionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F681EAE360A00808D4D /* CollectionPickerView.swift */; };
+		60597F711EAE360A00808D4D /* CollectionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F681EAE360A00808D4D /* CollectionPickerView.swift */; };
+		60597F721EAE360A00808D4D /* CollectionPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60597F691EAE360A00808D4D /* CollectionPickerView.xib */; };
+		60597F731EAE360A00808D4D /* CollectionPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60597F691EAE360A00808D4D /* CollectionPickerView.xib */; };
+		60597F741EAE360A00808D4D /* CollectionPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60597F691EAE360A00808D4D /* CollectionPickerView.xib */; };
+		60597F751EAE360A00808D4D /* CollectionPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F6A1EAE360A00808D4D /* CollectionPickerViewCell.swift */; };
+		60597F761EAE360A00808D4D /* CollectionPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F6A1EAE360A00808D4D /* CollectionPickerViewCell.swift */; };
+		60597F771EAE360A00808D4D /* CollectionPickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F6A1EAE360A00808D4D /* CollectionPickerViewCell.swift */; };
+		60597F781EAE360A00808D4D /* CollectionPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60597F6B1EAE360A00808D4D /* CollectionPickerViewCell.xib */; };
+		60597F791EAE360A00808D4D /* CollectionPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60597F6B1EAE360A00808D4D /* CollectionPickerViewCell.xib */; };
+		60597F7A1EAE360A00808D4D /* CollectionPickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60597F6B1EAE360A00808D4D /* CollectionPickerViewCell.xib */; };
+		60597F7C1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F7B1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift */; };
+		60597F7D1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F7B1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift */; };
+		60597F7E1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F7B1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift */; };
+		60597F801EAE3A1300808D4D /* CGOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F7F1EAE3A1300808D4D /* CGOperations.swift */; };
+		60597F811EAE3A1300808D4D /* CGOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F7F1EAE3A1300808D4D /* CGOperations.swift */; };
+		60597F821EAE3A1300808D4D /* CGOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60597F7F1EAE3A1300808D4D /* CGOperations.swift */; };
 		607EAA9E1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607EAA9D1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf */; };
 		607EAAA01E99245200F1DD9D /* ufonts.com_gotham-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 607EAA9F1E99245200F1DD9D /* ufonts.com_gotham-medium.ttf */; };
 		A40A25181DCB5C2C00DF9523 /* UIView+IBInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A25171DCB5C2C00DF9523 /* UIView+IBInspector.swift */; };
@@ -61,7 +91,7 @@
 		A47079831EA990010051E086 /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */; };
 		A47079841EA990010051E086 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA41E778B2300DBA933 /* Benefit.swift */; };
 		A47079851EA990010051E086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F89B291DA809B100949A35 /* AppDelegate.swift */; };
-		A47079861EA990010051E086 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
+		A47079861EA990010051E086 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A47079871EA990010051E086 /* AKMaskFieldBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1ACB1E6F1921004EDBD1 /* AKMaskFieldBlock.swift */; };
 		A47079881EA990010051E086 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E1B1E760E5000834122 /* MyAccountViewController.swift */; };
 		A47079891EA990010051E086 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315A31E9D4B7400F525F1 /* ButtonTableViewCell.swift */; };
@@ -154,7 +184,7 @@
 		A47079F21EA990FD0051E086 /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1A941E6F0437004EDBD1 /* ViewUtil.swift */; };
 		A47079F31EA990FD0051E086 /* Benefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60237FA41E778B2300DBA933 /* Benefit.swift */; };
 		A47079F41EA990FD0051E086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F89B291DA809B100949A35 /* AppDelegate.swift */; };
-		A47079F51EA990FD0051E086 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
+		A47079F51EA990FD0051E086 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A47079F61EA990FD0051E086 /* AKMaskFieldBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E1ACB1E6F1921004EDBD1 /* AKMaskFieldBlock.swift */; };
 		A47079F71EA990FD0051E086 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C65E1B1E760E5000834122 /* MyAccountViewController.swift */; };
 		A47079F81EA990FD0051E086 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601315A31E9D4B7400F525F1 /* ButtonTableViewCell.swift */; };
@@ -277,7 +307,6 @@
 		D47BE11E1E7735FF00261B01 /* UserWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */; };
 		D47BE11F1E7735FF00261B01 /* UserWorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */; };
 		D47BE1211E77394900261B01 /* UICollectionViewCell+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */; };
-		D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1231E7760B400261B01 /* ParseRequest.swift */; };
 		D47BE1271E7760F000261B01 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE1261E7760F000261B01 /* UserRequest.swift */; };
 		D47BE12C1E77837500261B01 /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE12B1E77837500261B01 /* ApplicationState.swift */; };
 		D47BE12F1E782F5600261B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47BE12E1E782F5600261B01 /* User.swift */; };
@@ -344,6 +373,16 @@
 		60237FA91E7791D300DBA933 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		60237FAA1E7791D300DBA933 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		60237FAD1E78534E00DBA933 /* NotificationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationModel.swift; path = SocialNetwork55Lab/ViewControllers/NotificationModel.swift; sourceTree = SOURCE_ROOT; };
+		60597F571EAA585000808D4D /* BenefitRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitRequest.swift; sourceTree = "<group>"; };
+		60597F5B1EAA5F4400808D4D /* ParseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParseRequest.swift; path = SocialNetwork55Lab/ViewControllers/ParseRequest.swift; sourceTree = SOURCE_ROOT; };
+		60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenefitPresenter.swift; sourceTree = "<group>"; };
+		60597F671EAE360A00808D4D /* CollectionPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPickerController.swift; sourceTree = "<group>"; };
+		60597F681EAE360A00808D4D /* CollectionPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPickerView.swift; sourceTree = "<group>"; };
+		60597F691EAE360A00808D4D /* CollectionPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPickerView.xib; sourceTree = "<group>"; };
+		60597F6A1EAE360A00808D4D /* CollectionPickerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPickerViewCell.swift; sourceTree = "<group>"; };
+		60597F6B1EAE360A00808D4D /* CollectionPickerViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPickerViewCell.xib; sourceTree = "<group>"; };
+		60597F7B1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterCellCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		60597F7F1EAE3A1300808D4D /* CGOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGOperations.swift; sourceTree = "<group>"; };
 		607EAA9D1E98027D00F1DD9D /* ufonts.com_gotham-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-light.ttf"; sourceTree = "<group>"; };
 		607EAA9F1E99245200F1DD9D /* ufonts.com_gotham-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ufonts.com_gotham-medium.ttf"; sourceTree = "<group>"; };
 		7F2D51D0C903269F104DD2E8 /* Pods-SocialNetwork55Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetwork55Lab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetwork55Lab/Pods-SocialNetwork55Lab.debug.xcconfig"; sourceTree = "<group>"; };
@@ -410,7 +449,6 @@
 		D47BE11C1E7735FF00261B01 /* UserWorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserWorkTableViewCell.swift; sourceTree = "<group>"; };
 		D47BE11D1E7735FF00261B01 /* UserWorkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserWorkTableViewCell.xib; sourceTree = "<group>"; };
 		D47BE1201E77394900261B01 /* UICollectionViewCell+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Utils.swift"; sourceTree = "<group>"; };
-		D47BE1231E7760B400261B01 /* ParseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseRequest.swift; sourceTree = "<group>"; };
 		D47BE1261E7760F000261B01 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		D47BE12B1E77837500261B01 /* ApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
 		D47BE12E1E782F5600261B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = SocialNetwork55Lab/ViewControllers/User.swift; sourceTree = SOURCE_ROOT; };
@@ -527,6 +565,7 @@
 		60237F5E1E773C3C00DBA933 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				60597F661EAE35BB00808D4D /* CollectionPicker */,
 				60237F5F1E773CE300DBA933 /* BenefitHeaderTableViewCell.swift */,
 				60237F601E773CE300DBA933 /* BenefitHeaderTableViewCell.xib */,
 				60237F9C1E7757BD00DBA933 /* BenefitTitleTableViewCell.swift */,
@@ -572,6 +611,34 @@
 				60237FAA1E7791D300DBA933 /* NotificationTableViewCell.xib */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		60597F561EAA582800808D4D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				60597F571EAA585000808D4D /* BenefitRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		60597F5D1EAA64E200808D4D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				60597F5E1EAA64F700808D4D /* BenefitPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		60597F661EAE35BB00808D4D /* CollectionPicker */ = {
+			isa = PBXGroup;
+			children = (
+				60597F671EAE360A00808D4D /* CollectionPickerController.swift */,
+				60597F681EAE360A00808D4D /* CollectionPickerView.swift */,
+				60597F691EAE360A00808D4D /* CollectionPickerView.xib */,
+				60597F6A1EAE360A00808D4D /* CollectionPickerViewCell.swift */,
+				60597F6B1EAE360A00808D4D /* CollectionPickerViewCell.xib */,
+			);
+			name = CollectionPicker;
 			sourceTree = "<group>";
 		};
 		A40A25291DCBD4B500DF9523 /* Controllers */ = {
@@ -736,6 +803,8 @@
 				601315AA1E9DBA4300F525F1 /* TextInputTableView.swift */,
 				601315AC1E9E5A1400F525F1 /* UIFontExtension.swift */,
 				601315AE1E9E5E9E00F525F1 /* UILabelExtension.swift */,
+				60597F7B1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift */,
+				60597F7F1EAE3A1300808D4D /* CGOperations.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -762,6 +831,7 @@
 		A4E462F81DCAEAC200A611C0 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				60597F5B1EAA5F4400808D4D /* ParseRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -810,7 +880,6 @@
 		A4F89B281DA809B100949A35 /* SocialNetwork55Lab */ = {
 			isa = PBXGroup;
 			children = (
-				D47BE1221E77609100261B01 /* Request */,
 				A4E462F41DCAEAC200A611C0 /* Constants */,
 				A4E462F51DCAEAC200A611C0 /* Extensions */,
 				A4E462F61DCAEAC200A611C0 /* Persistence */,
@@ -879,14 +948,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D47BE1221E77609100261B01 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				D47BE1231E7760B400261B01 /* ParseRequest.swift */,
-			);
-			name = Request;
-			sourceTree = "<group>";
-		};
 		D47BE1251E7760D100261B01 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -925,6 +986,8 @@
 		D4C65E171E760D9D00834122 /* Benefits */ = {
 			isa = PBXGroup;
 			children = (
+				60597F5D1EAA64E200808D4D /* Presenter */,
+				60597F561EAA582800808D4D /* Request */,
 				60237F5E1E773C3C00DBA933 /* Cells */,
 				60237F5D1E773BA400DBA933 /* Controller */,
 				60237F5C1E773B9D00DBA933 /* Interface */,
@@ -1220,12 +1283,14 @@
 				A47079C51EA990010051E086 /* UserInformationTableViewCell.xib in Resources */,
 				A47079C61EA990010051E086 /* UserWorkTableViewCell.xib in Resources */,
 				A47079C71EA990010051E086 /* Montserrat-UltraLight.otf in Resources */,
+				60597F7A1EAE360A00808D4D /* CollectionPickerViewCell.xib in Resources */,
 				A47079C81EA990010051E086 /* ActionButtonTableViewCell.xib in Resources */,
 				A47079C91EA990010051E086 /* Timeline.storyboard in Resources */,
 				A47079CA1EA990010051E086 /* InformationDescriptionTableViewCell.xib in Resources */,
 				A47079CB1EA990010051E086 /* Montserrat-Regular.otf in Resources */,
 				A47079CC1EA990010051E086 /* Montserrat-Black.otf in Resources */,
 				A47079CD1EA990010051E086 /* BebasNeue.otf in Resources */,
+				60597F741EAE360A00808D4D /* CollectionPickerView.xib in Resources */,
 				A47079CE1EA990010051E086 /* BenefitHeaderTableViewCell.xib in Resources */,
 				A47079CF1EA990010051E086 /* Assets.xcassets in Resources */,
 				A47079D01EA990010051E086 /* NotificationTableViewCell.xib in Resources */,
@@ -1264,12 +1329,14 @@
 				A4707A341EA990FD0051E086 /* UserInformationTableViewCell.xib in Resources */,
 				A4707A351EA990FD0051E086 /* UserWorkTableViewCell.xib in Resources */,
 				A4707A361EA990FD0051E086 /* Montserrat-UltraLight.otf in Resources */,
+				60597F781EAE360A00808D4D /* CollectionPickerViewCell.xib in Resources */,
 				A4707A371EA990FD0051E086 /* ActionButtonTableViewCell.xib in Resources */,
 				A4707A381EA990FD0051E086 /* Timeline.storyboard in Resources */,
 				A4707A391EA990FD0051E086 /* InformationDescriptionTableViewCell.xib in Resources */,
 				A4707A3A1EA990FD0051E086 /* Montserrat-Regular.otf in Resources */,
 				A4707A3B1EA990FD0051E086 /* Montserrat-Black.otf in Resources */,
 				A4707A3C1EA990FD0051E086 /* BebasNeue.otf in Resources */,
+				60597F721EAE360A00808D4D /* CollectionPickerView.xib in Resources */,
 				A4707A3D1EA990FD0051E086 /* BenefitHeaderTableViewCell.xib in Resources */,
 				A4707A3E1EA990FD0051E086 /* Assets.xcassets in Resources */,
 				A4707A3F1EA990FD0051E086 /* NotificationTableViewCell.xib in Resources */,
@@ -1308,12 +1375,14 @@
 				D4C65E2F1E76301900834122 /* UserInformationTableViewCell.xib in Resources */,
 				D47BE11F1E7735FF00261B01 /* UserWorkTableViewCell.xib in Resources */,
 				A44E0C6E1DD092650028F06C /* Montserrat-UltraLight.otf in Resources */,
+				60597F791EAE360A00808D4D /* CollectionPickerViewCell.xib in Resources */,
 				60237FA31E77802200DBA933 /* ActionButtonTableViewCell.xib in Resources */,
 				A4E462FD1DCAEAF800A611C0 /* Timeline.storyboard in Resources */,
 				D4C65E3A1E764AC000834122 /* InformationDescriptionTableViewCell.xib in Resources */,
 				A44E0C6C1DD092650028F06C /* Montserrat-Regular.otf in Resources */,
 				A44E0C671DD092650028F06C /* Montserrat-Black.otf in Resources */,
 				60237F991E77431C00DBA933 /* BebasNeue.otf in Resources */,
+				60597F731EAE360A00808D4D /* CollectionPickerView.xib in Resources */,
 				60237F621E773CE300DBA933 /* BenefitHeaderTableViewCell.xib in Resources */,
 				A4E463041DCAEC4F00A611C0 /* Assets.xcassets in Resources */,
 				60237FAC1E7791D300DBA933 /* NotificationTableViewCell.xib in Resources */,
@@ -1350,7 +1419,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		07D4CAFF627B2AC5BC4338AE /* [CP] Embed Pods Frameworks */ = {
@@ -1380,7 +1449,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		466954ACF1BCDDB8B5EB8415 /* [CP] Copy Pods Resources */ = {
@@ -1425,7 +1494,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A47079D91EA990010051E086 /* Adding tags to comment */ = {
@@ -1498,7 +1567,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A4707A481EA990FD0051E086 /* Adding tags to comment */ = {
@@ -1615,6 +1684,7 @@
 				A470797C1EA990010051E086 /* LoginViewController.swift in Sources */,
 				A470797D1EA990010051E086 /* UILabelExtension.swift in Sources */,
 				A470797E1EA990010051E086 /* IconNavigationBar.swift in Sources */,
+				60597F601EAA6D7F00808D4D /* BenefitPresenter.swift in Sources */,
 				A470797F1EA990010051E086 /* AKMaskFieldStatus.swift in Sources */,
 				A47079801EA990010051E086 /* InformationDescriptionTableViewCell.swift in Sources */,
 				A47079811EA990010051E086 /* ActionButtonTableViewCell.swift in Sources */,
@@ -1622,7 +1692,7 @@
 				A47079831EA990010051E086 /* ViewUtil.swift in Sources */,
 				A47079841EA990010051E086 /* Benefit.swift in Sources */,
 				A47079851EA990010051E086 /* AppDelegate.swift in Sources */,
-				A47079861EA990010051E086 /* ParseRequest.swift in Sources */,
+				A47079861EA990010051E086 /* (null) in Sources */,
 				A47079871EA990010051E086 /* AKMaskFieldBlock.swift in Sources */,
 				A47079881EA990010051E086 /* MyAccountViewController.swift in Sources */,
 				A47079891EA990010051E086 /* ButtonTableViewCell.swift in Sources */,
@@ -1630,11 +1700,15 @@
 				A470798B1EA990010051E086 /* NotificationViewController.swift in Sources */,
 				A470798C1EA990010051E086 /* UIApplication+Navigation.swift in Sources */,
 				A470798D1EA990010051E086 /* BenefitTitleTableViewCell.swift in Sources */,
+				60597F6E1EAE360A00808D4D /* CollectionPickerController.swift in Sources */,
 				A470798E1EA990010051E086 /* ProfileViewController.swift in Sources */,
 				A470798F1EA990010051E086 /* UIFontExtension.swift in Sources */,
 				A47079901EA990010051E086 /* TextInputTableView.swift in Sources */,
+				60597F631EAA6D9100808D4D /* BenefitRequest.swift in Sources */,
 				A47079911EA990010051E086 /* BenefitHeaderTableViewCell.swift in Sources */,
 				A47079921EA990010051E086 /* User.swift in Sources */,
+				60597F711EAE360A00808D4D /* CollectionPickerView.swift in Sources */,
+				60597F651EAA6DB900808D4D /* ParseRequest.swift in Sources */,
 				A47079931EA990010051E086 /* UIView+Animations.swift in Sources */,
 				A47079941EA990010051E086 /* DefaultsHelper.swift in Sources */,
 				A47079951EA990010051E086 /* UserWorkCollectionViewCell.swift in Sources */,
@@ -1649,6 +1723,7 @@
 				A470799D1EA990010051E086 /* CreateAccountViewController.swift in Sources */,
 				A470799E1EA990010051E086 /* AuthenticationContainerViewController.swift in Sources */,
 				A470799F1EA990010051E086 /* UITableViewCell+Utils.swift in Sources */,
+				60597F821EAE3A1300808D4D /* CGOperations.swift in Sources */,
 				A47079A01EA990010051E086 /* TabBarViewController.swift in Sources */,
 				A47079A11EA990010051E086 /* TimelineViewController.swift in Sources */,
 				A47079A21EA990010051E086 /* UserWorkTableViewCell.swift in Sources */,
@@ -1657,6 +1732,7 @@
 				A47079A51EA990010051E086 /* AKMaskFieldBlockCharacter.swift in Sources */,
 				A4707A601EA992680051E086 /* AppConfig.swift in Sources */,
 				A47079A61EA990010051E086 /* ContactInformationTableViewCell.swift in Sources */,
+				60597F7E1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift in Sources */,
 				A47079A71EA990010051E086 /* URLS.swift in Sources */,
 				A47079A81EA990010051E086 /* BenefitDetailViewController.swift in Sources */,
 				A47079A91EA990010051E086 /* UITextField+Padding.swift in Sources */,
@@ -1666,6 +1742,7 @@
 				A47079AD1EA990010051E086 /* AKMaskField.swift in Sources */,
 				A47079AE1EA990010051E086 /* UIColorExtension.swift in Sources */,
 				A47079AF1EA990010051E086 /* AuthenticationMainViewController.swift in Sources */,
+				60597F771EAE360A00808D4D /* CollectionPickerViewCell.swift in Sources */,
 				A47079B01EA990010051E086 /* UIView+IBInspector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1680,6 +1757,7 @@
 				A47079EB1EA990FD0051E086 /* LoginViewController.swift in Sources */,
 				A47079EC1EA990FD0051E086 /* UILabelExtension.swift in Sources */,
 				A47079ED1EA990FD0051E086 /* IconNavigationBar.swift in Sources */,
+				60597F611EAA6D8000808D4D /* BenefitPresenter.swift in Sources */,
 				A47079EE1EA990FD0051E086 /* AKMaskFieldStatus.swift in Sources */,
 				A47079EF1EA990FD0051E086 /* InformationDescriptionTableViewCell.swift in Sources */,
 				A47079F01EA990FD0051E086 /* ActionButtonTableViewCell.swift in Sources */,
@@ -1687,7 +1765,7 @@
 				A47079F21EA990FD0051E086 /* ViewUtil.swift in Sources */,
 				A47079F31EA990FD0051E086 /* Benefit.swift in Sources */,
 				A47079F41EA990FD0051E086 /* AppDelegate.swift in Sources */,
-				A47079F51EA990FD0051E086 /* ParseRequest.swift in Sources */,
+				A47079F51EA990FD0051E086 /* (null) in Sources */,
 				A47079F61EA990FD0051E086 /* AKMaskFieldBlock.swift in Sources */,
 				A47079F71EA990FD0051E086 /* MyAccountViewController.swift in Sources */,
 				A47079F81EA990FD0051E086 /* ButtonTableViewCell.swift in Sources */,
@@ -1695,11 +1773,15 @@
 				A47079FA1EA990FD0051E086 /* NotificationViewController.swift in Sources */,
 				A47079FB1EA990FD0051E086 /* UIApplication+Navigation.swift in Sources */,
 				A47079FC1EA990FD0051E086 /* BenefitTitleTableViewCell.swift in Sources */,
+				60597F6C1EAE360A00808D4D /* CollectionPickerController.swift in Sources */,
 				A47079FD1EA990FD0051E086 /* ProfileViewController.swift in Sources */,
 				A47079FE1EA990FD0051E086 /* UIFontExtension.swift in Sources */,
 				A47079FF1EA990FD0051E086 /* TextInputTableView.swift in Sources */,
+				60597F621EAA6D9000808D4D /* BenefitRequest.swift in Sources */,
 				A4707A001EA990FD0051E086 /* BenefitHeaderTableViewCell.swift in Sources */,
 				A4707A011EA990FD0051E086 /* User.swift in Sources */,
+				60597F6F1EAE360A00808D4D /* CollectionPickerView.swift in Sources */,
+				60597F641EAA6DB900808D4D /* ParseRequest.swift in Sources */,
 				A4707A021EA990FD0051E086 /* UIView+Animations.swift in Sources */,
 				A4707A031EA990FD0051E086 /* DefaultsHelper.swift in Sources */,
 				A4707A041EA990FD0051E086 /* UserWorkCollectionViewCell.swift in Sources */,
@@ -1714,6 +1796,7 @@
 				A4707A0C1EA990FD0051E086 /* CreateAccountViewController.swift in Sources */,
 				A4707A0D1EA990FD0051E086 /* AuthenticationContainerViewController.swift in Sources */,
 				A4707A0E1EA990FD0051E086 /* UITableViewCell+Utils.swift in Sources */,
+				60597F801EAE3A1300808D4D /* CGOperations.swift in Sources */,
 				A4707A0F1EA990FD0051E086 /* TabBarViewController.swift in Sources */,
 				A4707A101EA990FD0051E086 /* TimelineViewController.swift in Sources */,
 				A4707A111EA990FD0051E086 /* UserWorkTableViewCell.swift in Sources */,
@@ -1722,6 +1805,7 @@
 				A4707A141EA990FD0051E086 /* AKMaskFieldBlockCharacter.swift in Sources */,
 				A4707A621EA9926E0051E086 /* AppConfig.swift in Sources */,
 				A4707A151EA990FD0051E086 /* ContactInformationTableViewCell.swift in Sources */,
+				60597F7C1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift in Sources */,
 				A4707A161EA990FD0051E086 /* URLS.swift in Sources */,
 				A4707A171EA990FD0051E086 /* BenefitDetailViewController.swift in Sources */,
 				A4707A181EA990FD0051E086 /* UITextField+Padding.swift in Sources */,
@@ -1731,6 +1815,7 @@
 				A4707A1C1EA990FD0051E086 /* AKMaskField.swift in Sources */,
 				A4707A1D1EA990FD0051E086 /* UIColorExtension.swift in Sources */,
 				A4707A1E1EA990FD0051E086 /* AuthenticationMainViewController.swift in Sources */,
+				60597F751EAE360A00808D4D /* CollectionPickerViewCell.swift in Sources */,
 				A4707A1F1EA990FD0051E086 /* UIView+IBInspector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1740,10 +1825,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				60237F9B1E77491200DBA933 /* String+CharacterSpacing.swift in Sources */,
+				60597F811EAE3A1300808D4D /* CGOperations.swift in Sources */,
 				D4F39DDC1E6F766A00EA4728 /* Constants.swift in Sources */,
 				D42E1ADA1E6F1921004EDBD1 /* AKMaskFieldEvent.swift in Sources */,
 				D42E1A911E6E8054004EDBD1 /* LoginViewController.swift in Sources */,
+				60597F581EAA585000808D4D /* BenefitRequest.swift in Sources */,
 				601315AF1E9E5E9E00F525F1 /* UILabelExtension.swift in Sources */,
+				60597F5F1EAA64F700808D4D /* BenefitPresenter.swift in Sources */,
 				A4CB02691DD261D900B01A6B /* IconNavigationBar.swift in Sources */,
 				D42E1ADE1E6F1921004EDBD1 /* AKMaskFieldStatus.swift in Sources */,
 				D4C65E391E764AC000834122 /* InformationDescriptionTableViewCell.swift in Sources */,
@@ -1752,7 +1840,6 @@
 				D42E1A951E6F0437004EDBD1 /* ViewUtil.swift in Sources */,
 				60237FA51E778B2300DBA933 /* Benefit.swift in Sources */,
 				A4F89B2A1DA809B100949A35 /* AppDelegate.swift in Sources */,
-				D47BE1241E7760B400261B01 /* ParseRequest.swift in Sources */,
 				D42E1AD41E6F1921004EDBD1 /* AKMaskFieldBlock.swift in Sources */,
 				D4C65E1C1E760E5000834122 /* MyAccountViewController.swift in Sources */,
 				601315A51E9D4B7400F525F1 /* ButtonTableViewCell.swift in Sources */,
@@ -1763,12 +1850,15 @@
 				D4C65E2A1E761FAE00834122 /* ProfileViewController.swift in Sources */,
 				601315AD1E9E5A1400F525F1 /* UIFontExtension.swift in Sources */,
 				601315AB1E9DBA4300F525F1 /* TextInputTableView.swift in Sources */,
+				60597F5C1EAA5F4400808D4D /* ParseRequest.swift in Sources */,
 				60237F611E773CE300DBA933 /* BenefitHeaderTableViewCell.swift in Sources */,
 				D47BE12F1E782F5600261B01 /* User.swift in Sources */,
 				A40A251A1DCB681A00DF9523 /* UIView+Animations.swift in Sources */,
 				A44967761DDA300100990008 /* DefaultsHelper.swift in Sources */,
+				60597F6D1EAE360A00808D4D /* CollectionPickerController.swift in Sources */,
 				D47BE11A1E77266C00261B01 /* UserWorkCollectionViewCell.swift in Sources */,
 				60237FAE1E78534E00DBA933 /* NotificationModel.swift in Sources */,
+				60597F7D1EAE399D00808D4D /* CenterCellCollectionViewFlowLayout.swift in Sources */,
 				D42E1ADC1E6F1921004EDBD1 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				D4C65E351E76493C00834122 /* HeaderTableViewCell.swift in Sources */,
 				A4707A681EA99FBF0051E086 /* NotificationsManager.swift in Sources */,
@@ -1790,12 +1880,14 @@
 				A4D5DA231DDEBC7900EB9EC5 /* URLS.swift in Sources */,
 				601315A91E9D4F2000F525F1 /* BenefitDetailViewController.swift in Sources */,
 				601315A21E9D465F00F525F1 /* UITextField+Padding.swift in Sources */,
+				60597F701EAE360A00808D4D /* CollectionPickerView.swift in Sources */,
 				A4FE063B1DD0A13E00BFDC4D /* Dictionary+Indexable.swift in Sources */,
 				D47BE12C1E77837500261B01 /* ApplicationState.swift in Sources */,
 				D4C65E2E1E76301900834122 /* UserInformationTableViewCell.swift in Sources */,
 				D42E1AD21E6F1921004EDBD1 /* AKMaskField.swift in Sources */,
 				A427680C1DD3A09D00363343 /* UIColorExtension.swift in Sources */,
 				A489B1F91DDA7D3E00B239D5 /* AuthenticationMainViewController.swift in Sources */,
+				60597F761EAE360A00808D4D /* CollectionPickerViewCell.swift in Sources */,
 				A40A25181DCB5C2C00DF9523 /* UIView+IBInspector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
