@@ -13,9 +13,9 @@ class AppConfig: NSObject {
     
     struct parse {
         static let baseClientConfig = ParseClientConfiguration {
-            $0.applicationId = "lab262_55lab_social_network"
+            $0.applicationId = "api-55lab-production"
             $0.clientKey = ""
-            $0.server = "http://socialnetwork55lab.herokuapp.com/parse"
+            $0.server = "http://api-55lab-production.herokuapp.com/parse"
         }
     }
     
