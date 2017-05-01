@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let configuration = AppConfig.parse.baseClientConfig
         Parse.initialize(with: configuration)
         self.window!.rootViewController = self.setInitialStoryboardBySeasonUser()
-        NotificationsManager.shared.registerForLocalNotifications()
+        NotificationsManager.registerForNotifications()
         return true
     }
    
