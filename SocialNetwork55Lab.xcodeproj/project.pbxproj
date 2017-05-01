@@ -412,7 +412,7 @@
 		A4707A641EA9952D0051E086 /* lab262.55lab.socialnetwork.test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lab262.55lab.socialnetwork.test.entitlements; sourceTree = "<group>"; };
 		A4707A651EA9952F0051E086 /* lab262.55lab.socialnetwork.production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lab262.55lab.socialnetwork.production.entitlements; sourceTree = "<group>"; };
 		A4707A661EA99EFE0051E086 /* NotificationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
-		A4796CF31EB6BB8500B0E543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SocialNetwork55Lab/Info.plist; sourceTree = SOURCE_ROOT; };
+		A4796CF41EB6BBE300B0E543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		A489B1F61DDA7D1100B239D5 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		A489B1F81DDA7D3E00B239D5 /* AuthenticationMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationMainViewController.swift; sourceTree = "<group>"; };
 		A4AFBB011DD272A700F270C7 /* UIApplication+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Navigation.swift"; sourceTree = "<group>"; };
@@ -841,7 +841,7 @@
 		A4E463021DCAEC4F00A611C0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A4796CF31EB6BB8500B0E543 /* Info.plist */,
+				A4796CF41EB6BBE300B0E543 /* Info.plist */,
 				A44E0C5D1DD092650028F06C /* Fonts */,
 				A4E463031DCAEC4F00A611C0 /* Assets.xcassets */,
 			);
